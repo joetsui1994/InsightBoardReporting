@@ -1,6 +1,0 @@
-jinja2
-pandas
-plotly
-pyyaml
-geopandas
-numpy
