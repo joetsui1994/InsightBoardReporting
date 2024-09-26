@@ -5,3 +5,4 @@ pyyaml
 geopandas
 numpy
 matplotlib
+kaleido
