@@ -5,10 +5,13 @@
 ```bash
 .
 ├── data/
-│   ├── drc-provinces/
-│   ├── drc-aires-sante/
-│   ├── drc-zones-sante/
+│   ├── geoBoundaries-COD-ADM1-all/
+│   ├── geoBoundaries-COD-ADM1-all_dissolved/
+│   ├── rdc_aires-de-sante/
+│   ├── rdc_zones-de-sante/
 │   └── test_data/
+│       ├── generate_data.py
+│       └── test_data.csv
 ├── templates/
 │   └── report_template.html
 ├── config/
@@ -18,6 +21,12 @@
 │   ├── data_processor.py
 │   ├── plot_creator.py
 │   └── report_generator.py
-├── README.md
+├── plots/
+│   ├── province_map/
+│   │   ├── plot.py
+│   │   └── preprocess.py
+│   └── time_series_barplot/
+│       ├── plot.py
+│       └── preprocess.py
 ├── requirements.txt
 └── .gitignore
