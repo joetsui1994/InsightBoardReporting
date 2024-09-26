@@ -11,11 +11,11 @@ num_cases = 10000
 EPI_IDs = ['EPI_{:05d}'.format(i) for i in range(1, num_cases + 1)]
 
 # define possible values for categorical columns
-province_shp_dir = '../drc-provinces'
-zones_sante_shp_dir = '../drc-zones-sante'
-aires_sante_shp_dir = '../drc-aires-sante'
+province_shp_dir = '../geoBoundaries-COD-ADM1-all'
+zones_sante_shp_dir = '../rdc_zones-de-sante'
+aires_sante_shp_dir = '../rdc_aires-de-sante'
 # read in from shapefiles
-provinces = gpd.read_file(province_shp_dir).ADM1_FR.unique()
+provinces = gpd.read_file(province_shp_dir).shapeISO.unique()
 zones_sante = gpd.read_file(zones_sante_shp_dir).Pcode.unique()
 aires_sante = gpd.read_file(aires_sante_shp_dir).PCODE.unique() # not sure if this is the right column
 case_classifications = ['confirmed', 'probable', 'suspected', 'negative', 'unknown']

@@ -4,8 +4,8 @@ import json
 import os
 
 # filepath to provincial shapefile
-PROVINCES_SHAPEFILE = './data/drc-provinces/'
-SHAPEFILE_COLUMN = 'ADM1_FR'
+PROVINCES_SHAPEFILE = './data/geoBoundaries-COD-ADM1-all/'
+SHAPEFILE_COLUMN = 'shapeISO'
 
 def plot_province_map(geo_data, parameters):
     """
@@ -29,8 +29,7 @@ def plot_province_map(geo_data, parameters):
     geo_data['count'].fillna(0, inplace=True)
 
     # read GeoJSON
-    with open(os.path.join(PROVINCES_SHAPEFILE, 'drc-provinces.json')) as f:
-        geo_data_json = json.load(f)
+    geo_data_json = json.loads(geo_data.to_json())
 
     # create map
     fig = px.choropleth(
