@@ -8,7 +8,6 @@ def plot_time_series_barplot(plot_data, parameters):
     x_label = parameters.get('x_label', 'Time')
     y_label = parameters.get('y_label', 'Count')
     title = parameters.get('title', 'Plot Title')
-    caption = parameters.get('caption', '')
 
     # extract parameters for moving average
     ma_params = parameters.get('moving_average', False)
@@ -42,17 +41,5 @@ def plot_time_series_barplot(plot_data, parameters):
             name='Moving Average',
             line=dict(color=ma_colour, width=ma_lw)
         ))
-
-    # add caption if provided
-    if caption:
-        fig.add_annotation(
-            text=caption,
-            xref="paper",
-            yref="paper",
-            x=0,
-            y=-0.15,
-            showarrow=False,
-            font=dict(size=12)
-        )
 
     return fig

@@ -1,69 +1,75 @@
-import plotly.express as px
 import geopandas as gpd
-import json
+import matplotlib.pyplot as plt
+from matplotlib.colors import ListedColormap, LinearSegmentedColormap
 import os
 
 # filepath to provincial shapefile
 PROVINCES_SHAPEFILE = './data/geoBoundaries-COD-ADM1-all/'
+DISSOLVED_PROVINCES_SHAPEFILE = './data/geoBoundaries-COD-ADM1-all_dissolved/'
 SHAPEFILE_COLUMN = 'shapeISO'
+OUTPUT_DIR = './output/'
 
-def plot_province_map(geo_data, parameters):
+def plot_province_map_matplotlib(geo_data, parameters):
     """
-    Creates a provincial-level map using preprocessed geospatial data.
+    Plots a provincial-level map using GeoPandas and Matplotlib, then saves it as a PNG file.
     """
-    legend = parameters.get('legend', True)
-    mask_missing_tiles = parameters.get('mask_missing_tiles', True)
     title = parameters.get('title', '')
-    caption = parameters.get('caption', '')
+    fig_width = parameters.get('fig_width', 10)
+    fig_height = parameters.get('fig_height', 10)
+    png_dpi = parameters.get('png_dpi', 300)
+
+    # create figure and axes
+    fig, ax = plt.subplots(1, figsize=(fig_width, fig_height))
 
     # load shapefile
     provinces_gdf = gpd.read_file(PROVINCES_SHAPEFILE)
-    # provinces_gdf = provinces_gdf[[SHAPEFILE_COLUMN, 'geometry']]
+    provinces_gdf = provinces_gdf[[SHAPEFILE_COLUMN, 'geometry']]
     if provinces_gdf.crs != 'EPSG:4326':
         provinces_gdf = provinces_gdf.to_crs('EPSG:4326')
 
     # merge data with geographic data
     geo_data = provinces_gdf.merge(geo_data, left_on=SHAPEFILE_COLUMN, right_on='province', how='left')
 
-    # fill missing values
-    geo_data['count'].fillna(0, inplace=True)
+    # create custom colourmap
+    custom_cmap = LinearSegmentedColormap.from_list("red_blue", ['#c9c9c9', '#a16272', '#9F2241'])
 
-    # read GeoJSON
-    geo_data_json = json.loads(geo_data.to_json())
+    # plot provinces with the 'count' column as color
+    geo_data_plot = geo_data.plot(column='count', ax=ax, legend=False, cmap=custom_cmap)
+    # plot transparent polygons as borders
+    provinces_gdf.boundary.plot(ax=ax, color='white', linewidth=0.3, alpha=0.4)
 
-    # create map
-    fig = px.choropleth(
-        geo_data,
-        geojson=geo_data_json,
-        locations=SHAPEFILE_COLUMN,
-        color='count',
-        hover_name=SHAPEFILE_COLUMN,
-        color_continuous_scale="OrRd",
-        range_color=(0, geo_data['count'].max()),
-        labels={ 'count': 'Number of Cases' },
-        title=title
-    )
+    ###########
+    gdf_dissolved = gpd.read_file(DISSOLVED_PROVINCES_SHAPEFILE)
+    gdf_dissolved.plot(ax=ax, color='none', edgecolor='#484848', linewidth=3, alpha=0.8)
 
-    # adjust layout
-    fig.update_geos(
-        visible=False,
-        resolution=50,
-        showcountries=True,
-        lataxis_range=[-13.5, 5],  # Latitude range for the DRC
-        lonaxis_range=[12, 32],    # Longitude range for the DRC
-    )
+    # add title
+    ax.set_axis_off()
+    ax.text(0.5, -0.1, title, ha='center', va='center', transform=ax.transAxes, fontsize=20)
 
-    # add caption if provided
-    if caption:
-        fig.add_annotation(
-            text=caption,
-            xref="paper",
-            yref="paper",
-            x=0,
-            y=-0.1,
-            showarrow=False,
-            font=dict(size=12)
-        )
-    # fig.show()
+    # adjust colorbar dimensions
+    cbar = geo_data_plot.get_figure().colorbar(geo_data_plot.collections[0], ax=ax, shrink=0.7, aspect=20)
+    # Adjust the fontsize of the colorbar tick labels
+    cbar.ax.tick_params(labelsize=16)
 
-    return fig
+    # set background transparent
+    fig.patch.set_alpha(0)
+
+    # tight layout
+    plt.tight_layout()
+
+    # generate a unique filename for the plot in the output directory
+    png_filename = os.path.join(OUTPUT_DIR, 'province_map.png')
+    counter = 0
+    while os.path.exists(png_filename):
+        counter += 1
+        png_filename = os.path.join(OUTPUT_DIR, f'province_map_{counter}.png')
+
+    # save plot as PNG
+    plt.savefig(png_filename, dpi=png_dpi)
+    # save plot as PDF
+    plt.savefig(png_filename.replace('.png', '.pdf'))
+
+    # close plot to free memory
+    plt.close(fig)
+
+    return png_filename

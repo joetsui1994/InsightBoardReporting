@@ -26,7 +26,6 @@ reporting:
           x_label: 'Date'
           y_label: 'Case Incidence'
           title: 'Figure 1. Daily case incidence'
-          caption: 'something about the graph'
           moving_average:
             show: true
             linewidth: 4
@@ -45,10 +44,10 @@ reporting:
             start_date: '2023-01-05'
             end_date: '2023-02-01'
         graphics:
-          legend: true
-          mask_missing_tiles: true
           title: 'Case distribution at provincial level'
-          caption: 'something about the graph'
+          fig_width: 15
+          fig_height: 15
+          png_dpi: 300
 logging:
   export_data: false
   report_data_confidence: false

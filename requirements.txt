@@ -4,3 +4,4 @@ plotly
 pyyaml
 geopandas
 numpy
+matplotlib

@@ -20,8 +20,7 @@ def create_section(section_config, data):
 
     # plots
     elif section_type in ['time-series-barplot', 'province-map']:
-        fig = create_plot(data, section_config)
-        plot_html = fig.to_html(full_html=False, include_plotlyjs=False)
+        plot_html = create_plot(data, section_config)
         
         # return the plot as a dictionary with type 'plot'
         return {
