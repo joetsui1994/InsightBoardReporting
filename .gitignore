@@ -29,8 +29,9 @@ Thumbs.db
 # *.geojson
 
 # Ignore report outputs
-# report.html
-
+output/
+# Ignore tmp files
+tmp/
 # VS Code settings
 .vscode/
 

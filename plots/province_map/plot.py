@@ -1,6 +1,8 @@
 import geopandas as gpd
 import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap, LinearSegmentedColormap
+import numpy as np
+from pathlib import Path
 import os
 
 # filepath to provincial shapefile
@@ -8,6 +10,7 @@ PROVINCES_SHAPEFILE = './data/geoBoundaries-COD-ADM1-all/'
 DISSOLVED_PROVINCES_SHAPEFILE = './data/geoBoundaries-COD-ADM1-all_dissolved/'
 SHAPEFILE_COLUMN = 'shapeISO'
 OUTPUT_DIR = './output/'
+TMP_DIR = './tmp/'
 
 def plot_province_map_matplotlib(geo_data, parameters):
     """
@@ -17,6 +20,8 @@ def plot_province_map_matplotlib(geo_data, parameters):
     fig_width = parameters.get('fig_width', 10)
     fig_height = parameters.get('fig_height', 10)
     png_dpi = parameters.get('png_dpi', 300)
+    export = parameters.get('export', True)
+    filename = parameters.get('filename', 'province_map.pdf')
 
     # create figure and axes
     fig, ax = plt.subplots(1, figsize=(fig_width, fig_height))
@@ -57,19 +62,23 @@ def plot_province_map_matplotlib(geo_data, parameters):
     # tight layout
     plt.tight_layout()
 
-    # generate a unique filename for the plot in the output directory
-    png_filename = os.path.join(OUTPUT_DIR, 'province_map.png')
-    counter = 0
-    while os.path.exists(png_filename):
-        counter += 1
-        png_filename = os.path.join(OUTPUT_DIR, f'province_map_{counter}.png')
+    # generate a unique filename for PNG plot in TMP_DIR
+    tmp_png_filename = os.path.join(TMP_DIR, '%d.png' % np.random.randint(1e9))
+    while os.path.exists(tmp_png_filename):
+        tmp_png_filename = os.path.join(TMP_DIR, '%d.png' % np.random.randint(1e9))
+    # save plot as PNG in TMP_DIR for display in the html report
+    plt.savefig(tmp_png_filename, dpi=png_dpi)
 
-    # save plot as PNG
-    plt.savefig(png_filename, dpi=png_dpi)
-    # save plot as PDF
-    plt.savefig(png_filename.replace('.png', '.pdf'))
+    # save plot as PDF if export is True
+    if export:
+        pdf_filename = os.path.join(OUTPUT_DIR, filename)
+        counter = 0
+        while os.path.exists(pdf_filename):
+            counter += 1
+            pdf_filename = os.path.join(OUTPUT_DIR, '%s.%d.pdf' % (Path(filename).stem, counter))
+        plt.savefig(pdf_filename, format='pdf')
 
     # close plot to free memory
     plt.close(fig)
 
-    return png_filename
+    return tmp_png_filename

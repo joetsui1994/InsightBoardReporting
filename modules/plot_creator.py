@@ -34,7 +34,7 @@ def create_plot(data, graph_config):
     if isinstance(plot_output, str):  # if a file path is returned, generate absolute path for <img> tag
         absolute_path = os.path.abspath(plot_output)  # convert to absolute path
         plot_html = f'<img src="{absolute_path}" alt="Generated Map Plot" />'
-    else:  # Handle Plotly plots
+    else:  # handle Plotly plots
         plot_html = plot_output.to_html(full_html=False, include_plotlyjs=False)
 
     return plot_html

@@ -1,5 +1,9 @@
 import plotly.express as px
 import plotly.graph_objects as go
+from pathlib import Path
+import os
+
+OUTPUT_DIR = './output/'
 
 def plot_time_series_barplot(plot_data, parameters):
     """
@@ -8,6 +12,10 @@ def plot_time_series_barplot(plot_data, parameters):
     x_label = parameters.get('x_label', 'Time')
     y_label = parameters.get('y_label', 'Count')
     title = parameters.get('title', 'Plot Title')
+    fig_width = parameters.get('fig_width', 300)
+    fig_height = parameters.get('fig_height', 500)
+    export = parameters.get('export', True)
+    filename = parameters.get('filename', 'time_series_barplot.pdf')
 
     # extract parameters for moving average
     ma_params = parameters.get('moving_average', False)
@@ -41,5 +49,16 @@ def plot_time_series_barplot(plot_data, parameters):
             name='Moving Average',
             line=dict(color=ma_colour, width=ma_lw)
         ))
+
+    # export plot if specified
+    if export:
+        pdf_filename = os.path.join(OUTPUT_DIR, filename)
+        counter = 0
+        while os.path.exists(pdf_filename):
+            counter += 1
+            pdf_filename = os.path.join(OUTPUT_DIR, '%s.%d.pdf' % (Path(filename).stem, counter))
+
+        # create layout object
+        fig.write_image(pdf_filename, format='pdf', width=fig_width, height=fig_height)
 
     return fig
