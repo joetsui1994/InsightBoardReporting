@@ -9,11 +9,11 @@
 │   ├── drc-aires-sante/
 │   ├── drc-zones-sante/
 │   └── test_data/
-├── templates
+├── templates/
 │   └── report_template.html
-├── config
+├── config/
 │   └── config.yaml
-├── modules
+├── modules/
 │   ├── config_loader.py
 │   ├── data_processor.py
 │   ├── plot_creator.py
