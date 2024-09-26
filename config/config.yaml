@@ -30,7 +30,7 @@ reporting:
           moving_average:
             show: true
             linewidth: 4
-            colour: '#424242'
+            colour: '#B4A269'
           fig_width: 1000
           fig_height: 300
           export: false

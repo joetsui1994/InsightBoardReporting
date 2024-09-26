@@ -21,9 +21,8 @@ def plot_time_series_barplot(plot_data, parameters):
     ma_params = parameters.get('moving_average', False)
     ma_show = ma_params.get('show', False)
     ma_lw = ma_params.get('linewidth', 2)
-    ma_colour = ma_params.get('colour', 'black')
+    ma_colour = ma_params.get('colour', '#B4A269')
 
-    
     # create plot
     fig = px.bar(
         plot_data,
@@ -31,7 +30,7 @@ def plot_time_series_barplot(plot_data, parameters):
         y='count',
         labels={ 'date': x_label, 'count': y_label },
         title=title,
-        color_discrete_sequence=['#278277']  # change bar colors
+        color_discrete_sequence=['#1A5632']  # change bar colors
     )
     fig.update_layout(
         paper_bgcolor='rgba(0,0,0,0)',
