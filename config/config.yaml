@@ -21,7 +21,8 @@ reporting:
       parameters:
         data:
           time_col: 'date_notification'
-          moving_average_window: 7
+          aggregate_by_epiweek: true
+          moving_average_window: 3 # in units of aggregation (e.g. days, weeks)
         graphics:
           x_label: 'Date'
           y_label: 'Case Incidence'
@@ -32,7 +33,7 @@ reporting:
             colour: '#424242'
           fig_width: 1000
           fig_height: 300
-          export: true
+          export: false
           filename: 'daily_case_incidence.pdf'
     - type: 'text'
       parameters:
@@ -52,5 +53,5 @@ reporting:
           fig_width: 15
           fig_height: 15
           png_dpi: 300
-          export: true
+          export: false
           filename: 'province_case_distribution_map.pdf'
