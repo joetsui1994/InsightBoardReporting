@@ -1,0 +1,520 @@
+PROVINCE,TERRITOIRE,SCE_GEO,Nom,Pcode,cle,Sce_Sem,Modif,Code_DHIS2,Fiabilite,Code_SNIS,Anc_provin
+Sankuru,Katako Kombe,OMS,Wembo Nyama,CD8308ZS03,Wembo NyamaSankuru,DSNIS,,dw6cxRCsTBH,,,Kasai-Oriental
+Sankuru,Lusambo,OMS,Pania Mutombo,CD8302ZS03,Pania MutomboSankuru,DSNIS,,yzgZ77cqLEc,,,Kasai-Oriental
+Sankuru,Lubefu,OMS,Minga,CD8309ZS02,MingaSankuru,DSNIS,,S6nnhxGaPR3,,,Kasai-Oriental
+Sankuru,Lusambo,OMS,Lusambo,CD8302ZS01,LusamboSankuru,DSNIS,,x6qA2FLnw1e,,,Kasai-Oriental
+Sankuru,Lodja,OMS,Vanga Kete,CD8303ZS03,Vanga KeteSankuru,DSNIS,,UXxD0fWI2yS,,,Kasai-Oriental
+Sankuru,Lodja,OMS,Lodja,CD8303ZS01,LodjaSankuru,DSNIS,,fJD7wOwwi4M,,,Kasai-Oriental
+Sankuru,Katako Kombe,OMS,Katako Kombe,CD8308ZS02,Katako KombeSankuru,DSNIS,,IPDJ2AFLJ1q,,,Kasai-Oriental
+Kongo-Central,Moanda,OMS,Moanda,CD2003ZS03,MoandaKongo-Central,DSNIS,,Zbg4fiy6f3t,,,Bas-Congo
+Kongo-Central,Moanda,OMS,Kitona,CD2003ZS02,KitonaKongo-Central,DSNIS,,ADqfcJ05GHD,,,Bas-Congo
+Kongo-Central,Boma,OMS,Boma,CD2002ZS01,BomaKongo-Central,DSNIS,,djWn21U4AVy,,,Bas-Congo
+Kongo-Central,Moanda,OMS,Boma Bungu,CD2003ZS01,Boma BunguKongo-Central,DSNIS,,vquecO03tD0,,,Bas-Congo
+Kongo-Central,Lukula,OMS,Lukula,CD2005ZS02,LukulaKongo-Central,DSNIS,,KlQNBFiC8Cf,,,Bas-Congo
+Kongo-Central,Tshela,OMS,Tshela,CD2007ZS04,TshelaKongo-Central,DSNIS,,hniXpSX7Zrq,,,Bas-Congo
+Kongo-Central,Tshela,OMS,Vaku,CD2007ZS05,VakuKongo-Central,DSNIS,,ZRDAZVZ4HMV,,,Bas-Congo
+Kongo-Central,Tshela,OMS,Kizu,CD2007ZS02,KizuKongo-Central,DSNIS,,TQ5nmMVD9uY,,,Bas-Congo
+Bas-Uele,Poko,OMS,Poko,CD5208ZS01,PokoBas-Uele,DSNIS,,iqV2dwy0B1b,,,Oriental
+Bas-Uele,Buta,OMS,Buta,CD5202ZS01,ButaBas-Uele,DSNIS,,pggZxV6O3iF,,,Oriental
+Bas-Uele,Buta,OMS,Titule,CD5202ZS02,TituleBas-Uele,DSNIS,,EgtXyZdGsLP,,,Oriental
+Bas-Uele,Bambesa,OMS,Ganga,CD5209ZS01,GangaBas-Uele,DSNIS,,QU7amTjhWlQ,,,Oriental
+Sud-Ubangi,Gemena,OMS,Bwamanda,CD4202ZS03,BwamandaSud-Ubangi,DSNIS,,hlvN8zeyDZz,,,Equateur
+Mongala,Bumba,OMS,Yamaluka,CD4404ZS03,YamalukaMongala,DSNIS,,Yo6u0UIHrfc,,,Equateur
+Nord-Ubangi,Businga,OMS,Karawa,CD4305ZS02,KarawaNord-Ubangi,DSNIS,,N3EOJsjCXzW,,,Equateur
+Sud-Ubangi,Gemena,OMS,Bominenge,CD4202ZS02,BominengeSud-Ubangi,DSNIS,,kYp7VK3USwS,,,Equateur
+Mongala,Bumba,OMS,Yamongili,CD4404ZS05,YamongiliMongala,DSNIS,,wqYpElLVfnN,,,Equateur
+Nord-Ubangi,Yakoma,OMS,Abuzi,CD4304ZS01,AbuziNord-Ubangi,DSNIS,,a4pMwNr59bj,,,Equateur
+Nord-Ubangi,Yakoma,OMS,Wasolo,CD4304ZS03,WasoloNord-Ubangi,DSNIS,,PzrqwW6m5Wz,,,Equateur
+Mongala,Bumba,OMS,Bumba,CD4404ZS01,BumbaMongala,DSNIS,,KxsehuKFqW3,,,Equateur
+Tshuapa,Ikela,DSNIS,Mondombe,CD4505ZS02,MondombeTshuapa,DSNIS,2020-12-11,sJNFC3s1djp,Basse,,Equateur
+Kongo-Central,Lukula,OMS,Kangu,CD2005ZS01,KanguKongo-Central,DSNIS,,bV04pTUIL8A,,,Bas-Congo
+Kongo-Central,Tshela,OMS,Kuimba,CD2007ZS03,KuimbaKongo-Central,DSNIS,,ZekPSH5fUQ0,,,Bas-Congo
+Kongo-Central,Kasangulu,OMS,Masa,CD2015ZS01,MasaKongo-Central,DSNIS,,yb4Q3Xo1EUo,,,Bas-Congo
+Sud-Ubangi,Zongo,OMS,Zongo,CD4206ZS01,ZongoSud-Ubangi,DSNIS,,QNFYEQrW7Dy,,,Equateur
+Sud-Ubangi,Libenge,OMS,Libenge,CD4205ZS01,LibengeSud-Ubangi,DSNIS,,ArdlF8PnpYL,,,Equateur
+Nord-Ubangi,Bosobolo,OMS,Bili,CD4306ZS01,BiliNord-Ubangi,DSNIS,,aU2jY9HAg9u,,,Equateur
+Nord-Ubangi,Gbadolite,OMS,Gbadolite,CD4301ZS01,GbadoliteNord-Ubangi,DSNIS,,lIWxyiAegfN,,,Equateur
+Nord-Ubangi,Mobayi-Mbongo,MSF,Mobayi Mbongo,CD4302ZS01,Mobayi MbongoNord-Ubangi,DSNIS,,e3onjTOWxjS,Basse,,Equateur
+Nord-Ubangi,Yakoma,MSF,Yakoma,CD4304ZS04,YakomaNord-Ubangi,DSNIS,2019-12-30,Bou7OgEKEp1,Basse,,Equateur
+Bas-Uele,Bondo,OMS,Monga,CD5206ZS03,MongaBas-Uele,DSNIS,,jFTjaBOa844,,,Oriental
+Bas-Uele,Bondo,OMS,Bili,CD5206ZS01,BiliBas-Uele,DSNIS,,CO06cO2i4Nm,,,Oriental
+Bas-Uele,Ango,OMS,Ango,CD5207ZS01,AngoBas-Uele,DSNIS,,rLPkZegjzaS,,,Oriental
+Kasaï-Central,Dimbelenge,Div_snis,Bena Tshiadi,CD9107ZS01,Bena TshiadiKasaï-Central,DSNIS,,CXIGn9khu8A,,,Kasai-Occidental
+Kasaï-Central,Luiza,Div_snis,Yangala,CD9104ZS04,YangalaKasaï-Central,DSNIS,,OxPPcQLweov,,,Kasai-Occidental
+Kasaï-Central,Dimbelenge,Div_snis,Muetshi,CD9107ZS04,MuetshiKasaï-Central,DSNIS,,Ied3F9RYVfg,,,Kasai-Occidental
+Kasaï-Central,Dibaya,Div_snis,Tshikula,CD9102ZS04,TshikulaKasaï-Central,DSNIS,,k3UBz1nclY7,,,Kasai-Occidental
+Kasaï-Central,Kazumba,Div_snis,Tshibala,CD9105ZS05,TshibalaKasaï-Central,DSNIS,,AH4FtBD4MqK,,,Kasai-Occidental
+Kasaï-Central,Luiza,Div_snis,Masuika,CD9104ZS03,MasuikaKasaï-Central,DSNIS,,hi9gSpIVzai,,,Kasai-Occidental
+Kasaï-Central,Luiza,Div_snis,Luiza,CD9104ZS02,LuizaKasaï-Central,DSNIS,,etpyShZCZEs,,,Kasai-Occidental
+Kasaï-Central,Kananga,Div_snis,Katoka,CD9101ZS03,KatokaKasaï-Central,DSNIS,,dwBRSfVBpk6,,,Kasai-Occidental
+Kasaï-Central,Kananga,Div_snis,Ndesha,CD9101ZS05,NdeshaKasaï-Central,DSNIS,,wq3tWiKJkNr,,,Kasai-Occidental
+Kasaï-Central,Kananga,Div_snis,Tshikaji,CD9101ZS06,TshikajiKasaï-Central,DSNIS,,U6rNBblejC5,Basse,,Kasai-Occidental
+Kasaï-Central,Kazumba,Div_snis,Bilomba,CD9105ZS01,BilombaKasaï-Central,DSNIS,,FwiMpLozKls,,,Kasai-Occidental
+Kasaï-Central,Dibaya,Div_snis,Bunkonde,CD9102ZS01,BunkondeKasaï-Central,DSNIS,,Al39AWPqFCc,,,Kasai-Occidental
+Kasaï-Central,Kazumba,Div_snis,Mikalayi,CD9105ZS03,MikalayiKasaï-Central,DSNIS,,csMZZqDFCvW,,,Kasai-Occidental
+Kasaï-Central,Luiza,Div_snis,Luambo,CD9104ZS01,LuamboKasaï-Central,DSNIS,,lRLzCt3aMHM,Basse,,Kasai-Occidental
+Kasaï-Central,Dimbelenge,Div_snis,Katende,CD9107ZS02,KatendeKasaï-Central,DSNIS,,Ko8qaFXjOIM,,,Kasai-Occidental
+Kasaï-Central,Dibaya,Div_snis,Lubondaie,CD9102ZS03,LubondaieKasaï-Central,DSNIS,,ZIEdn6Pptv7,,,Kasai-Occidental
+Kasaï-Central,Demba,OMS,Demba,CD9106ZS02,DembaKasaï-Central,DSNIS,,F8Spet7wqMK,,,Kasai-Occidental
+Kasaï-Central,Demba,OMS,Mutoto,CD9106ZS03,MutotoKasaï-Central,DSNIS,,QtlqWolz843,,,Kasai-Occidental
+Kasaï-Central,Dimbelenge,Div_snis,Lubunga,CD9107ZS03,LubungaKasaï-Central,DSNIS,,FTamklKvHl5,,,Kasai-Occidental
+Kasaï-Central,Kananga,OMS,Kananga,CD9101ZS02,KanangaKasaï-Central,DSNIS,,m2DHxGhogWK,,,Kasai-Occidental
+Kasaï-Central,Kananga,Div_snis,Lukonga,CD9101ZS04,LukongaKasaï-Central,DSNIS,,SAt8yoeSMjD,,,Kasai-Occidental
+Sud-Ubangi,Kungu,OMS,Boto,CD4204ZS02,BotoSud-Ubangi,DSNIS,,FzA1yCf8PY7,,,Equateur
+Sud-Ubangi,Budjala,OMS,Ndage,CD4203ZS05,NdageSud-Ubangi,DSNIS,,GMlNzqj2WDG,,,Equateur
+Kasaï-Central,Kananga,Div_snis,Bobozo,CD9101ZS01,BobozoKasaï-Central,DSNIS,,MlE1k08houk,,,Kasai-Occidental
+Nord-Kivu,Lubero,OCHA,Manguredjipa,CD6105ZS05,ManguredjipaNord-Kivu,DSNIS,,IyDb5geWMDN,,,Nord-Kivu
+Sud-Kivu,Mwenga,OMS,Mwana,CD6212ZS04,MwanaSud-Kivu,DSNIS,,nfYQfVxJRyJ,,,Sud-Kivu
+Sud-Kivu,Walungu,OMS,Kaziba,CD6207ZS01,KazibaSud-Kivu,DSNIS,,a2dADiJAGrT,,,Sud-Kivu
+Sud-Kivu,Kabare,OMS,Nyantende,CD6202ZS05,NyantendeSud-Kivu,DSNIS,,R1E0VjRQ4SN,,,Sud-Kivu
+Sud-Kivu,Walungu,OMS,Nyangezi,CD6207ZS03,NyangeziSud-Kivu,DSNIS,,sai4xbqW0CL,,,Sud-Kivu
+Sud-Kivu,Kabare,OMS,Kabare,CD6202ZS01,KabareSud-Kivu,DSNIS,,zqUe1DuDMxH,,,Sud-Kivu
+Sud-Kivu,Walungu,OMS,Mubumbano,CD6207ZS02,MubumbanoSud-Kivu,DSNIS,,JzBIOZSJfmJ,,,Sud-Kivu
+Sud-Kivu,Walungu,OMS,Walungu,CD6207ZS04,WalunguSud-Kivu,DSNIS,,x4xQfjclCTo,,,Sud-Kivu
+Sud-Kivu,Uvira,OMS,Hauts-Plateaux,CD6208ZS01,Hauts-PlateauxSud-Kivu,DSNIS,,CP7PqKqIADY,,,Sud-Kivu
+Sud-Kivu,Kabare,OMS,Kaniola,CD6202ZS02,KaniolaSud-Kivu,DSNIS,,lXfXl6ZJQWI,,,Sud-Kivu
+Sud-Kivu,Kalehe,OMS,Kalonge,CD6205ZS03,KalongeSud-Kivu,DSNIS,,iPD8STDLALc,,,Sud-Kivu
+Sud-Kivu,Kalehe,OMS,Bunyakiri,CD6205ZS01,BunyakiriSud-Kivu,DSNIS,,Th9eFA4VSq6,,,Sud-Kivu
+Sud-Kivu,Uvira,OMS,Uvira,CD6208ZS04,UviraSud-Kivu,DSNIS,,mx8PkwuIR5x,,,Sud-Kivu
+Sud-Kivu,Mwenga,OMS,Kitutu,CD6212ZS03,KitutuSud-Kivu,DSNIS,,n1r14Rh3NvB,,,Sud-Kivu
+Sud-Kivu,Mwenga,OMS,Kamituga,CD6212ZS02,KamitugaSud-Kivu,DSNIS,,rv3KA7DrJCO,,,Sud-Kivu
+Sud-Kivu,Mwenga,OMS,Itombwe,CD6212ZS01,ItombweSud-Kivu,DSNIS,,ZwpyTsxIyb3,,,Sud-Kivu
+Sud-Kivu,Fizi,OMS,Minembwe,CD6210ZS03,MinembweSud-Kivu,DSNIS,,i3NxrFDG9hU,,,Sud-Kivu
+Sud-Kivu,Fizi,OMS,Nundu,CD6210ZS04,NunduSud-Kivu,DSNIS,,pWBu6qPNvdv,,,Sud-Kivu
+Sud-Kivu,Uvira,OMS,Ruzizi,CD6208ZS03,RuziziSud-Kivu,DSNIS,,jkonpGckbPg,,,Sud-Kivu
+Sud-Kivu,Uvira,OMS,Lemera,CD6208ZS02,LemeraSud-Kivu,DSNIS,,XFUHGajCqjY,,,Sud-Kivu
+Sud-Kivu,Shabunda,OMS,Shabunda,CD6203ZS04,ShabundaSud-Kivu,DSNIS,,MOESL4KbKoV,Moyenne,,Sud-Kivu
+Sud-Kivu,Shabunda,OMS,Lulingu,CD6203ZS02,LulinguSud-Kivu,DSNIS,,UkT2MUS83YY,Moyenne,,Sud-Kivu
+Sud-Kivu,Shabunda,OMS,Kalole,CD6203ZS01,KaloleSud-Kivu,DSNIS,,euP5fSU9vky,,,Sud-Kivu
+Sud-Kivu,Mwenga,OMS,Mwenga,CD6212ZS05,MwengaSud-Kivu,DSNIS,,Q3HTytyiRyL,,,Sud-Kivu
+Sud-Kivu,Shabunda,OMS,Mulungu,CD6203ZS03,MulunguSud-Kivu,DSNIS,,tJmFpEp4TCb,Moyenne,,Sud-Kivu
+Sud-Kivu,Bukavu,OMS,Bagira,CD6201ZS01,BagiraSud-Kivu,DSNIS,,aOghManYK5E,Tres haute,,Sud-Kivu
+Sud-Kivu,Bukavu,OMS,Kadutu,CD6201ZS03,KadutuSud-Kivu,DSNIS,,bfFprcRp0YO,Tres haute,,Sud-Kivu
+Sud-Kivu,Bukavu,OMS,Ibanda,CD6201ZS02,IbandaSud-Kivu,DSNIS,,jOxDAa0HM4a,Tres haute,,Sud-Kivu
+Sud-Kivu,Kabare,OMS,Katana,CD6202ZS03,KatanaSud-Kivu,DSNIS,,TpB2SUwsDbn,Moyenne,,Sud-Kivu
+Lualaba,Mutshatsha,OMS,Lualaba,CD7202ZS02,LualabaLualaba,DSNIS,,uFV6BUpJi7E,,,Katanga
+Lualaba,Dilolo,OMS,Dilolo,CD7205ZS01,DiloloLualaba,DSNIS,,kwvvScW5Xgj,,,Katanga
+Lualaba,Lubudi,OMS,Fungurume,CD7203ZS02,FungurumeLualaba,DSNIS,,eWGgthNBOZ8,,,Katanga
+Haut-Katanga,Kambove,OMS,Manika,CD7105ZS04,ManikaHaut-Katanga,DSNIS,,xMdqjEKgZLw,,,Katanga
+Sud-Kivu,Kalehe,OMS,Minova,CD6205ZS04,MinovaSud-Kivu,DSNIS,,oNybyvjU5ZT,,,Sud-Kivu
+Sud-Kivu,Kalehe,OMS,Kalehe,CD6205ZS02,KaleheSud-Kivu,DSNIS,,OWrtstWKEly,,,Sud-Kivu
+Sud-Kivu,Kabare,OMS,Miti-Murhesa,CD6202ZS04,Miti-MurhesaSud-Kivu,DSNIS,,cXkCT53xxfk,Moyenne,,Sud-Kivu
+Sud-Kivu,Idjwi,OMS,Idjwi,CD6206ZS01,IdjwiSud-Kivu,DSNIS,,Bxi65HPz420,,,Sud-Kivu
+Lualaba,Mutshatsha,OMS,Dilala,CD7202ZS01,DilalaLualaba,DSNIS,,mSQE0BqfXOy,,,Katanga
+Nord-Ubangi,Yakoma,OMS,Wapinda,CD4304ZS02,WapindaNord-Ubangi,DSNIS,,CSvyaLZJiEt,,,Equateur
+Kwilu,Bulungu,ESP-UCLA,Vanga,CD3204ZS05,VangaKwilu,DSNIS,2018-04-24,fXTBfVcge4w,Tres haute,,Bandundu
+Kwango,Kasongo-Lunda,ESP-UCLA,Tembo,CD3106ZS04,TemboKwango,DSNIS,2018-04-24,dazaa6QjHa1,Tres haute,,Bandundu
+Kwilu,Bagata,ESP-UCLA,Sia,CD3202ZS03,SiaKwilu,DSNIS,2018-04-24,poOqTlUDT0A,Tres haute,,Bandundu
+Kwilu,Bulungu,ESP-UCLA,Pay Kongila,CD3204ZS04,Pay KongilaKwilu,DSNIS,2018-04-24,smw3DtURc1n,Tres haute,,Bandundu
+Kwango,Kasongo-Lunda,ESP-UCLA,Panzi,CD3106ZS03,PanziKwango,DSNIS,2018-04-24,Kl436vOuc9s,Tres haute,,Bandundu
+Kwango,Feshi,ESP-UCLA,Mwela Lembwa,CD3103ZS03,Mwela LwembaKwango,DSNIS,2018-04-24,jzvghlGm7Hp,Tres haute,,Bandundu
+Kwilu,Masi-Manimba,ESP-UCLA,Mosango,CD3212ZS03,MosangoKwilu,DSNIS,2018-04-24,JRaVxSGfJ9Z,Tres haute,,Bandundu
+Kwilu,Masi-Manimba,ESP-UCLA,Moanza,CD3212ZS02,MoanzaKwilu,DSNIS,2018-04-24,N1K2MB4mUJ8,Tres haute,,Bandundu
+Kwilu,Masi-Manimba,ESP-UCLA,Masi-Manimba,CD3212ZS01,Masi-ManimbaKwilu,DSNIS,2018-04-24,VYlgP4yyY7F,Tres haute,,Bandundu
+Kwilu,Bulungu,ESP-UCLA,Lusanga,CD3204ZS03,LusangaKwilu,DSNIS,2018-04-24,WziDY5wD1fX,Tres haute,,Bandundu
+Kwango,Kasongo-Lunda,ESP-UCLA,Kitenda,CD3106ZS02,KitendaKwango,DSNIS,2018-04-24,c66ur6Nda04,Tres haute,,Bandundu
+Kwilu,Kikwit,ESP-UCLA,Kikwit-Sud,CD3203ZS02,Kikwit-SudKwilu,DSNIS,2018-04-24,Y8Hlj8DpZHc,Tres haute,,Bandundu
+Kwilu,Kikwit,ESP-UCLA,Kikwit-Nord,CD3203ZS01,Kikwit-NordKwilu,DSNIS,2018-04-24,GaaOhIJU3Bx,Tres haute,,Bandundu
+Kwango,Feshi,ESP-UCLA,Feshi,CD3103ZS01,FeshiKwango,DSNIS,2018-04-24,vyNZCFIed9O,Tres haute,,Bandundu
+Kwilu,Bulungu,ESP-UCLA,Djuma,CD3204ZS02,DjumaKwilu,DSNIS,2018-04-24,IgSLfQbGSnF,Tres haute,,Bandundu
+Kwilu,Bulungu,ESP-UCLA,Bulungu,CD3204ZS01,BulunguKwilu,DSNIS,2018-04-24,e6Wpbl5nqcD,Tres haute,,Bandundu
+MAI NDOMBE,Bolobo,ESP-UCLA,Bolobo,CD3308ZS01,BoloboMaï-Ndombe,DSNIS,2018-04-24,MiaMAqYujLY,Tres haute,,Bandundu
+Sankuru,Lodja,OMS,Omendjadi,CD8303ZS02,OmendjadiSankuru,DSNIS,,Bf1FDCIjIoE,,,Kasai-Oriental
+Sankuru,Lomela,OMS,Lomela,CD8307ZS01,LomelaSankuru,DSNIS,,L08zgLln431,,,Kasai-Oriental
+Tshuapa,Ikela,DSNIS,Ikela,CD4505ZS01,IkelaTshuapa,DSNIS,2020-12-11,S3K6ShnHjIY,Basse,,Equateur
+Kwilu,Idiofa,ESP-UCLA,Kimputu,CD3206ZS03,KimputuKwilu,DSNIS,2018-04-24,GaFyM05saxx,Tres haute,,Bandundu
+Kwilu,Idiofa,ESP-UCLA,Idiofa,CD3206ZS01,IdiofaKwilu,DSNIS,2018-04-24,riGgtQ9beB5,Tres haute,,Bandundu
+Kwilu,Idiofa,ESP-UCLA,Mungindu,CD3206ZS06,MunginduKwilu,DSNIS,2018-04-24,CyHuq664hCU,Tres haute,,Bandundu
+Kwilu,Gungu,ESP-UCLA,Kingandu,CD3210ZS02,KinganduKwilu,DSNIS,2018-04-24,QVjGTE0nOen,Tres haute,,Bandundu
+Kwilu,Gungu,ESP-UCLA,Gungu,CD3210ZS01,GunguKwilu,DSNIS,2018-04-24,GuAIPcinFIj,Tres haute,,Bandundu
+Kwango,Feshi,ESP-UCLA,Kisanji,CD3103ZS02,KisanjiKwango,DSNIS,2018-04-24,ni4XTmpzmVX,Tres haute,,Bandundu
+Kwango,Kahemba,ESP-UCLA,Kajiji,CD3105ZS02,KajijiKwango,DSNIS,2018-04-24,LhkH0lpHnU0,Tres haute,,Bandundu
+Kwilu,Gungu,ESP-UCLA,Mukedi,CD3210ZS03,MukediKwilu,DSNIS,2018-04-24,Tt1rjDuQtRh,Tres haute,,Bandundu
+Kwilu,Bandundu,ESP-UCLA,Bandundu,CD3201ZS01,BandunduKwilu,DSNIS,2018-04-24,KJPFKwgcqyd,Tres haute,,Bandundu
+Kwilu,Masi-Manimba,ESP-UCLA,Yasa-Bonga,CD3212ZS04,Yasa-BongaKwilu,DSNIS,2018-04-24,NxFuYzZy7Bn,Tres haute,,Bandundu
+Kwilu,Bagata,ESP-UCLA,Bagata,CD3202ZS01,BagataKwilu,DSNIS,2018-04-24,k06WV7FTN9D,Tres haute,,Bandundu
+Kwango,Kasongo-Lunda,ESP-UCLA,Wamba Lwadi,CD3106ZS05,Wamba LwadiKwango,DSNIS,2018-04-24,xUfv1fcnAmb,Tres haute,,Bandundu
+Kwango,Kasongo-Lunda,ESP-UCLA,Kasongo-Lunda,CD3106ZS01,Kasongo-LundaKwango,DSNIS,2018-04-24,eIpu2GCPTIP,Tres haute,,Bandundu
+Kwango,Kenge,ESP-UCLA,Kenge,CD3102ZS02,KengeKwango,DSNIS,2018-04-24,Qx104OFTrS6,Tres haute,,Bandundu
+Kwango,Popokabaka,ESP-UCLA,Popokabaka,CD3108ZS01,PopokabakaKwango,DSNIS,2018-04-24,Otc087GDtkQ,Tres haute,,Bandundu
+Kwango,Kenge,ESP-UCLA,Kimbau,CD3102ZS03,KimbauKwango,DSNIS,2018-04-24,lJaJ763sqNI,Tres haute,,Bandundu
+Kongo-Central,Madimba,OMS,Nselo,CD2017ZS03,NseloKongo-Central,DSNIS,,TqMyBh0yNwZ,,,Bas-Congo
+MAI NDOMBE,Kwamouth,ESP-UCLA,Kwamouth,CD3307ZS01,KwamouthMaï-Ndombe,DSNIS,2018-04-24,nTMZjDaAgBb,Tres haute,,Bandundu
+Kwango,Kenge,ESP-UCLA,Boko,CD3102ZS01,BokoKwango,DSNIS,2018-04-24,tUhIQ4MVPVI,Tres haute,,Bandundu
+Kwilu,Bagata,ESP-UCLA,Kikongo,CD3202ZS02,KikongoKwilu,DSNIS,2018-04-24,DrEgd3k7YFu,Tres haute,,Bandundu
+Kongo-Central,Kimvula,OMS,Kimvula,CD2019ZS01,KimvulaKongo-Central,DSNIS,,ZSbsXl7Zsf8,,,Bas-Congo
+Equateur,Mbandaka,UCLA-RDC,Wangata,CD4101ZS03,WangataEquateur,DSNIS,2018-05-23,J0LvPM9HPVN,Tres haute,,Equateur
+Equateur,Bolomba,OMS,Lolanga Mampoko,CD4108ZS02,Lolanga MampokoEquateur,DSNIS,,pBzecjfopeA,,,Equateur
+Sud-Ubangi,Libenge,OMS,Mawuya,CD4205ZS02,MawuyaSud-Ubangi,DSNIS,,HL8XdWF8Sne,,,Equateur
+MAI NDOMBE,Inongo,ESP-UCLA,Ntandembelo,CD3302ZS03,NtandembeloMaï-Ndombelo,DSNIS,2018-04-24,Kts0Ppbd4En,Tres haute,,Bandundu
+MAI NDOMBE,Yumbi,ESP-UCLA,Yumbi,CD3310ZS01,YumbiMaï-Ndombe,DSNIS,2018-04-24,VOwZTRAt0Ak,Tres haute,,Bandundu
+Equateur,Bomongo,OMS,Lilanga Bobangi,CD4104ZS02,Lilanga BobangiEquateur,DSNIS,,N1S6mK9QTE5,,,Equateur
+MAI NDOMBE,Mushie,ESP-UCLA,Mushie,CD3311ZS01,MushieMaï-Ndombe,DSNIS,2018-04-24,EDu64jGXwRe,Tres haute,,Bandundu
+MAI NDOMBE,Kutu,ESP-UCLA,Nioki,CD3306ZS02,NiokiMaï-Ndombe,DSNIS,2018-04-24,j89PZlq83OT,Tres haute,,Bandundu
+MAI NDOMBE,Inongo,ESP-UCLA,Inongo,CD3302ZS02,InongoMaï-Ndombe,DSNIS,2018-04-24,PIT5UiywHIa,Tres haute,,Bandundu
+Equateur,Lukolela,OMS,Lukolela,CD4103ZS02,LukolelaEquateur,DSNIS,,hH0vfyk0M5B,,,Equateur
+MAI NDOMBE,Inongo,ESP-UCLA,Banjow Moke,CD3302ZS01,Banjow MokeMaï-Ndombe,DSNIS,2018-04-24,Vf0Hzcf5ux3,Tres haute,,Bandundu
+Equateur,Mbandaka,UCLA-RDC,Mbandaka,CD4101ZS02,MbandakaEquateur,DSNIS,2018-05-23,DmRUZqBRNzB,Tres haute,,Equateur
+Equateur,Mbandaka,UCLA-RDC,Bolenge,CD4101ZS01,BolengeEquateur,DSNIS,2018-05-23,MMnBp2lllhf,Tres haute,,Equateur
+Equateur,Bikoro,OMS,Ntondo,CD4102ZS03,NtondoEquateur,DSNIS,,Tt7ZtAGLNOp,,,Equateur
+Equateur,Lukolela,OMS,Irebu,CD4103ZS01,IrebuEquateur,DSNIS,,p40o8g3kdQL,,,Equateur
+Equateur,Bikoro,UCLA-RDC,Bikoro,CD4102ZS01,BikoroEquateur,DSNIS,2018-05-23,NMRFBOfk41A,Tres haute,,Equateur
+Tshuapa,Bokungu,DSNIS,Bokungu,CD4506ZS01,BokunguTshuapa,DSNIS,2020-12-11,rhVkq8RX6BV,Basse,,Equateur
+Equateur,Bikoro,OMS,Iboko,CD4102ZS02,IbokoEquateur,DSNIS,,QltsFPvfG7J,Tres haute,,Equateur
+Equateur,Ingende,UCLA-RDC,Ingende,CD4109ZS01,IngendeEquateur,DSNIS,2018-05-23,ER2ozdS2Ysm,Tres haute,,Equateur
+Tshuapa,Befale,DSNIS,Mompono,CD4503ZS02,MomponoTshuapa,DSNIS,2020-12-11,Oiv2yYIjRrm,Basse,,Equateur
+Equateur,Bolomba,OMS,Monieka,CD4108ZS03,MoniekaEquateur,DSNIS,,FXSygz18Lfk,,,Equateur
+Tshuapa,Befale,DSNIS,Befale,CD4503ZS01,BefaleTshuapa,DSNIS,2020-12-11,gBHYNsh9EjA,Basse,,Equateur
+Tshuapa,Djolu,DSNIS,Lingomo,CD4504ZS02,LingomoTshuapa,DSNIS,2020-12-11,hM2ZsK1vEox,Basse,,Equateur
+Equateur,Basankusu,OMS,Djombo,CD4107ZS02,DjomboEquateur,DSNIS,,gcWEhRl00iJ,,,Equateur
+Mongala,Bongandanga,OMS,Bosondjo,CD4405ZS03,BosondjoMongala,DSNIS,,jm3dqXXoblR,,,Equateur
+Mongala,Bongandanga,OMS,Bongandanga,CD4405ZS01,BongandangaMongala,DSNIS,,DvgAtRmciu7,,,Equateur
+Mongala,Bongandanga,OMS,Pimu,CD4405ZS04,PimuMongala,DSNIS,,YrNj0gTvp4l,,,Equateur
+Mongala,Bongandanga,OMS,Boso Mondanda,CD4405ZS02,Boso MondandaMongala,DSNIS,,rWbNwJffOMY,,,Equateur
+Mongala,Lisala,OMS,Lisala,CD4402ZS03,LisalaMongala,DSNIS,,Xol9qIrf1Gi,,,Equateur
+Sud-Ubangi,Budjala,OMS,Mbaya,CD4203ZS04,MbayaSud-Ubangi,DSNIS,"2018",BWravV88qKy,Basse,,Equateur
+Mongala,Lisala,OMS,Binga,CD4402ZS01,BingaMongala,DSNIS,,a0M4XJunan2,,,Equateur
+Sud-Ubangi,Budjala,OMS,Bulu,CD4203ZS03,BuluSud-Ubangi,DSNIS,,uCYafBxBtO8,,,Equateur
+Sud-Ubangi,Gemena,OMS,Gemena,CD4202ZS04,GemenaSud-Ubangi,DSNIS,,F2sZHvPlln6,,,Equateur
+Sud-Ubangi,Gemena,OMS,Tandala,CD4202ZS05,TandalaSud-Ubangi,DSNIS,,nX75O17I2sY,,,Equateur
+Sud-Ubangi,Budjala,OMS,Bangabola,CD4203ZS01,BangabolaSud-Ubangi,DSNIS,,aVeCzXx2CDZ,,,Equateur
+Sud-Ubangi,Budjala,OMS,Budjala,CD4203ZS02,BudjalaSud-Ubangi,DSNIS,,J1nws7yZLvv,,,Equateur
+Equateur,Makanza,OMS,Makanza,CD4105ZS01,MakanzaEquateur,DSNIS,,nXXpnAQ8M3v,,,Equateur
+Sud-Ubangi,Kungu,OMS,Kungu,CD4204ZS03,KunguSud-Ubangi,DSNIS,,C6xrZPQNxHd,,,Equateur
+Sud-Ubangi,Kungu,OMS,Bokonzi,CD4204ZS01,BokonziSud-Ubangi,DSNIS,,izt3XGlBrmK,,,Equateur
+Equateur,Bomongo,OMS,Bomongo,CD4104ZS01,BomongoEquateur,DSNIS,,dseqqnd0Nuw,,,Equateur
+Tshuapa,Bokungu,DSNIS,Yalifafo,CD4506ZS03,YalifafoTshuapa,DSNIS,2020-12-11,pVmIEdIFeUJ,Basse,,Equateur
+Tshuapa,Bokungu,DSNIS,Bosanga,CD4506ZS02,BosangaTshuapa,DSNIS,2020-12-11,PpY62UBIBEf,Basse,,Equateur
+Tshuapa,Boende,DSNIS,Wema,CD4502ZS02,WemaTshuapa,DSNIS,2020-12-11,qa0zXM6tGPJ,Basse,,Equateur
+MAI NDOMBE,Kiri,ESP-UCLA,Penjwa,CD3303ZS02,PenjwaMaï-Ndombe,DSNIS,2018-04-24,NyvJf4zd0Sj,Tres haute,,Bandundu
+Equateur,Ingende,OMS,Lotumbe,CD4109ZS02,LotumbeEquateur,DSNIS,,CeO42blQ92C,,,Equateur
+Tshuapa,Boende,DSNIS,Boende,CD4502ZS01,BoendeTshuapa,DSNIS,2020-12-11,Uyz1XxXNBKB,Basse,,Equateur
+Sankuru,Lomela,OMS,Tshudi Loto,CD8307ZS02,Tshudi LotoSankuru,DSNIS,,hdi8WfQrxeD,,,Kasai-Oriental
+Sankuru,Kole,OMS,Kole,CD8306ZS02,KoleSankuru,DSNIS,,aUOLee25Tko,,,Kasai-Oriental
+Sankuru,Kole,OMS,Bena Dibele,CD8306ZS01,Bena DibeleSankuru,DSNIS,,Qx49Xk4whc5,,,Kasai-Oriental
+MAI NDOMBE,Oshwe,ESP-UCLA,Oshwe,CD3304ZS03,OshweMaï-Ndombe,DSNIS,2018-04-24,ZOLJkw5FviP,Tres haute,,Bandundu
+Tshuapa,Monkoto,DSNIS,Monkoto,CD4507ZS01,MonkotoTshuapa,DSNIS,2020-12-11,VnNdiJcF3rF,Basse,,Equateur
+MAI NDOMBE,Kiri,ESP-UCLA,Kiri,CD3303ZS01,KiriMaï-Ndombe,DSNIS,2018-04-24,dQ9r634pZZF,Tres haute,,Bandundu
+MAI NDOMBE,Oshwe,ESP-UCLA,Bosobe,CD3304ZS01,BosobeMaï-Ndombe,DSNIS,2018-04-24,DlpIIdkVKyg,Tres haute,,Bandundu
+Kwilu,Idiofa,ESP-UCLA,Mokala,CD3206ZS05,MokalaKwilu,DSNIS,2018-04-24,tPnKr9Z2phW,Tres haute,,Bandundu
+MAI NDOMBE,Kutu,ESP-UCLA,Bokoro,CD3306ZS01,BokoroMaï-Ndombe,DSNIS,2018-04-24,GcP2B8nmUVo,Tres haute,,Bandundu
+MAI NDOMBE,Oshwe,ESP-UCLA,Mimia,CD3304ZS02,MimiaMaï-Ndombe,DSNIS,2018-04-24,IIMpZbLeAvx,Tres haute,,Bandundu
+Sud-Kivu,Fizi,OMS,Kimbi Lulenge,CD6210ZS02,Kimbi LulengeSud-Kivu,DSNIS,,lF2aCHDydzn,,,Sud-Kivu
+Kongo-Central,Madimba,OMS,Kisantu,CD2017ZS01,KisantuKongo-Central,DSNIS,,pZobW0wXW6e,,,Bas-Congo
+Kongo-Central,Kasangulu,OMS,Sona-Bata,CD2015ZS02,Sona-BataKongo-Central,DSNIS,,RJDVdKIftDZ,,,Bas-Congo
+Kongo-Central,Madimba,OMS,Ngidinga,CD2017ZS02,NgidingaKongo-Central,DSNIS,,fuiphWnOGii,,,Bas-Congo
+Kongo-Central,Luozi,OMS,Mangembo,CD2010ZS03,MangemboKongo-Central,DSNIS,,muQLQumKnyM,,,Bas-Congo
+Kongo-Central,Mbanza-Ngungu,OMS,Kwilu-Ngongo,CD2013ZS04,Kwilu-NgongoKongo-Central,DSNIS,,DZV9ipxIsg1,,,Bas-Congo
+Kongo-Central,Mbanza-Ngungu,OMS,Mbanza-Ngungu,CD2013ZS05,Mbanza-NgunguKongo-Central,DSNIS,,PDfWsEoWLcy,,,Bas-Congo
+Kongo-Central,Mbanza-Ngungu,OMS,Boko-Kivulu,CD2013ZS01,Boko-KivuluKongo-Central,DSNIS,,VGFWIr5Rx1D,,,Bas-Congo
+Kongo-Central,Mbanza-Ngungu,OMS,Gombe-Matadi,CD2013ZS02,Gombe-MatadiKongo-Central,DSNIS,,MjmIRJaAC1H,,,Bas-Congo
+Kongo-Central,Mbanza-Ngungu,OMS,Kimpangu,CD2013ZS03,KimpanguKongo-Central,DSNIS,,bBTWb8cD9Z3,,,Bas-Congo
+Kongo-Central,Songololo,OMS,Kimpese,CD2011ZS01,KimpeseKongo-Central,DSNIS,,XXKTLp8q7wJ,,,
+Kongo-Central,Luozi,OMS,Kibunzi,CD2010ZS01,KibunziKongo-Central,DSNIS,,zuuFyMjjK7i,,,Bas-Congo
+Kongo-Central,Matadi,OMS,Matadi,CD2001ZS01,MatadiKongo-Central,DSNIS,,pFhuqRaXTSO,,,Bas-Congo
+Kongo-Central,Matadi,Div_snis,Nzanza,CD2001ZS02,NzanzaKongo-Central,DSNIS,,JBCsFIBR2IO,,,Bas-Congo
+Kongo-Central,Luozi,OMS,Luozi,CD2010ZS02,LuoziKongo-Central,DSNIS,,DaXi5vRLqh3,,,Bas-Congo
+Kongo-Central,Songololo,OMS,Nsona-Pangu,CD2011ZS02,Nsona-PanguKongo-Central,DSNIS,,n0NjjahdTLk,,,
+Kongo-Central,Seke-Banza,OMS,Seke-Banza,CD2009ZS02,Seke-BanzaKongo-Central,DSNIS,,fWrUdkX9JEv,,,Bas-Congo
+Kongo-Central,Tshela,OMS,Kinkonzi,CD2007ZS01,KinkonziKongo-Central,DSNIS,,F1WHo6oyNag,,,Bas-Congo
+Kongo-Central,Seke-Banza,OMS,Inga,CD2009ZS01,IngaKongo-Central,DSNIS,,DD5m0lzETfF,,,Bas-Congo
+Lualaba,Sandoa,OMS,Sandoa,CD7206ZS02,SandoaLualaba,DSNIS,,yIYFKwCgYVZ,,,Katanga
+Lualaba,Mutshatsha,OMS,Mutshatsha,CD7202ZS03,MutshatshaLualaba,DSNIS,,S0Ne5rWQhxw,,,Katanga
+Lualaba,Lubudi,OMS,Kanzenze,CD7203ZS03,KanzenzeLualaba,DSNIS,,yAdgorGUtcE,,,Katanga
+Lualaba,Dilolo,OMS,Kasaji,CD7205ZS02,KasajiLualaba,DSNIS,,kiFDojGFG3x,,,Katanga
+Lualaba,Sandoa,OMS,Kafakumba,CD7206ZS01,KafakumbaLualaba,DSNIS,,I42uxuyvTXt,,,Katanga
+Sud-Kivu,Fizi,MSF,Fizi,CD6210ZS01,FiziSud-Kivu,DSNIS,"2018",roraCGWMUQ0,Haute,,
+Nord-Kivu,Rutshuru,,Bambo,CD6111ZS01,BamboNord-Kivu,DSNIS,2018-12-29,reOlSi4YUvZ,Basse,,
+Nord-Kivu,Lubero,,Biena,CD6105ZS02,BienaNord-Kivu,DSNIS,2018-12-29,TtaXlLIpy8b,Basse,,
+Nord-Kivu,Rutshuru,,Birambizo,CD6111ZS03,BirambizoNord-Kivu,DSNIS,2018-12-29,CFKkX16A1rM,Basse,,
+Nord-Kivu,Oïcha,OCHA,Kamango,CD6107ZS02,KamangoNord-Kivu,DSNIS,2018-12-29,vFJcnSDGQS0,Basse,,
+Nord-Kivu,Oicha,OMS,Kyondo,CD6107ZS03,KyondoNord-Kivu,DSNIS,2018-12-29,amGiV9h9C2I,Moyenne,,
+Nord-Kivu,Lubero,MSF & OCHA,Musienene,CD6105ZS07,MusieneneNord-Kivu,DSNIS,2018-12-29,VooLsNf0dDB,Moyenne,,
+Nord-Kivu,Lubero,OMS DSNIS,Masereka,CD6105ZS06,MaserekaNord-Kivu,DSNIS,2018-12-29,kQCMPbHKQ93,Moyenne,,
+Nord-Kivu,Lubero,OMS DSNIS,Lubero,CD6105ZS04,LuberoNord-Kivu,DSNIS,2018-12-29,oTtGHeQSotN,Haute,,
+Nord-Kivu,Walikale,MSF & OCHA,Pinga,CD6104ZS03,PingaNord-Kivu,DSNIS,2018-12-29,Qnxdx1xJkXt,Basse,,
+Nord-Kivu,Lubero,MSF & OCHA,Kayna,CD6105ZS03,KaynaNord-Kivu,DSNIS,2018-12-29,ZLgC2OOesbS,Basse,,
+Nord-Kivu,Lubero,MSF & OCHA,Alimbongo,CD6105ZS01,AlimbongoNord-Kivu,DSNIS,2018-12-29,GLky3WLKZTi,Basse,,
+Nord-Kivu,Rutshuru,MSF & OCHA,Kibirizi,CD6111ZS04,KibiriziNord-Kivu,DSNIS,2018-12-29,OKMskHnAdPh,Basse,,
+Nord-Kivu,Rutshuru,MSF & OCHA,Binza,CD6111ZS02,BinzaNord-Kivu,DSNIS,2018-12-29,qa1TBnjJilP,Basse,,
+Nord-Kivu,Masisi,OMS DSNIS,Mweso,CD6103ZS04,MwesoNord-Kivu,DSNIS,2018-12-29,OZYtwRFkc5Z,Basse,,
+Nord-Kivu,Rutshuru,MSF & OCHA,Rwanguba,CD6111ZS06,RwangubaNord-Kivu,DSNIS,2018-12-29,iQA2NO6cMnJ,Basse,,
+Nord-Kivu,Rutshuru,MSF & OCHA,Rutshuru,CD6111ZS05,RutshuruNord-Kivu,DSNIS,2018-12-29,nXYw6kLqc0y,Basse,,
+Nord-Kivu,Nyirangongo,MSF & OCHA,Nyirangongo,CD6102ZS01,NyirangongoNord-Kivu,DSNIS,2018-12-29,WLVe6Xt7Xum,Basse,,
+Nord-Kivu,Goma,MSF & OCHA,Karisimbi,CD6101ZS02,KarisimbiNork-Kivu,DSNIS,2018-12-29,RSaqeeEezZl,Moyenne,,
+Nord-Kivu,Goma,MSF & OCHA,Goma,CD6101ZS01,GomaNord-Kivu,DSNIS,2018-12-29,t8tjGKVhkl3,Haute,,
+Nord-Kivu,Masisi,MSF & OCHA,Kirotshe,CD6103ZS02,KirotsheNord-Kivu,DSNIS,2018-12-29,xS36Jly2x2T,Basse,,
+Nord-Kivu,Masisi,MSF & OCHA,Katoyi,CD6103ZS01,KatoyiNord-Kivu,DSNIS,2018-12-29,Hxf5Q4K6Ad,Basse,,
+Nord-Kivu,Masisi,MSF & OCHA,Masisi,CD6103ZS03,MasisiNord-Kivu,DSNIS,2018-12-29,D6IRek5MhIt,Basse,,
+Nord-Kivu,Walikale,OCHA,Itebero,CD6104ZS01,IteberoNord-Kivu,DSNIS,2018-12-29,bzo7dCPSXS2,,,
+Equateur,Basankusu,MSF,Basankusu,CD4107ZS01,BasankusuEquateur,DSNIS,2019-12-30,rxk1YvYKi7j,Basse,,
+Kwango,Kahemba,ACF,Kahemba,CD3105ZS01,KahembaKwango,DSNIS,2019-12-30,JkaDYyGpdPX,Tres haute,,
+Tanganyika,Kiambi,CIESIN/GRID3,Kiambi,CD7406ZS02,KiambiTanganyika,DSNIS,2019-12-10,DhKljsD2lWQ,Tres haute,,
+Tanganyika,Moba,CIESIN/GRID3,Moba,CD7404ZS02,MobaTanganyika,DSNIS,2019-12-10,J7wvqfrgQwh,Tres haute,,
+Tanganyika,Moba,CIESIN/GRID3,Kansimba,CD7404ZS01,KansimbaTanganyika,DSNIS,2019-12-10,R4mOOfzymdd,Tres haute,,
+Tanganyika,Manono,ESP-UCLA,Manono,CD7406ZS03,ManonoTanganyika,DSNIS,2019-12-10,qdVGrVRQCm9,Tres haute,,
+Tanganyika,Ankoro,CIESIN/GRID3,Ankoro,CD7406ZS01,AnkoroTanganyika,DSNIS,2019-12-10,AKRGpnoCXJx,Tres haute,,
+Tanganyika,Kabalo,CIESIN/GRID3,Kabalo,CD7407ZS01,KabaloTanganyika,DSNIS,2019-12-10,i7D2F5LkDkG,Tres haute,,
+Tanganyika,Kongolo,CIESIN/GRID3,Mbulula,CD7409ZS02,KongoloTanganyika,DSNIS,2019-12-10,x9qGPjZ9VHH,Tres haute,,
+Tanganyika,Kongolo,CIESIN/GRID3,Kongolo,CD7409ZS01,KongoloTanganyika,DSNIS,2019-12-10,hWY6knCjNW7,Tres haute,,
+Tanganyika,Nyunzu,CIESIN/GRID3,Nyunzu,CD7410ZS01,NyunzuTanganyika,DSNIS,2019-12-10,kJnbINGeVDQ,Tres haute,,
+Tanganyika,Kalemie,CIESIN/GRID3,Nyemba,CD7402ZS02,NyembaTanganyika,DSNIS,2019-12-10,QR6aqCF2lRc,Tres haute,,
+Tanganyika,Kalemie,CIESIN/GRID3,Kalemie,CD7402ZS01,KalemieTanganyika,DSNIS,2019-12-10,NngVL8arEx2,Tres haute,,
+Nord-Kivu,Oicha,MSF & OCHA,Oicha,CD6107ZS06,OichaNord-Kivu,DSNIS,2018-12-29,zOOAshOz4Cz,Basse,,
+Nord-Kivu,Oicha,OMS-DSNIS,Mutwanga,CD6107ZS05,MutwangaNord-Kivu,DSNIS,2019-10-15,TnjfqDbxtwP,Basse,,
+Equateur,Bolomba,MSF,Bolomba,CD4108ZS01,BolombaEquateur,DSNIS,2020-07-09,lW6uPgrLYfi,Tres haute,,
+Sankuru,Lusambo,MSF,Ototo,CD8302ZS02,OtotoSankuru,DSNIS,2020-07-03,Rw3GsgKRHj5,Basse,,
+Sankuru,Lubefu,MSF,Tshumbe,CD8309ZS03,TshumbeSankuru,DSNIS,2020-07-03,fjTwDPXTHPR,Basse,,
+Sankuru,Lubefu,MSF,Dikungu,CD8309ZS01,LubefuSankuru,DSNIS,2020-07-03,TJpOhLF2cXo,Basse,,
+Sankuru,Katako Kombe,MSF,Djalo Djeka,CD8308ZS01,Djalo DjekaSankuru,DSNIS,2020-07-03,lDx3qiOSC3F,Basse,,
+Nord-Ubangi,Bosobolo,MSF,Bosobolo,CD4306ZS02,BosoboloNord-Ubangi,DSNIS,"2021",HT0MyE7KoXx,Tres haute,,
+Sud-Ubangi,Gemena,,Bogosenubia,CD4202ZS01,BogosenubiaSud-Ubangi,DSNIS,"2021",k31uAjnzhTj,Tres haute,,
+Nord-Ubangi,Businga,MSF,Loko,CD4305ZS03,LokoNord-Ubangi,DSNIS,"2021",ARnHjae4l5S,Tres haute,,
+Nord-Ubangi,Businga,MSF,Businga,CD4305ZS01,BusingaNord-Ubangi,DSNIS,"2021",R9J0n0C1U0s,Haute,,
+Mongala,Lisala,MSF,Boso Manzi,CD4402ZS02,Boso ManziMongala,DSNIS,"2021",w70GpRgNj01,Haute,,
+Mongala,Bumba,MSF,Yambuku,CD4404ZS04,YambukuMongala,DSNIS,"2021",J1sz6yfmelr,Haute,,
+Bas-Uele,Aketi,MSF,Aketi,CD5204ZS01,AketiBas-Uele,DSNIS,"2021",LOm8B3vy1qR,Haute,,
+Bas-Uele,Aketi,MSF,Likati,CD5204ZS02,LikatiBas-Uele,DSNIS,"2021",wqWNVs3uxpv,Haute,,
+Bas-Uele,Bondo,MSF,Bondo,CD5206ZS02,BondoBas-Uele,DSNIS,"2021",ebKZ38Ejpb5,Haute,,
+Tshopo,Basoko,MSF,Yalimbongo,CD5109ZS03,YalimbongoTshopo,DSNIS,"2021",CPZTm1VIXB9,Haute,,
+Tshopo,Basoko,MSF,Basoko,CD5109ZS02,BasokoTshopo,DSNIS,"2021",SxrrguFFktT,Haute,,
+Mongala,Bumba,OMS,Lolo,CD4404ZS02,LoloMongala,DSNIS,,Kc3iE3HU6mA,,,Equateur
+Tshopo,Yahuma,MSF,Yahuma,CD5107ZS01,YahumaTshopo,DSNIS,"2021",quf7vedArhs,Haute,,
+Tshuapa,Tshuapa,DSNIS,Djolu,CD4504ZS01,DjoluTshuapa,DSNIS,2020-12-11,J7p1ASHGpX4,Basse,,Equateur
+Tshopo,Opala,MSF,Opala,CD5103ZS01,OpalaTshopo,DSNIS,"2021",G2crAXygKeF,Haute,,
+Tshopo,Opala,MSF,Yaleko,CD5103ZS02,YalekoTshopo,DSNIS,"2021",S8Vd8dUvIqT,Haute,,
+Tshopo,Ubundu,MSF,Ubundu,CD5102ZS02,UbunduTshopo,DSNIS,"2021",ThkZT6koPKj,Moyenne,,
+Tshopo,Kisangani,MSF,Lubunga,CD5101ZS02,LubungaTshopo,DSNIS,"2021",I9d1F9TGn33,Haute,,
+Tshopo,Isangi,MSF,Yahisuli,CD5105ZS03,YahisuliTshopo,DSNIS,"2021",HHv5opVWeoY,Basse,,
+Tshopo,Isangi,MSF,Yabaondo,CD5105ZS02,YabaondoTshopo,DSNIS,"2021",D4KWg03yZrX,Haute,,
+Tshopo,Isangi,MSF,Yakusu,CD5105ZS04,YakusuTshopo,DSNIS,"2021",IQjyCunMvUt,Moyenne,,
+Tshopo,Isangi,MSF,Isangi,CD5105ZS01,IsangiTshopo,DSNIS,"2021",dtBcztLoZpn,Moyenne,,
+Tshopo,Kisangani,MSF,Makiso-Kisangani,CD5101ZS03,Makiso-KisanganiTshopo,DSNIS,"2021",ZHIrX4z487c,Moyenne,,
+Tshopo,Ubundu,OMS,Lowa,CD5102ZS01,LowaTshopo,DSNIS,"2021",cbLNDeAYrGo,Moyenne,,
+Tshopo,Bafwasende,MSF,Opienge,CD5111ZS03,OpiengeTshopo,DSNIS,"2021",G1OIhUfxLw5,Moyenne,,
+Tshopo,Kisangani,MSF,Kabondo,CD5101ZS01,KabondoTshopo,DSNIS,"2021",Al5GBxzCgMe,Haute,,
+Tshopo,Kisangani,Div_SNIS,Mangobo,CD5101ZS04,MangoboTshopo,DSNIS,"2021",wOWB7WbNuSN,,,
+Tshopo,Bafwasende,MSF,Bafwagbogbo,CD5111ZS01,Bafwagbogbo,DSNIS,"2021",jaNYqjAceGA,Haute,,
+Tshopo,Banalia,MSF,Banalia,CD5110ZS01,BanaliaTshopo,DSNIS,"2021",WxBLTUjeyfB,Haute,,
+Tshopo,Banalia,MSF,Bengamisa,CD5110ZS02,BengamisaTshopo,DSNIS,"2021",dxiEfVDsieA,Haute,,
+Tshopo,Kisangani,MSF,Tshopo,CD5101ZS05,TshopoTshopo,DSNIS,"2021",IMkgSD6FVjc,Haute,,
+Tshopo,Basoko,MSF,Basali,CD5109ZS01,BasaliTshopo,DSNIS,"2021",yS5rrhCjubi,Haute,,
+Tshopo,Bafwasende,MSF,Bafwasende,CD5111ZS02,BafwasendeTshopo,DSNIS,"2021",pLBZiohnxFC,Haute,,
+Haut-Uele,Wamba,MSF,Wamba,CD5311ZS03,WambaHaut-Uele,DSNIS,"2021",ET5R8zSN3gm,Moyenne,,
+Ituri,Mambasa,MSF,Nia Nia,CD5403ZS04,Nia NiaIturi,DSNIS,"2021",tWlaqwSUheI,Haute,,
+Haut-Uele,Wamba,MSF,Boma-Mangbetu,CD5311ZS01,Boma-MangbetuHaut-Uele,DSNIS,"2021",qwBasnNFRFW,Haute,,
+Haut-Uele,Wamba,MSF,Pawa,CD5311ZS02,PawaHaut-Uele,DSNIS,"2021",ZxQY9szHMx5,Haute,,
+Haut-Uele,Rungu,MSF,Isiro,CD5302ZS01,IsiroHaut-Uele,DSNIS,"2021",lW6NlTXqGcv,Moyenne,,
+Bas-Uele,Poko,MSF,Viadana,CD5208ZS02,ViadanaBas-Uele,DSNIS,"2021",joxrJQ6anPt,Haute,,
+Haut-Uele,Rungu,MSF,Rungu,CD5302ZS02,RunguHaut-Uele,DSNIS,"2021",EGoMVOvVUAp,Haute,,
+Haut-Uele,Dungu,MSF,Doruma,CD5305ZS01,DorumaHaut-Uele,DSNIS,"2021",ZEGVJVjXJJW,Haute,,
+Haut-Uele,Niangara,MSF,Niangara,CD5303ZS01,NiangaraHaut-Uele,DSNIS,"2021",PDPn74NtJzs,Haute,,
+Haut-Uele,Dungu,MSF,Dungu,CD5305ZS02,DunguHaut-Uele,DSNIS,"2021",GkqfQB4CBwt,Haute,,
+Haut-Uele,Watsa,MSF,Gombari,CD5309ZS01,GombariHaut-Uele,DSNIS,"2021",h1dItcsoHRw,Moyenne,,
+Ituri,Mambasa,MSF,Mambasa,CD5403ZS02,MambasaIturi,DSNIS,"2021",RjHZChl5gJQ,Haute,,
+Ituri,Mambasa,MSF,Mandima,CD5403ZS03,MandimaIturi,DSNIS,"2021",YpXUkTbtAPA,Haute,,
+Ituri,Irumu,MSF,Komanda,CD5402ZS04,KomandaIturi,DSNIS,"2021",i2mtQy4nTmD,Haute,,
+Nord-Kivu,Oicha,DSNIS-OMS,Mabalako,CD6107ZS04,MabalakoNord-Kivu,DSNIS,2019-06-30,svtAZQ9nVl0,Haute,,
+Ituri,Irumu,MSF,Boga,CD5402ZS01,BogaIturi,DSNIS,"2021",rLadlFjzCh7,Haute,,
+Ituri,Irumu,MSF,Gethy,CD5402ZS03,GethyIturi,DSNIS,"2021",X8zFJ7DJlRD,Haute,,
+Ituri,Irumu,MSF,Nyankunde,CD5402ZS05,NyankundeIturi,DSNIS,"2021",mGTaa8TFifO,Haute,,
+Ituri,Irumu,MSF,Rwampara,CD5402ZS06,RwamparaIturi,DSNIS,"2021",vPxN2nZnBXK,Haute,,
+Ituri,Djugu,MSF,Mongbalu,CD5405ZS10,MongbaluIturi,DSNIS,"2021",nv8tx681Gjd,Basse,,
+Haut-Uele,Watsa,MSF,Watsa,CD5309ZS02,WatsaHaut-Uele,DSNIS,"2021",mS2mByLHkzL,Moyenne,,
+Haut-Uele,Faradje,MSF,Faradje,CD5307ZS02,FaradjeHaut-Uele,DSNIS,"2021",H0UZDpNtJ17,Moyenne,,
+Haut-Uele,Faradje,MSF,Aba,CD5307ZS01,AbaHaut-Uele,DSNIS,"2021",NC2xavZLq2a,Moyenne,,
+Haut-Uele,Faradje,MSF,Makoro,CD5307ZS03,MakoroHaut-Uele,DSNIS,"2021",yNXb6VSdyPw,Haute,,
+Ituri,Aru,MSF,Adi,CD5409ZS01,AdiIturi,DSNIS,"2021",QAjDPUD5eCo,Haute,,
+Ituri,Aru,OMS,Ariwara,CD5409ZS03,AriwaraIturi,DSNIS,"2021",fM8IqjhdeyL,Haute,,
+Ituri,Aru,MSF,Aru,CD5409ZS04,AruIturi,DSNIS,"2021",v8PqffapuVl,Basse,,
+Ituri,Aru,MSF,Biringi,CD5409ZS05,BiringiIturi,DSNIS,"2021",yS0pmMtanuT,Haute,,
+Ituri,Aru,MSF,Adja,CD5409ZS02,AdjaIturi,DSNIS,"2021",CLboGR4F3lj,Moyenne,,
+Ituri,Aru,MSF,Laybo,CD5409ZS06,LayboIturi,DSNIS,"2021",n1N4M95juaC,Basse,,
+Ituri,Mahagi,MSF,Aungba,CD5407ZS02,AungbaIturi,DSNIS,"2021",DFcltLEKLxj,Haute,,
+Ituri,Djugu,MSF,Damas,CD5405ZS02,DamasIturi,DSNIS,"2021",ApdB8z3Wrxt,Haute,,
+Ituri,Mahagi,MSF,Kambala,CD5407ZS03,KambalaIturi,DSNIS,"2021",SkEKQLSulmp,Haute,,
+Ituri,Mahagi,MSF,Rimba,CD5407ZS07,RimbaIturi,DSNIS,"2021",a2aJcbwnjoK,Haute,,
+Ituri,Mahagi,MSF,Logo,CD5407ZS04,LogoIturi,DSNIS,"2021",qqGoQGSp1Dw,Haute,,
+Ituri,Mahagi,MSF,Nyarambe,CD5407ZS06,NyarambeIturi,DSNIS,"2021",gyRgzU4sTgY,Haute,,
+Ituri,Mahagi,MSF,Mahagi,CD5407ZS05,MahagiIturi,DSNIS,"2021",seNn0NUsKYn,Haute,,
+Ituri,Djugu,MSF,Rethy,CD5405ZS12,RethyIturi,DSNIS,"2021",hWMdKGgsAIz,Moyenne,,
+Ituri,Mahagi,MSF,Angumu,CD5407ZS01,AngumuIturi,DSNIS,"2021",yKlg7zZ2xlH,Haute,,
+Ituri,Djugu,MSF,Fataki,CD5405ZS04,FatakiIturi,DSNIS,"2021",FDNwbfrJhkA,Moyenne,,
+Ituri,Djugu,MSF,Linga,CD5405ZS07,LingaIturi,DSNIS,"2021",K0KK2tBPIRA,Haute,,
+Ituri,Djugu,MSF,Mangala,CD5405ZS09,MangalaIturi,DSNIS,"2021",YTZmP8g33YJ,Moyenne,,
+Ituri,Djugu,MSF,Bambu,CD5405ZS01,BambuIturi,DSNIS,"2021",Uc3GqWS8C0w,Haute,,
+Ituri,Djugu,MSF,Nizi,CD5405ZS11,NiziIturi,DSNIS,"2021",TCE5waEW7Fi,Moyenne,,
+Ituri,Djugu,MSF,Drodro,CD5405ZS03,DrodroIturi,DSNIS,"2021",OIhgsXcZf6x,Haute,,
+Ituri,Djugu,MSF,Lita,CD5405ZS08,LitaIturi,DSNIS,"2021",xGWcGHazqtw,Haute,,
+Ituri,Irumu,MSF,Bunia,CD5402ZS02,BuniaIturi,DSNIS,"2021",GPi6i83o7l6,Haute,,
+Ituri,Djugu,MSF,Tchomia,CD5405ZS13,TchomiaIturi,DSNIS,"2021",rhj4btTd3i0,Tres haute,,
+Ituri,Djugu,MSF,Kilo,CD5405ZS06,KiloIturi,DSNIS,"2021",sbyWSsdZ3tj,Basse,,
+Ituri,Mambasa,MSF,Lolwa,CD5403ZS01,LolwaIturi,DSNIS,"2021",xp3Y1OXHZLj,Haute,,
+Ituri,Djugu,MSF,Jiba,CD5405ZS05,JibaIturi,DSNIS,"2021",mgcXmrrvCZr,Moyenne,,
+Nord-Kivu,Beni,,Beni,CD6109ZS01,BeniNord-Kivu,DSNIS,"2021",msg2MyMGhKv,Moyenne,,
+Nord-Kivu,Butembo,OSM_RDC,Butembo,CD6110ZS01,ButemboNord-Kivu,DSNIS,"2021",foR0DRLqtdJ,Moyenne,,
+Nord-Kivu,Oicha,OSM_RDC,Kalunguta,CD6107ZS01,KalungutaNord-Kivu,DSNIS,"2021",XoJ3dLz68aj,Moyenne,,
+Nord-Kivu,Oicha,OMS DSNIS,Vuhovi,CD6107ZS07,VuhoviNord-Kivu,DSNIS,2018-12-29,EsZ68sGXB5Y,Moyenne,,
+Nord-Kivu,Butembo,OSM_RDC,Katwa,CD6110ZS02,KatwaNord-Kivu,DSNIS,"2021",woJBeEpIZdy,Moyenne,,
+Maniema,Lubutu,DSNIS,Lubutu,CD6305ZS,LubutuManiema,DSNIS,"2020",HtQZ7yf79SN,Moyenne,,
+Tshopo,Ubundu,MSF,Wanierukula,CD5102ZS03,WanierukulaTshopo,DSNIS,"2021",RowlA1nBHee,Haute,,
+Nord-Kivu,Walikale,OCHA,Walikale,CD6104ZS04,WalikaleNord-Kivu,DSNIS,,xIs8yXFjb9Y,,,
+Nord-Kivu,Walikale,MSF &OCHA,Kibua,CD6104ZS02,KibuaNord-Kivu,DSNIS,2018-12-29,is2bUIOxBUG,Basse,,
+Maniema,Kabambare,DSNIS,Kabambare,CD6309ZS01,KabambareManiema,DSNIS,"2021",ncFyk9qnjro,Basse,,
+Maniema,Kabambare,DSNIS,Lusangi,CD6309ZS02,LusangiManiema,DSNIS,"2021",rmoJzmAeUZq,Basse,,
+Maniema,Kabambare,DSNIS,Saramabila,CD6309ZS03,SaramabilaManiema,DSNIS,"2021",aPONdpnYXAn,Basse,,
+Maniema,Kasongo,DSNIS,Kasongo,CD6311ZS01,KasongoManiema,DSNIS,"2021",MRRlnyr6MW6,Basse,,
+Maniema,Kasongo,DSNIS,Samba,CD6311ZS03,SambaManiema,DSNIS,"2021",SWIUdbyuNVh,Basse,,
+Maniema,Kibombo,DSNIS,Kibombo,CD6313ZS01,KibomboManiema,DSNIS,"2021",FMXSE1MWvdO,Basse,,
+Maniema,Kibombo,DSNIS,Tunda,CD6313ZS02,TundaManiema,DSNIS,"2021",BmjuXfI9o9i,Basse,,
+Maniema,Kasongo,DSNIS,Kunda,CD6311ZS02,KundaManiema,DSNIS,"2021",MMeukZwYdI1,Basse,,
+Maniema,Pangi,DSNIS,Kampene,CD6307ZS02,KampeneManiema,DSNIS,"2021",y08g1DjhBXu,Basse,,
+Maniema,Pangi,DSNIS,Pangi,CD6307ZS03,PangiManiema,DSNIS,"2021",ie0dbeVpvnB,Basse,,
+Maniema,Pangi,DSNIS,Kalima,CD6307ZS01,KalimaManiema,DSNIS,"2021",IpT4QLSAYMK,Basse,,
+Maniema,Kindu,DSNIS,Alunguli,CD6301ZS01,AlunguliManiema,DSNIS,"2021",w1BnPOcmluI,Basse,,
+Maniema,Kindu,DSNIS,Kindu,CD6301ZS02,KinduManiema,DSNIS,"2021",lbUq2j3aRYh,Basse,,
+Maniema,Kailo,DSNIS,Kailo,CD6302ZS01,KailoManiema,DSNIS,"2021",ZHRREbCOGwG,Basse,,
+Maniema,Punia,DSNIS,Ferekeni,CD6303ZS01,FerekeniManiema,DSNIS,"2021",YuGk2dXTvKj,Basse,,
+Maniema,Punia,DSNIS,Punia,CD6303ZS02,PuniaManiema,DSNIS,"2021",EyMlz2Qvcmt,Basse,,
+Maniema,Lubutu,DSNIS,Obokote,CD6305ZS02,ObokoteManiema,DSNIS,"2021",BsSB1PA58Qp,Basse,,
+Haut-Katanga,Sakania,GRID3 M4H,Sakania,CD7104ZS01,SakaniaHaut-Katanga,DSNIS,"2021",CSwaGvyMS6Z,Tres haute,,
+Haut-Katanga,Kipushi,GRID3 M4H,Kafubu,CD7102ZS01,KafubuHaut-Katanga,DSNIS,"2022",GpdRlogsSiE,Tres haute,,
+Haut-Katanga,Lubumbashi,GRID3 M4H,Rwashi,CD7101ZS09,RwashiHaut-Katanga,DSNIS,"2022",YFSLTwHFlOk,Tres haute,,
+Haut-Katanga,Lubumbashi,GRID3 M4H,Vangu,CD7101ZS11,VanguHaut-Katanga,DSNIS,"2022",uIuYpiQm6m8,Tres haute,,
+Haut-Katanga,Lubumbashi,GRID3 M4H,Lubumbashi,CD7101ZS07,LubumbashiHaut-Katanga,DSNIS,"2022",H8vCqAKUlyX,Tres haute,,
+Haut-Katanga,Lubumbashi,GRID3 M4H,Kampemba,CD7101ZS02,KampembaHaut-Katanga,DSNIS,"2022",zMfBT8xVQeH,Tres haute,,
+Haut-Katanga,Lubumbashi,GRID3 M4H,Tshamilembe,CD7101ZS10,TshamilembaHaut-Katanga,DSNIS,"2022",BdGu22qs6aS,Tres haute,,
+Haut-Katanga,Lubumashi,GRID3 M4H,Kowe,CD7101ZS06,KoweHaut-Katanga,DSNIS,"2022",sAsXOxkBdrE,Tres haute,,
+Haut-Katanga,Lubumbashi,GRID3 M4H,Kamalondo,CD7101ZS01,KamalondoHaut-Katanga,DSNIS,"2022",uocpzPZHiEo,Tres haute,,
+Haut-Katanga,Lubumbashi,GRID3 M4H,Kenya,CD7101ZS04,KenyaHaut-Katanga,DSNIS,"2022",IOin37HS2Wz,Tres haute,,
+Haut-Katanga,Lubumbashi,GRID3 M4H,Mumbunda,CD7101ZS08,MumbundaHaut-Katanga,DSNIS,"2022",QteKQ66ixqO,Tres haute,,
+Haut-Katanga,Lubumbashi,GRID3 M4H,Kisanga,CD7101ZS05,KisangaHaut-Katanga,DSNIS,"2022",QA2FRWLQqWE,Tres haute,,
+Haut-Katanga,Lubumbashi,GRID3 M4H,Katuba,CD7101ZS03,KatubaHaut-Katanga,DSNIS,"2022",nhdQUgOeBQU,Tres haute,,
+Haut-Katanga,Kipushi,GRID3 M4H,Kipushi,CD7102ZS02,KipushiHaut-Katanga,DSNIS,"2022",ZMH0kkBQFs9,Tres haute,,
+Haut-Katanga,Kambove,GRID3 M4H,Kapolowe,CD7105ZS02,KapoloweHaut-Katanga,DSNIS,"2022",bAFJ18IAf2S,Tres haute,,
+Haut-Katanga,Kambove,GRID3 M4H,Kilela Balanda,CD7105ZS03,Kilela BalandaHaut-Katanga,DSNIS,"2022",Kth7MQGYcrE,Tres haute,,
+Haut-Katanga,Kambove,GRID3 M4H,Panda,CD7105ZS05,PandaHaut-Katanga,DSNIS,"2022",EofZhh5yYMG,Tres haute,,
+Haut-Katanga,Kambove,GRID3 M4H,Kambove,CD7105ZS01,KamboveHaut-Katanga,DSNIS,"2022",NR5cDy2jhiJ,Tres haute,,
+Haut-Katanga,Likasi,GRID3 M4H,Likasi,CD7106ZS01,LikasiHaut-Katanga,DSNIS,"2022",fQLRnttyYlx,Tres haute,,
+Haut-Katanga,Kasenga,GRID3 M4H,Kikula,CD7107ZS02,KikulaHaut-Katanga,DSNIS,"2022",Q22qlkhPQDO,Tres haute,,
+Haut-Katanga,Kasenga,GRID3 M4H,Lukafu,CD7107ZS03,LukafiHaut-Katanga,DSNIS,"2022",nNFVLFmkaAz,Tres haute,,
+Haut-Katanga,Kasenga,GRID3 M4H,Kasenga,CD7107ZS01,KasengaHaut-Katanga,DSNIS,"2022",Vue5tcMpaGh,Tres haute,,
+Haut-Katanga,Kasenga,GRID3 M4H,Kashobwe,CD7107ZS04,KashobweHaut-Katanga,DSNIS,"2022",OcTqzK4K1RV,Tres haute,,
+Haut-Katanga,Mitwaba,GRID3 M4H,Mufunga Sampwe,CD7108ZS02,Mufunga SampweHaut-Katanga,DSNIS,"2022",qzQdkny6PZ4,Tres haute,,
+Haut-Katanga,Pweto,GRID3 M4H,Kilwa,CD7109ZS01,KilwaHaut-Katanga,DSNIS,"2022",iHmCGdXARXG,Tres haute,,
+Haut-Katanga,Mitwaba,GRID3 M4H,Mitwaba,CD7108ZS01,MitwabaHaut-Katanga,DSNIS,"2022",rYWmyhhl1LP,Tres haute,,
+Haut-Katanga,Pweto,GRID3 M4H,Pweto,CD7109ZS02,PwetoHaut-Katanga,DSNIS,"2022",fdlN13eHB5u,Tres haute,,
+Lualaba,Lubudi,OMS,Bunkeya,CD7203ZS01,BunkeyaLualaba,DSNIS,,cw1CZyDiPyA,,,Katanga
+Lualaba,Lubudi,OMS,Lubudi,CD7203ZS04,LubudiLualaba,DSNIS,,goYHUDWT3jn,,,Katanga
+Kasaî-Oriental,Katanda,GRID3 M4H,Bibanga,CD8209ZS01,BibangaKasaï-Oriental,DSNIS,"2022",pzMw9DUQ6An,Tres haute,,
+Kasaï-Oriental,Mbuji-Mayi,GRID3 M4H,Bipemba,CD8201ZS01,BipembaKasaï-Oriental,DSNIS,"2022",xx5xiY5vVBa,Tres haute,,
+Kasaï-Oriental,Mbuji-Mayi,GRID3 M4H,Bonzola,CD8201ZS02,BonzolaKasaï-Oriental,DSNIS,"2022",ZxyZ7L3ynso,Tres haute,,
+Kasaï-Oriental,Miabi,GRID3 M4H,Cilundu,CD8205ZS01,CilunduKasaï-Oriental,DSNIS,"2022",GZJ4wCF5dr8,Tres haute,,
+Kasaï-Oriental,Katanda,GRID3 M4H,Citenge,CD8209ZS02,CitengeKasaï-Oriental,DSNIS,"2022",EpoRodQJ1La,Tres haute,,
+Kasaï-Oriental,Mbuji-Mayi,GRID3 M4H,Dibindi,CD8201ZS03,DibindiKasaï-Oriental,DSNIS,"2022",Z5I1TvCKVcG,Tres haute,,
+Kasaï-Oriental,Mbuji-Mayi,GRID3 M4H,Diulu,CD8201ZS04,DiuluKasaï-Oriental,DSNIS,"2022",f1b3q0aLFzW,Tres haute,,
+Kasaï-Oriental,Kabeya-Kamwanga,GRID3 M4H,Kabeya Kamwanga,CD8207ZS01,Kabeya KamwangaKasaï-Oriental,DSNIS,"2022",k7iudxSjdn7,Tres haute,,
+Kasaï-Oriental,Mbuji-Mayi,GRID3 M4H,Kansele,CD8201ZS05,KanseleKasaï-Oriental,DSNIS,"2022",HN9etyIXrEE,Tres haute,,
+Kasaï-Oriental,Tshilenge,GRID3 M4H,Kasansa,CD8202ZS01,KasansaKasaï-Oriental,DSNIS,"2022",w9GBwODOJNY,Tres haute,,
+Kasaï-Oriental,Mbuji-Mayi,GRID3 M4H,Lubilanji,CD8201ZS06,LubilanjiKasaï-Oriental,DSNIS,"2022",FvSLntNvpao,Tres haute,,
+Kasaï-Oriental,Mbuji-Mayi,GRID3 M4H,Lukelenge,CD8201ZS07,LukelengeKasaï-Oriental,DSNIS,"2022",ucEXrvC3lau,Tres haute,,
+Kasaï-Oriental,Miabi,GRID3 M4H,Miabi,CD8205ZS02,MiabiKasaï-Oriental,DSNIS,"2022",vyzwR6KnN2M,Tres haute,,
+Kasaï-Oriental,Mbuji-Mayi,GRID3 M4H,Mpokolo,CD8201ZS08,MpokoloKasaï-Oriental,DSNIS,"2022",v4bwDhzBFks,Tres haute,,
+Kasaï-Oriental,Lupatapata,GRID3 M4H,Mukumbi,CD8208ZS01,MukumbiKasaï-Oriental,DSNIS,"2022",L4fvzJb0ijt,Tres haute,,
+Kasaï-Oriental,Mbuji-Mayi,GRID3 M4H,Muya,CD8201ZS09,MuyaKasaï-Oriental,DSNIS,"2022",HllryitwQ4u,Tres haute,,
+Kasaï-Oriental,Mbuji-Mayi,GRID3 M4H,Nzaba,CD8201ZS10,NzabaKasaï-Oriental,DSNIS,"2022",amSVlGShY91,Tres haute,,
+Kasaï-Oriental,Tshilenge,GRID3 M4H,Tshilenge,CD8202ZS02,TshilengeKasaï-Oriental,DSNIS,"2022",sxo8WzGfbXk,Tres haute,,
+Kasaï-Oriental,Lupatapata,GRID3 M4H,Tshishimbi,CD8208ZS02,TshishimbiKasaï-Oriental,DSNIS,"2022",PuF5BL8Npna,Tres haute,,
+Lomami,Kabinda,GRID3 M4H,Kabinda,CD8102ZS01,KabindaLomami,DSNIS,"2022",S7r6j8vvjBa,Tres haute,,
+Lomami,Ngandajika,GRID3 M4H,Kalambayi Kabanga,CD8106ZS01,Kalambayi KabangaLomami,DSNIS,"2022",hyVNQXTLM57,Tres haute,,
+Lomami,Luilu,GRID3 M4H,Kalenda,CD8104ZS01,KalendaLomami,DSNIS,"2022",vnt8fprZWxI,Tres haute,,
+Lomami,Kabinda,GRID3 M4H,Kalonda Est,CD8102ZS02,Kalonda EstLomami,DSNIS,"2022",HDHPGpYow9n,Tres haute,,
+Lomami,Lubao,GRID3 M4H,Kamana,CD8108ZS01,KamanaLomami,DSNIS,"2022",KxcxIF0z6y3,Tres haute,,
+Lomami,Kamiji,GRID3 M4H,Kamiji,CD8105ZS01,KamijiLomami,DSNIS,"2022",rg471npPLBo,Tres haute,,
+Kasaï-Central,Dibaya,Div_snis,Dibaya,CD9102ZS02,DibayaKasaï-Central,DSNIS,,kye1r2XW3YV,,,Kasai-Occidental
+Lomami,Luilu,GRID3 M4H,Kanda Kanda,CD8104ZS02,Kanda KandaLomami,DSNIS,"2022",LREYTGTn3sk,Tres haute,,
+Lomami,Lubao,GRID3 M4H,Lubao,CD8108ZS02,LubaoLomami,DSNIS,"2022",hhPQBTvWnWR,Tres haute,,
+Lomami,Ludimbi Lukula,GRID3 M4H,Ludimbi Lukula,CD8102ZS03,Ludimbi LukulaLomami,DSNIS,"2022",v92Jk9YbTsC,Tres haute,,
+Lomami,Luilu,GRID3 M4H,Luputa,CD8104ZS03,LuputaLomami,DSNIS,"2022",gYjfhzYH5ra,Tres haute,,
+Lomami,Mwene-Ditu,GRID3 M4H,Makota,CD8103ZS01,MakotaLomami,DSNIS,"2022",x0EmG1LRyjy,Tres haute,,
+Lomami,Ngandajika,GRID3 M4H,Mulumba,CD8106ZS02,MulumbaLomami,DSNIS,"2022",Ca5EitY4zzl,Tres haute,,
+Lomami,Mwene-Ditu,GRID3 M4H,Mwene-Ditu,CD8103ZS02,Mwene-DituLomami,DSNIS,"2022",yft32K4WOYZ,Tres haute,,
+Lomami,Ngandajika,GRID3 M4H,Ngandajika,CD8106ZS03,NgandajikaLomami,DSNIS,"2022",HpQHhqioedF,Tres haute,,
+Lomami,Lubao,GRID3 M4H,Tshofa,CD8108ZS03,TshofaLomami,DSNIS,"2022",JMyFFcdmIMU,Tres haute,,
+Lomami,Luilu,GRID3 M4H,Wikong,CD8104ZS04,WikongLomami,DSNIS,"2022",gMiVopcM4An,Tres haute,,
+Lualaba,Kapanga,OMS,Kapanga,CD7207ZS02,KapangaLualaba,DSNIS,,qdhfi48INZJ,,,Katanga
+Lualaba,Kapanga,OMS,Kalamba,CD7207ZS01,KalambaLualaba,DSNIS,,Ux1WH67fWJJ,,,Katanga
+Haut-Lomami,Kamina,MSP/CIESIN,Baka,CD7302ZS01,BakaHaut-Lomami,DSNIS,"2022",OyzUIt0IaeY,Tres haute,,
+Haut-Lomami,Bukama,MSP/CIESIN,Bukama,CD7306ZS01,BukamaHaut-Lomami,DSNIS,"2022",glucPFMOELN,Tres haute,,
+Haut-Lomami,Bukama,ESP-UCLA,Butumba,CD7306ZS02,ButumbaHaut-Lomami,DSNIS,"2022",FWbGIJwFtFw,Tres haute,,
+Haut-Lomami,Bukama,MSP/CIESIN,Kabondo-Dianda,CD7306ZS03,Kabondo-DiandaHaut-Lomami,DSNIS,"2022",BU8zas1K8mi,Tres haute,,
+Haut-Lomami,Kabongo,MSP/CIESIN,Kabongo,CD7304ZS01,KabongoHaut-Lomami,DSNIS,"2022",fhqCaqAoVI8,Tres haute,,
+Haut-Lomami,Kamina,MSP/CIESIN,Kamina,CD7302ZS02,KaminaHaut-Lomami,DSNIS,"2022",T0YXktZkPCF,Tres haute,,
+Haut-Lomami,Kaniama,MSP/CIESIN,Kaniama,CD7303ZS01,KaniamaHaut-Lomami,DSNIS,"2022",guov7iiEM6c,Tres haute,,
+Haut-Lomami,Kabongo,MSP/CIESIN,Kayamba,CD7304ZS02,KayambaHaut-Lomami,DSNIS,"2022",RonTeRt1of5,Tres haute,,
+Haut-Lomami,Kamina,MSP/CIESIN,Kinda,CD7302ZS03,KindaHaut-Lomami,DSNIS,"2022",i1aUdilicx5,Tres haute,,
+Haut-Lomami,Bukama,ESP-UCLA,Kinkondja,CD7305ZS01,KinkondjaHaut-Lomami,DSNIS,"2022",qZdoTKoMddO,Tres haute,,
+Haut-Lomami,Kabongo,MSP/CIESIN,Kitenge,CD7304ZS03,KitengeHaut-Lomami,DSNIS,"2022",mSpktJNvGmQ,Tres haute,,
+Haut-Lomami,Malemba-Nkulu,MSP/CIESIN,Lwamba,CD7305ZS02,LwambaHaut-Lomami,DSNIS,"2022",QZr08cvgmWI,Tres haute,,
+Haut-Lomami,Malemba-Nkulu,ESP-UCLA,Malemba-Nkulu,CD7306ZS04,Malemba-NkuluHaut-Lomami,DSNIS,"2022",N3b4xbGIP6r,Tres haute,,
+Haut-Lomami,Malemba-Nkulu,ESP-UCLA,Mukanga,CD7305ZS03,MukangaHaut-Lomami,DSNIS,"2022",XdR0dqdFNt4,Tres haute,,
+Haut-Lomami,Malemba-Nkulu,ESP-UCLA,Mulongo,CD7305ZS04,MulongoHaut-Lomami,DSNIS,"2022",hdDyVXgN46J,Tres haute,,
+Haut-Lomami,Kamina,MSP/CIESIN,Songa,CD7302ZS04,SongaHaut-Lomami,DSNIS,"2022",cgc7FkCPcKb,Tres haute,,
+Kinshasa,Kinshasa,GRID3 M4H,Bandalungwa,CD1000ZS01,BandalungwaKinshasa,DSNIS,"2022",xZy8t34pvs6,Tres haute,,
+Kinshasa,Kinshasa,GRID3 M4H,Barumbu,CD1000ZS02,BarumbuKinshasa,DSNIS,"2022",uw3SOxNTDP4,Tres haute,,
+Kinshasa,Kinshasa,GRID3 M4H,Binza Ozone,CD1000ZS04,Binza OzoneKinshasa,DSNIS,"2022",m5B0okd0KaZ,Tres haute,,
+Kinshasa,Kinshasa,GRID3 M4H,Biyela,CD1000ZS05,BiyelaKinshasa,DSNIS,"2022",QzpHCAKe31e,tres haute,,
+Kinshasa,Kinshasa,GRID3 M4H,Bumbu,CD1000ZS06,BumbuKinshasa,DSNIS,"2022",sZ2goXLKmQX,Tres haute,,
+Kinshasa,Kinshasa,GRID3 M4H,Gombe,CD1000ZS07,GombeKinshasa,DSNIS,"2022",L3vMLScAbZ6,Tres haute,,
+Kinshasa,Kinshasa,GRID3 M4H,Kalamu 1,CD1000ZS08,Kalamu 1Kinshasa,DSNIS,"2022",D1jF9OzETge,Tres haute,,
+Kinshasa,Kinshasa,GRID3 M4H,Kalamu 2,CD1000ZS09,Kalamu 2Kinshasa,DSNIS,"2022",Z3DMBdrM8Df,Tres haute,,
+Kinshasa,Kinshasa,GRID3 M4H,Kasa-Vubu,CD1000ZS10,Kasa-VubuKinshasa,DSNIS,"2022",TuzDrpZ9zzl,Tres haute,,
+Kinshasa,Kinshasa,GRID3 M4H,Kikimi,CD1000ZS11,KikimiKinshasa,DSNIS,"2022",wTaqhPcijDM,Tres haute,,
+Kinshasa,Kinshasa,GRID3 M4H,Kimbanseke,CD1000ZS12,KimbansekeKinshasa,DSNIS,"2022",cycttnJlR4L,Tres haute,,
+Kinshasa,Kinshasa,GRID3 M4H,Kingabwa,CD1000ZS13,KingabwaKinshasa,DSNIS,"2022",NwNyAitXVsr,tres haute,,
+Kinshasa,Kinshasa,GRID3 M4H,Kingasani,CD1000ZS14,KingasaniKinshasa,DSNIS,"2022",ZTt8HbFGrY4,Tres haute,,
+Kinshasa,Kinshasa,GRID3 M4H,Kinshasa,CD1000ZS15,KinshasaKinshasa,DSNIS,"2022",xZy8t34pvs6,Tres haute,,
+Kinshasa,Kinshasa,GRID3 M4H,Kinsenso,CD1000ZS17,KinsensoKinshasa,DSNIS,"2022",Vv9L3W7VMrX,Tres haute,,
+Kinshasa,Kinshasa,GRID3 M4H,Kokolo,CD1000ZS18,KokoloKinshasa,DSNIS,"2022",Ab6jrKWO5EZ,Tres haute,,
+Kinshasa,Kinshasa,GRID3 M4H,Lemba,CD1000ZS19,LembaKinshasa,DSNIS,"2022",tCLXgZBBLQ0,Tres haute,,
+Kinshasa,Kinshasa,GRID3 M4H,Limete,CD1000ZS20,LimeteKinshasa,DSNIS,"2022",JhJFxKnFvmJ,Tres haute,,
+Kinshasa,Kinshasa,GRID3 M4H,Lingwala,CD1000ZS21,LingwalaKinshasa,DSNIS,"2022",qbe5m6fVfMT,Tres haute,,
+Kinshasa,Kinshasa,GRID3 M4H,Makala,CD1000ZS22,MakalaKinshasa,DSNIS,"2022",SqWL31RNyKx,Tres haute,,
+Kinshasa,Kinshasa,GRID3 M4H,Maluku 1,CD1000ZS23,Maluku 1Kinshasa,DSNIS,"2022",tkbMhp2kIT2,Tres haute,,
+Kinshasa,Kinshasa,GRID3 M4H,Maluku 2,CD1000ZS24,Maluku 2Kinshasa,DSNIS,"2022",nq4LAyXUm8a,Tres haute,,
+Kinshasa,Kinshasa,GRID3 M4H,Masina 1,CD1000ZS25,Masina 1Kinshasa,DSNIS,"2022",F0zQH8NbaIx,Tres haute,,
+Kinshasa,Kinshasa,GRID3 M4H,Masina 2,CD1000ZS26,Masina 2Kinshasa,DSNIS,"2022",hL8oJfWHx3g,Tres haute,,
+Kinshasa,Kinshasa,GRID3 M4H,Matete,CD1000ZS27,MateteKinshasa,DSNIS,"2022",UrJlHRGZGGJ,Tres haute,,
+Kinshasa,Kinshasa,GRID3 M4H,Mont Ngafula 1,CD1000ZS28,Mont Ngafula 1Kinshasa,DSNIS,"2022",ubl3NORPhsC,Tres haute,,
+Kinshasa,Kinshasa,GRID3 M4H,Mont Ngafula 2,CD1000ZS29,Mont Ngafula 2Kinshasa,DSNIS,"2022",gMhYDNcoZSe,Tres haute,,
+Kinshasa,Kinshasa,GRID3 M4H,Ndjili,CD1000ZS30,NdjiliKinshasa,DSNIS,"2022",rK2ODHilbAP,Tres haute,,
+Kinshasa,Kinshasa,GRID3 M4H,Ngaba,CD1000ZS31,NgabaKinshasa,DSNIS,"2022",vvrhCzWzc0J,Tres haute,,
+Kinshasa,Kinshasa,GRID3 M4H,Ngir Ngiri,CD1000ZS32,Ngiri NgiriKinshasa,DSNIS,"2022",LSvg2jR0rEQ,Tres haute,,
+Kinshasa,Kinshasa,GRID3 M4H,Nsele,CD1000ZS33,NseleKinshasa,DSNIS,"2022",m0D9iUAjJ1G,Tres haute,,
+Kinshasa,Kinshasa,GRID3 M4H,Police,CD1000ZS34,PoliceKinshasa,DSNIS,"2022",kyBo3gA8qoh,Tres haute,,
+Kasaï,Ilebo,GRID3 M4H,Banga Lubaka,CD9205ZS01,Banga LubakaKasaï,GRID3 M4H,"2022",bNFyJIkjMdY,Tres haute,,
+Kasaï,Mweka,GRID3 M4H,Bulape,CD9207ZS01,BulapaKasaï,DSNIS,"2022",tTRg4cT07K7,Tres haute,,
+Kasaï,Dekese,GRID3 M4H,Dekese,CD9208ZS01,DekeseKasaï,DSNIS,"2022",Z3lr3MOHNLH,Tres haute,,
+Kasaï,Ilebo,GRID3 M4H,Ilebo,CD9205ZS02,IleboKasaï,DSNIS,"2022",g9sayFS8d1p,Tres haute,,
+Kasaï,Mweka,GRID3 M4H,Kakenge,CD9207ZS02,KakengeKasaï,DSNIS,"2022",y1bSl3YWtJm,Tres haute,,
+Kasaï,Kamonia,GRID3 M4H,Kalonda Ouest,CD9202ZS01,Kalonda Ouest Kasaï,DSNIS,"2022",jCOBMIbRlMV,Tres haute,,
+Kasaï,Kamonia,GRID3 M4H,Kamonia,CD9202ZS02,KamoniaKasaï,DSNIS,"2022",BTGp4czwZRN,Tres haute,,
+Kasaï,Kamonia,GRID3 M4H,Kamwesha,CD9202ZS03,KamweshaKasaï,DSNIS,"2022",lHsn3K40LBB,Tres haute,,
+Kasaï,Kamonia,GRID3 M4H,Kanzala,CD9202ZS04,KanzalaKasaï,DSNIS,"2022",BuX1tLn79WK,Tres haute,,
+Kasaï,Kamonia,GRID3 M4H,Kitangwa,CD9202ZS05,KitangwaKasaï,DSNIS,"2022",IDFKkakVBRc,Tres haute,,
+Kasaï,Luebo,GRID3 M4H,Luebo,CD9204ZS01,LueboKasaï,DSNIS,"2022",d9la4YKNnto,Tres haute,,
+Kasaï,Ilebo,GRID3 M4H,Mikope,CD9205ZS03,MikopeKasaï,DSNIS,"2022",vy2yqOs0J70,Tres haute,,
+Kwilu,Idiofa,ESP-UCLA,Koshibanda,CD3206ZS04,KoshibandaKwilu,DSNIS,2018-04-24,O3KmMLK10ru,Tres haute,,Bandundu
+Kwilu,Idiofa,ESP-UCLA,Ipamu,CD3206ZS02,IpamuKwilu,DSNIS,2018-04-24,jSLnBqCXCzW,Tres haute,,Bandundu
+Kasaï,Mweka,GRID3 M4H,Mushenge,CD9207ZS03,MushengeKasaï,DSNIS,"2022",qdhh0JFWiW2,Tres haute,,
+Kasaï,Kamonia,GRID3 M4H,Mutena,CD9202ZS06,MutenaKasaï,DSNIS,"2022",g0UqlSRyINa,Tres haute,,
+Kasaï-Central,Kazumba,ACF,Kalomba,CD9105ZS02,KalombaKasaï-Central,DSNIS,"2021",r9jRmNpYalx,Tres haute,,
+Kasaï-Central,Kazumba,Div_snis,Ndekesha,CD9105ZS04,NdekeshaKasaï-Central,DSNIS,,mixGG8ryrT9,,,Kasai-Occidental
+Kasaï,Mweka,GRID3 M4H,Mweka,CD9207ZS04,MwekaKasaï,DSNIS,"2022",yxRgfrgfuOK,Tres haute,,
+Kasaï-Central,Demba,Div_snis,Bena Leka,CD9106ZS01,Bena LekaKasaï-Central,DSNIS,,HYPBUncgldT,,,Kasai-Occidental
+Kasaï,Luebo,GRID3 M4H,Ndjoko-Punda,CD9204ZS02,Ndjoko-PundaKasaï,DSNIS,"2022",phRBB1s5LJX,Tres haute,,
+Kasaï,Kamonia,GRID3 M4H,Nyanga,CD9202ZS07,NyangaKasaï,DSNIS,"2022",ilgYm3DfbGP,Tres haute,,
+Kasaï,Kamonia,GRID3 M4H,Tshikapa,CD9202ZS08,TshikapaKasaï,DSNIS,"2022",rsaI3zncNG9,Tres haute,,
+Kintambo,Kintambo,GRID3 M4H,Kintambo,CD1000ZS16,KintamboKinshasa,DSNIS,"2022",oeP2sQLMCuy,Tres haute,,
+Kinshasa,Kinshasa,GRID3 M4H,Selembao,CD1000ZS35,SelembaoKinshasa,DSNIS,"2022",nbSOIch7Mbc,Tres haute,,
+Kinshasa,Kinshasa,FICR/CP3,Binza Meteo,CD1000ZS03,Binza MeteoKinshasa,DSNIS,"2021",ShcGSNMpF7z,Tres haute,,
