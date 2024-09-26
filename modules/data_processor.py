@@ -4,24 +4,23 @@ def preprocess_data(data, config):
     """
     Preprocesses the data according to configuration.
     """
-    reporting = config.get('reporting', {})
-    use_date = reporting.get('use_date', 'date_notification')
-    data_range = reporting.get('data_range_inclusive', {})
+    reporting = config.get('reporting')
+    data_range = reporting.get('data_range_inclusive')
+
+    # filter by date range
+    use_date = data_range.get('use_date')
     start_date = data_range.get('start_date')
     end_date = data_range.get('end_date')
 
-    # check that use_date column is in datetime format
+    # check that use_date column is in datetime format, otherwise use all data
     if use_date in data.columns:
         data[use_date] = pd.to_datetime(data[use_date])
-    else:
-        raise KeyError("Data does not contain a 'date' column.")
-
-    # filter by date range
-    if start_date and end_date:
-        start_date = pd.to_datetime(start_date)
-        end_date = pd.to_datetime(end_date)
-        mask = (data[use_date] >= start_date) & (data[use_date] <= end_date)
-        data = data.loc[mask]
+        # filter by date range
+        if start_date and end_date:
+            start_date = pd.to_datetime(start_date)
+            end_date = pd.to_datetime(end_date)
+            mask = (data[use_date] >= start_date) & (data[use_date] <= end_date)
+            data = data.loc[mask]
 
     # filter by provinces
     provinces = reporting.get('provinces', {})
