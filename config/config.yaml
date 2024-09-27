@@ -24,6 +24,15 @@ reporting:
           deaths_only: false
           aggregate_by_epiweek: true
           moving_average_window: 3 # in units of aggregation (e.g. days, weeks)
+          provinces:
+            include: ['CD-IT']
+            exclude: null
+          zones_sante:
+            include: null
+            exclude: null
+          aires_sante:
+            include: null
+            exclude: null
         graphics:
           x_label: 'Date'
           y_label: 'Case Incidence'
@@ -46,6 +55,7 @@ reporting:
       parameters:
         data:
           time_col: 'date_notification'
+          deaths_only: false
           date_range_inclusive:
             start_date: '2023-01-05'
             end_date: '2023-02-01'
@@ -53,19 +63,28 @@ reporting:
           title: 'Case distribution at provincial level'
           fig_width: 15
           fig_height: 15
-          png_dpi: 300
           export: false
           filename: 'province_case_distribution_map.pdf'
     - type: 'age-sex-pyramid-plot'
       parameters:
         data:
           time_col: 'date_notification'
+          deaths_only: false
           date_range_inclusive:
             start_date: '2023-01-05'
             end_date: '2023-02-01'
           age_col: 'age'
           age_groups: [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60]
           sex_col: 'sex'
+          provinces:
+            include: ['CD-IT']
+            exclude: null
+          zones_sante:
+            include: null
+            exclude: null
+          aires_sante:
+            include: null
+            exclude: null
         graphics:
           x_label: 'Population'
           y_label: 'Age Group'

@@ -35,7 +35,7 @@ def plot_province_map_matplotlib(geo_data, parameters):
     geo_data = provinces_gdf.merge(geo_data, left_on=SHAPEFILE_COLUMN, right_on='province', how='left')
 
     # create custom colourmap
-    custom_cmap = LinearSegmentedColormap.from_list("red_blue", ['#c9c9c9', '#a16272', '#9F2241'])
+    custom_cmap = LinearSegmentedColormap.from_list("red_blue", ['#9db09f', '#a16272', '#9F2241'])
 
     # plot provinces with the 'count' column as color
     geo_data_plot = geo_data.plot(column='count', ax=ax, legend=False, cmap=custom_cmap)

@@ -18,6 +18,36 @@ def preprocess_time_series_data(data, parameters):
     if deaths_only:
         data = data[data['status'] == 'died']
 
+    # filter by provinces
+    provinces = parameters.get('provinces', {})
+    include_provinces = provinces.get('include')
+    exclude_provinces = provinces.get('exclude')
+
+    if include_provinces:
+        data = data[data['province'].isin(include_provinces)]
+    if exclude_provinces:
+        data = data[~data['province'].isin(exclude_provinces)]
+
+    # filter by zones_sante
+    zones_sante = parameters.get('zones_sante', {})
+    include_zones = zones_sante.get('include')
+    exclude_zones = zones_sante.get('exclude')
+
+    if include_zones:
+        data = data[data['zones_sante'].isin(include_zones)]
+    if exclude_zones:
+        data = data[~data['zones_sante'].isin(exclude_zones)]
+
+    # filter by aires_sante
+    aires_sante = parameters.get('aires_sante', {})
+    include_aires = aires_sante.get('include')
+    exclude_aires = aires_sante.get('exclude')
+
+    if include_aires:
+        data = data[data['aires_sante'].isin(include_aires)]
+    if exclude_aires:
+        data = data[~data['aires_sante'].isin(exclude_aires)]
+
     # create a copy of relevant column
     plot_data = data[[time_col]].copy()
 
