@@ -33,6 +33,8 @@ def plot_province_map_matplotlib(geo_data, parameters):
 
     # merge data with geographic data
     geo_data = provinces_gdf.merge(geo_data, left_on=SHAPEFILE_COLUMN, right_on='province', how='left')
+    # fill NaN values with 0
+    geo_data['count'] = geo_data['count'].fillna(0)
 
     # create custom colourmap
     custom_cmap = LinearSegmentedColormap.from_list("red_blue", ['#9db09f', '#a16272', '#9F2241'])

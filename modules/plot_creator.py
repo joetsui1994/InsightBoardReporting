@@ -11,6 +11,8 @@ from plots.multi_province_time_series_barplot.preprocess import preprocess_multi
 from plots.multi_province_time_series_barplot.plot import plot_multi_province_time_series_barplot
 from plots.multi_province_age_sex_pyramid_plot.preprocess import preprocess_multi_province_pyramid_data
 from plots.multi_province_age_sex_pyramid_plot.plot import plot_multi_province_pyramid
+from plots.multi_week_province_map.preprocess import preprocess_multi_week_province_map_data
+from plots.multi_week_province_map.plot import plot_multi_week_province_map_matplotlib
 
 def create_plot(data, graph_config):
     plot_type = graph_config['type']
@@ -28,6 +30,10 @@ def create_plot(data, graph_config):
         'province-map': {
             'preprocess': preprocess_province_map_data,
             'plot': plot_province_map_matplotlib
+        },
+        'multi-week-province-map': {
+            'preprocess': preprocess_multi_week_province_map_data,
+            'plot': plot_multi_week_province_map_matplotlib
         },
         'age-sex-pyramid-plot': {
             'preprocess': preprocess_pyramid_data,
