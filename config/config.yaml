@@ -21,6 +21,7 @@ reporting:
       parameters:
         data:
           time_col: 'date_notification'
+          deaths_only: false
           aggregate_by_epiweek: true
           moving_average_window: 3 # in units of aggregation (e.g. days, weeks)
         graphics:

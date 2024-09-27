@@ -6,12 +6,17 @@ def preprocess_time_series_data(data, parameters):
     Preprocesses data for the time-series bar plot.
     """
     time_col = parameters.get('time_col')
+    deaths_only = parameters.get('deaths_only', False)
     aggregate_by_epiweek = parameters.get('aggregate_by_epiweek', False)
     moving_average_window = parameters.get('moving_average_window')
 
     # check that time_col is in data
     if time_col not in data.columns:
         raise ValueError(f"Column '{time_col}' not found in data.")
+
+    # filter out non-death data if specified
+    if deaths_only:
+        data = data[data['status'] == 'died']
 
     # create a copy of relevant column
     plot_data = data[[time_col]].copy()
