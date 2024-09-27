@@ -1,9 +1,4 @@
 import pandas as pd
-import geopandas as gpd
-
-# filepath to provincial shapefile
-PROVINCES_SHAPEFILE = '../../data/drf-provinces'
-SHAPEFILE_COLUMN = 'ADM1_FR'
 
 def preprocess_province_map_data(data, parameters):
     """

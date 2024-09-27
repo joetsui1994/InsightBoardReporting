@@ -1,6 +1,6 @@
 import geopandas as gpd
 import matplotlib.pyplot as plt
-from matplotlib.colors import ListedColormap, LinearSegmentedColormap
+from matplotlib.colors import LinearSegmentedColormap
 import numpy as np
 from pathlib import Path
 import os
