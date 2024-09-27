@@ -56,7 +56,7 @@ def plot_pyramid(plot_data, parameters):
 
     # create nice x-axis ticks
     num_divs = 4
-    max_population = max(plot_data['male'].max(), plot_data['female'].max())
+    max_population = max(plot_data['male'].abs().max(), plot_data['female'].abs().max())
     tick_step = get_nice_round_number(max_population / num_divs)
     max_tick = (tick_step * 5)  # round up to a multiple of tick_step
     ticks = list(range(-max_tick, max_tick + 1, tick_step))

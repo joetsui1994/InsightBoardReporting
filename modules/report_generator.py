@@ -19,7 +19,8 @@ def create_section(section_config, data):
         }
 
     # plots
-    elif section_type in ['time-series-barplot', 'multi-province-time-series-barplot', 'province-map', 'age-sex-pyramid-plot', 'zone-sante-map']:
+    elif section_type in ['time-series-barplot', 'multi-province-time-series-barplot', 'province-map',
+                          'age-sex-pyramid-plot', 'multi-province-age-sex-pyramid-plot', 'zone-sante-map']:
         plot_html = create_plot(data, section_config)
         
         # return the plot as a dictionary with type 'plot'
