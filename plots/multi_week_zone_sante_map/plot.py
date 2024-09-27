@@ -63,7 +63,7 @@ def plot_multi_week_zone_sante_map_matplotlib(geo_data, parameters):
         gdf_dissolved.plot(ax=axs[i], color='none', edgecolor='#484848', linewidth=3, alpha=0.8)
 
         # add title for each panel (use the date as the title)
-        axs[i].set_title(f'Date: {date}', fontsize=16)
+        axs[i].set_title(f'Date: {date}', fontsize=20)
         axs[i].set_axis_off()
 
         # update count_min

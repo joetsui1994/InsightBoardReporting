@@ -2,7 +2,7 @@
 reporting:
   date: '2023-10-01'
   title: 'DRC Mpox Outbreak Report'
-  introductory_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br />Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?'
+  introductory_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
   data_range_inclusive:
     use_date: 'date_notification'
     start_date: null
@@ -17,6 +17,7 @@ reporting:
     include: null
     exclude: null
   sections:
+    ################################## Country-level, daily case number ##################################
     - type: 'time-series-barplot'
       parameters:
         data:
@@ -36,7 +37,7 @@ reporting:
         graphics:
           x_label: 'Date'
           y_label: 'Case Incidence'
-          title: 'Figure 1. Daily case incidence'
+          title: ''
           moving_average:
             show: true
             linewidth: 4
@@ -45,6 +46,15 @@ reporting:
           fig_height: 400
           export: false
           filename: 'daily_case_incidence.pdf'
+    - type: 'text'
+      parameters:
+        content: 'Fig. 1: Daily case incidence at country-level'
+        text_color: '#484848'
+        font_size: '15px'
+        font_weight: 100
+    - type: 'horizontal-line'
+    ######################################################################################################
+    ################################## Province-level, daily case number ##################################
     - type: 'multi-province-time-series-barplot'
       parameters:
         data:
@@ -64,7 +74,7 @@ reporting:
         graphics:
           x_label: 'Date'
           y_label: 'Case Incidence'
-          title: 'Figure 1. Daily case incidence'
+          title: ''
           moving_average:
             show: true
             linewidth: 4
@@ -75,10 +85,13 @@ reporting:
           filename: 'daily_case_incidence.pdf'
     - type: 'text'
       parameters:
-        content: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.'
+        content: 'Fig. 2: Daily case incidence at province-level'
         text_color: '#484848'
         font_size: '15px'
         font_weight: 100
+    - type: 'horizontal-line'
+    ######################################################################################################
+    ################################## Province-level, cumulative case number ##################################
     - type: 'province-map'
       parameters:
         data:
@@ -88,11 +101,43 @@ reporting:
             start_date: null
             end_date: null
         graphics:
-          title: 'Case distribution at provincial level'
+          title: ''
           fig_width: 15
           fig_height: 15
           export: false
           filename: 'province_case_distribution_map.pdf'
+    - type: 'text'
+      parameters:
+        content: 'Fig. 3: Cumulative case distribution at province-level'
+        text_color: '#484848'
+        font_size: '15px'
+        font_weight: 100
+    - type: 'horizontal-line'
+    ######################################################################################################
+    ################################## Zone-sante-level, cumulative case number ##################################
+    - type: 'zone-sante-map'
+      parameters:
+        data:
+          time_col: 'date_notification'
+          deaths_only: true
+          date_range_inclusive:
+            start_date: null
+            end_date: null
+        graphics:
+          title: ''
+          fig_width: 15
+          fig_height: 15
+          export: false
+          filename: 'zone-sante_case_distribution_map.pdf'
+    - type: 'text'
+      parameters:
+        content: 'Fig. 4: Cumulative case distribution at zone-sante-level'
+        text_color: '#484848'
+        font_size: '15px'
+        font_weight: 100
+    - type: 'horizontal-line'
+    ######################################################################################################
+    ################################## Country-level, age-sex distribution ################################
     - type: 'age-sex-pyramid-plot'
       parameters:
         data:
@@ -116,12 +161,20 @@ reporting:
         graphics:
           x_label: 'Population'
           y_label: 'Age Group'
-          title: 'something'
+          title: ''
           fig_width: 1200
           fig_height: 500
           export: false
           filename: 'age-sex-distribution.pdf'
+    - type: 'text'
+      parameters:
+        content: 'Fig. 5: Age-sex distribution at country-level'
+        text_color: '#484848'
+        font_size: '15px'
+        font_weight: 100
     - type: 'horizontal-line'
+    ######################################################################################################
+    ################################## Province-level, age-sex distribution ################################
     - type: 'multi-province-age-sex-pyramid-plot'
       parameters:
         data:
@@ -145,27 +198,20 @@ reporting:
         graphics:
           x_label: 'Population'
           y_label: 'Age Group'
-          title: 'something'
+          title: ''
           fig_width: 1200
           fig_height: 500
           export: false
           filename: 'age-sex-distribution.pdf'
-    - type: 'horizontal-line'
-    - type: 'zone-sante-map'
+    - type: 'text'
       parameters:
-        data:
-          time_col: 'date_notification'
-          deaths_only: true
-          date_range_inclusive:
-            start_date: null
-            end_date: null
-        graphics:
-          title: 'Case distribution at zone-sant-level'
-          fig_width: 15
-          fig_height: 15
-          export: false
-          filename: 'zone-sante_case_distribution_map.pdf'
+        content: 'Fig. 6: Age-sex distribution at province-level'
+        text_color: '#484848'
+        font_size: '15px'
+        font_weight: 100
     - type: 'horizontal-line'
+    ######################################################################################################
+    ################################## Province-level, weekly cumulative case distribution ################################
     - type: 'multi-week-province-map'
       parameters:
         data:
@@ -173,12 +219,20 @@ reporting:
           deaths_only: true
           weeks: ['2023-02-05', '2023-02-12', '2023-02-19', '2023-02-26']
         graphics:
-          title: 'Case distribution at zone-sant-level'
-          fig_width: 15
-          fig_height: 15
+          title: ''
+          fig_width: 20
+          fig_height: 20
           export: false
           filename: 'zone-sante_case_distribution_map.pdf'
+    - type: 'text'
+      parameters:
+        content: 'Fig. 7: Weekly cumulative case distribution at province-level (4 weeks)'
+        text_color: '#484848'
+        font_size: '15px'
+        font_weight: 100
     - type: 'horizontal-line'
+    ######################################################################################################
+    ################################## Zone-sante-level, weekly cumulative case distribution ################################
     - type: 'multi-week-zone-sante-map'
       parameters:
         data:
@@ -186,11 +240,17 @@ reporting:
           deaths_only: true
           weeks: ['2023-02-05', '2023-02-12', '2023-02-19', '2023-02-26']
         graphics:
-          title: 'Case distribution at zone-sant-level'
-          fig_width: 15
-          fig_height: 15
+          title: ''
+          fig_width: 20
+          fig_height: 20
           export: false
           filename: 'zone-sante_case_distribution_map.pdf'
+    - type: 'text'
+      parameters:
+        content: 'Fig. 8: Weekly cumulative case distribution at zone-sante-level (4 weeks)'
+        text_color: '#484848'
+        font_size: '15px'
+        font_weight: 100
 
 
 
