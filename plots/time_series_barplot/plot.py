@@ -30,7 +30,8 @@ def plot_time_series_barplot(plot_data, parameters):
         y='count',
         labels={ 'date': x_label, 'count': y_label },
         title=title,
-        color_discrete_sequence=['#1A5632']  # change bar colors
+        color_discrete_sequence=['#1A5632'],
+        opacity=0.9
     )
     fig.update_layout(
         paper_bgcolor='rgba(0,0,0,0)',
