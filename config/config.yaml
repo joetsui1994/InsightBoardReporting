@@ -97,7 +97,7 @@ reporting:
       parameters:
         data:
           time_col: 'date_notification'
-          deaths_only: false
+          deaths_only: true
           date_range_inclusive:
             start_date: '2023-01-05'
             end_date: '2023-02-01'

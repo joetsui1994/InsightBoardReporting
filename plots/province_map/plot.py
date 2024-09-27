@@ -7,7 +7,7 @@ import os
 
 # filepath to provincial shapefile
 PROVINCES_SHAPEFILE = './data/geoBoundaries-COD-ADM1-all/'
-DISSOLVED_PROVINCES_SHAPEFILE = './data/geoBoundaries-COD-ADM1-all_dissolved/'
+COUNTRY_BOUNDARY_SHAPEFILE = './data/country-boundary/'
 SHAPEFILE_COLUMN = 'shapeISO'
 OUTPUT_DIR = './output/'
 TMP_DIR = './tmp/'
@@ -43,7 +43,7 @@ def plot_province_map_matplotlib(geo_data, parameters):
     provinces_gdf.boundary.plot(ax=ax, color='white', linewidth=0.3, alpha=0.4)
 
     ###########
-    gdf_dissolved = gpd.read_file(DISSOLVED_PROVINCES_SHAPEFILE)
+    gdf_dissolved = gpd.read_file(COUNTRY_BOUNDARY_SHAPEFILE)
     gdf_dissolved.plot(ax=ax, color='none', edgecolor='#484848', linewidth=3, alpha=0.8)
 
     # add title
