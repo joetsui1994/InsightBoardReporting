@@ -1,7 +1,7 @@
 import pandas as pd
 from datetime import datetime, timedelta
 
-def preprocess_time_series_data(data, parameters):
+def preprocess_multi_province_time_series_data(data, parameters):
     """
     Preprocesses data for the time-series bar plot.
     """
@@ -58,12 +58,12 @@ def preprocess_time_series_data(data, parameters):
     if aggregate_by_epiweek:
         # extract epiweek from the date using the isocalendar() method
         plot_data['year'], plot_data['epiweek'], _ = plot_data[time_col].dt.isocalendar().values.T
-        plot_data = plot_data.groupby(['year', 'epiweek']).size().reset_index(name='count')
+        plot_data = plot_data.groupby(['year', 'epiweek', 'province']).size().reset_index(name='count')
         # add start of each epiweek as date
         plot_data['date'] = plot_data.apply(lambda x: datetime.strptime('%d-W%d-1' % (x['year'], x['epiweek']), "%G-W%V-%u") - timedelta(days=1), axis=1)
     else:
         plot_data['date'] = pd.to_datetime(plot_data[time_col]).dt.date
-        plot_data = plot_data.groupby('date').size().reset_index(name='count')
+        plot_data = plot_data.groupby(['date', 'province']).size().reset_index(name='count')
 
     # add 0 count for missing dates
     all_dates = pd.date_range(plot_data['date'].min(), plot_data['date'].max(), freq='D' if not aggregate_by_epiweek else 'W')

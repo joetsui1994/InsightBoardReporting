@@ -7,6 +7,8 @@ from plots.age_sex_pyramid_plot.preprocess import preprocess_pyramid_data
 from plots.age_sex_pyramid_plot.plot import plot_pyramid
 from plots.zone_sante_map.preprocess import preprocess_zone_sante_map_data
 from plots.zone_sante_map.plot import plot_zone_sante_map_matplotlib
+from plots.multi_province_time_series_barplot.preprocess import preprocess_multi_province_time_series_data
+from plots.multi_province_time_series_barplot.plot import plot_multi_province_time_series_barplot
 
 def create_plot(data, graph_config):
     plot_type = graph_config['type']
@@ -16,6 +18,10 @@ def create_plot(data, graph_config):
         'time-series-barplot': {
             'preprocess': preprocess_time_series_data,
             'plot': plot_time_series_barplot
+        },
+        'multi-province-time-series-barplot': {
+            'preprocess': preprocess_multi_province_time_series_data,
+            'plot': plot_multi_province_time_series_barplot
         },
         'province-map': {
             'preprocess': preprocess_province_map_data,
