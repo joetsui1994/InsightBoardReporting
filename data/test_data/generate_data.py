@@ -19,7 +19,7 @@ provinces = gpd.read_file(province_shp_dir).shapeISO.unique()
 zones_sante = gpd.read_file(zones_sante_shp_dir).Pcode.unique()
 aires_sante = gpd.read_file(aires_sante_shp_dir).PCODE.unique() # not sure if this is the right column
 case_classifications = ['confirmed', 'probable', 'suspected', 'negative', 'unknown']
-statuses = ['alive', 'dead']
+statuses = ['alive', 'died', 'unknown']
 sexes = ['male', 'female', 'other', 'unknown']
 
 # generate random values for categorical columns
