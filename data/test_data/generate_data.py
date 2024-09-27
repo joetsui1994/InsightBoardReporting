@@ -72,8 +72,8 @@ for _ in range(num_cases):
 data = pd.DataFrame({
     'EPI_ID': EPI_IDs,
     'province': province_values,
-    'zones_sante': zones_sante_values,
-    'aires_sante': aires_sante_values,
+    'zone_sante': zones_sante_values,
+    'aire_sante': aires_sante_values,
     'date_notification': date_notification_values,
     'case_classification': case_classification_values,
     'status': status_values,

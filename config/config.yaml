@@ -91,5 +91,20 @@ reporting:
           title: 'something'
           fig_width: 1200
           fig_height: 500
-          export: true
+          export: false
           filename: 'age-sex-distribution.pdf'
+    - type: 'zone-sante-map'
+      parameters:
+        data:
+          time_col: 'date_notification'
+          deaths_only: false
+          date_range_inclusive:
+            start_date: '2023-01-05'
+            end_date: '2023-02-01'
+        graphics:
+          title: 'Case distribution at zone-sant-level'
+          fig_width: 15
+          fig_height: 15
+          export: false
+          filename: 'zone-sante_case_distribution_map.pdf'
+
