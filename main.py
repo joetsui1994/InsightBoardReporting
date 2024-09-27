@@ -7,7 +7,7 @@ from modules.report_generator import generate_report_html
 data = pd.read_csv('data/test_data/test_data.csv')
 
 # load configuration
-config = load_config('config/config.yaml')
+config = load_config('config/config_v2.yaml')
 
 # preprocess data (non-plot-specific)
 processed_data = preprocess_data(data, config)

@@ -68,8 +68,9 @@ def preprocess_time_series_data(data, parameters):
     # add 0 count for missing dates
     all_dates = pd.date_range(plot_data['date'].min(), plot_data['date'].max(), freq='D' if not aggregate_by_epiweek else 'W')
     all_dates_df = pd.DataFrame(all_dates.date, columns=['date'])
-    all_dates_df['date'] = pd.to_datetime(all_dates_df['date'])
+    all_dates_df['date'] = pd.to_datetime(all_dates_df['date']).dt.date
     # merge
+    plot_data['date'] = pd.to_datetime(plot_data['date']).dt.date
     plot_data = all_dates_df.merge(plot_data, how='left', on='date')
     plot_data['count'].fillna(0, inplace=True)
     # sort

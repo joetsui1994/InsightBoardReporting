@@ -1,0 +1,223 @@
+---
+reporting:
+  date: '2023-10-01'
+  title: 'DRC Mpox Outbreak Report'
+  introductory_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br />Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?'
+  data_range_inclusive:
+    use_date: 'date_notification'
+    start_date: '2023-01-01'
+    end_date: '2023-09-30'
+  provinces:
+    include: null
+    exclude: null
+  zones_sante:
+    include: null
+    exclude: null
+  aires_sante:
+    include: null
+    exclude: null
+  sections:
+    ################## Country-level, daily case number ##################
+    - type: 'time-series-barplot'
+      parameters:
+        data:
+          time_col: 'date_notification'
+          deaths_only: false
+          aggregate_by_epiweek: false
+          moving_average_window: 7 # in units of aggregation (e.g. days, weeks)
+          provinces:
+            include: null
+            exclude: null
+          zones_sante:
+            include: null
+            exclude: null
+          aires_sante:
+            include: null
+            exclude: null
+        graphics:
+          x_label: 'Date'
+          y_label: 'Case Incidence'
+          title: 'Figure 1. daily case incidence, at country-level'
+          moving_average:
+            show: true
+            linewidth: 4
+            colour: '#B4A269'
+          fig_width: 1000
+          fig_height: 300
+          export: false
+          filename: 'daily_case_incidence.country.pdf'
+    - type: 'text'
+      parameters:
+        content: 'Some description of the plot'
+        text_color: '#484848'
+        font_size: '15px'
+        font_weight: 100
+    ####################################
+    ################## Country-level, weekly case number ##################
+    - type: 'time-series-barplot'
+      parameters:
+        data:
+          time_col: 'date_notification'
+          deaths_only: false
+          aggregate_by_epiweek: true
+          moving_average_window: 3 # in units of aggregation (e.g. days, weeks)
+          provinces:
+            include: null
+            exclude: null
+          zones_sante:
+            include: null
+            exclude: null
+          aires_sante:
+            include: null
+            exclude: null
+        graphics:
+          x_label: 'Date'
+          y_label: 'Case Incidence'
+          title: 'Figure 2. weekly case incidence at country-level'
+          moving_average:
+            show: true
+            linewidth: 4
+            colour: '#B4A269'
+          fig_width: 1000
+          fig_height: 300
+          export: false
+          filename: 'weekly_case_incidence.country.pdf'
+    - type: 'text'
+      parameters:
+        content: 'Some description of the plot'
+        text_color: '#484848'
+        font_size: '15px'
+        font_weight: 100
+    ####################################
+    - type: 'horizontal-line'
+    ################## Country-level, daily deaths ##################
+    - type: 'time-series-barplot'
+      parameters:
+        data:
+          time_col: 'date_notification'
+          deaths_only: true
+          aggregate_by_epiweek: false
+          moving_average_window: 7 # in units of aggregation (e.g. days, weeks)
+          provinces:
+            include: null
+            exclude: null
+          zones_sante:
+            include: null
+            exclude: null
+          aires_sante:
+            include: null
+            exclude: null
+        graphics:
+          x_label: 'Date'
+          y_label: 'Case Incidence'
+          title: 'Figure 3. daily death count at country-level'
+          moving_average:
+            show: true
+            linewidth: 4
+            colour: '#B4A269'
+          fig_width: 1000
+          fig_height: 300
+          export: false
+          filename: 'daily_death_count.country.pdf'
+    - type: 'text'
+      parameters:
+        content: 'Some description of the plot'
+        text_color: '#484848'
+        font_size: '15px'
+        font_weight: 100
+    ####################################
+    ################## Country-level, weekly deaths ##################
+    - type: 'time-series-barplot'
+      parameters:
+        data:
+          time_col: 'date_notification'
+          deaths_only: true
+          aggregate_by_epiweek: true
+          moving_average_window: 3 # in units of aggregation (e.g. days, weeks)
+          provinces:
+            include: null
+            exclude: null
+          zones_sante:
+            include: null
+            exclude: null
+          aires_sante:
+            include: null
+            exclude: null
+        graphics:
+          x_label: 'Date'
+          y_label: 'Case Incidence'
+          title: 'Figure 4. weekly death count at country-level'
+          moving_average:
+            show: true
+            linewidth: 4
+            colour: '#B4A269'
+          fig_width: 1000
+          fig_height: 300
+          export: false
+          filename: 'weekly_death_count.country.pdf'
+    - type: 'text'
+      parameters:
+        content: 'Some description of the plot'
+        text_color: '#484848'
+        font_size: '15px'
+        font_weight: 100
+    ####################################
+    - type: 'horizontal-line'
+    - type: 'province-map'
+      parameters:
+        data:
+          time_col: 'date_notification'
+          deaths_only: false
+          date_range_inclusive:
+            start_date: '2023-01-05'
+            end_date: '2023-02-01'
+        graphics:
+          title: 'Case distribution at provincial level'
+          fig_width: 15
+          fig_height: 15
+          export: false
+          filename: 'province_case_distribution_map.pdf'
+    - type: 'age-sex-pyramid-plot'
+      parameters:
+        data:
+          time_col: 'date_notification'
+          deaths_only: false
+          date_range_inclusive:
+            start_date: '2023-01-05'
+            end_date: '2023-02-01'
+          age_col: 'age'
+          age_groups: [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60]
+          sex_col: 'sex'
+          provinces:
+            include: null
+            exclude: null
+          zones_sante:
+            include: null
+            exclude: null
+          aires_sante:
+            include: null
+            exclude: null
+        graphics:
+          x_label: 'Population'
+          y_label: 'Age Group'
+          title: 'something'
+          fig_width: 1200
+          fig_height: 500
+          export: false
+          filename: 'age-sex-distribution.pdf'
+    - type: 'horizontal-line'
+    - type: 'zone-sante-map'
+      parameters:
+        data:
+          time_col: 'date_notification'
+          deaths_only: true
+          date_range_inclusive:
+            start_date: '2023-01-05'
+            end_date: '2023-02-01'
+        graphics:
+          title: 'Case distribution at zone-sant-level'
+          fig_width: 15
+          fig_height: 15
+          export: false
+          filename: 'zone-sante_case_distribution_map.pdf'
+
