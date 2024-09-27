@@ -19,7 +19,6 @@ def plot_province_map_matplotlib(geo_data, parameters):
     title = parameters.get('title', '')
     fig_width = parameters.get('fig_width', 10)
     fig_height = parameters.get('fig_height', 10)
-    png_dpi = parameters.get('png_dpi', 300)
     export = parameters.get('export', True)
     filename = parameters.get('filename', 'province_map.pdf')
 
@@ -67,7 +66,7 @@ def plot_province_map_matplotlib(geo_data, parameters):
     while os.path.exists(tmp_png_filename):
         tmp_png_filename = os.path.join(TMP_DIR, '%d.png' % np.random.randint(1e9))
     # save plot as PNG in TMP_DIR for display in the html report
-    plt.savefig(tmp_png_filename, dpi=png_dpi)
+    plt.savefig(tmp_png_filename, dpi=300)
 
     # save plot as PDF if export is True
     if export:

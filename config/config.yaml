@@ -69,3 +69,7 @@ reporting:
           x_label: 'Population'
           y_label: 'Age Group'
           title: 'something'
+          fig_width: 1000
+          fig_height: 300
+          export: true
+          filename: 'age-sex-distribution.pdf'

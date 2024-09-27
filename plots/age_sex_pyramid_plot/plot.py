@@ -1,4 +1,8 @@
 import plotly.graph_objects as go
+from pathlib import Path
+import os
+
+OUTPUT_DIR = './output/'
 
 def get_nice_round_number(value):
     scale = 10 ** (len(str(int(value))) - 1)
@@ -19,6 +23,10 @@ def plot_pyramid(plot_data, parameters):
     y_label = parameters.get('y_label', 'Age Group')
     male_color = parameters.get('male_color', '#1A5632')
     female_color = parameters.get('female_color', '#9F2241')
+    fig_width = parameters.get('fig_width', 300)
+    fig_height = parameters.get('fig_height', 500)
+    export = parameters.get('export', True)
+    filename = parameters.get('filename', 'time_series_barplot.pdf')
 
     # map age groups to nice labels
     plot_data['age_group_labels'] = plot_data['age_group'].apply(get_nice_age_label)
@@ -75,7 +83,16 @@ def plot_pyramid(plot_data, parameters):
         paper_bgcolor='rgba(0,0,0,0)'
     )
 
-    # show figure
-    fig.show()
+    # export plot if specified
+    if export:
+        pdf_filename = os.path.join(OUTPUT_DIR, filename)
+        counter = 0
+        while os.path.exists(pdf_filename):
+            counter += 1
+            pdf_filename = os.path.join(OUTPUT_DIR, '%s.%d.pdf' % (Path(filename).stem, counter))
+
+        # create layout object
+        fig.write_image(pdf_filename, format='pdf', width=fig_width, height=fig_height)
+
 
     return fig
