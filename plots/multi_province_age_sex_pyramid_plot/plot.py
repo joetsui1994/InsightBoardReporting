@@ -52,10 +52,10 @@ def plot_multi_province_pyramid(plot_data, parameters):
 
         # pivot the data so that we can plot male and female counts in the same graph
         province_pivot = province_data.pivot_table(
-            index='age_group',  # Keep age groups as index
-            columns='sex',      # Pivot based on sex ('male' or 'female')
-            values='count',     # The values are the counts
-            fill_value=0        # Fill missing values with 0
+            index='age_group',
+            columns='sex',
+            values='count',
+            fill_value=0
         ).reset_index()
 
         # map age groups to nice labels
@@ -63,24 +63,24 @@ def plot_multi_province_pyramid(plot_data, parameters):
 
         # add trace for males
         male_trace = go.Bar(
-            y=province_pivot['age_group_labels'].astype(str),  # Age groups as strings for proper labeling
-            x=province_pivot.get('male', 0),  # Get 'male' values or 0 if missing
+            y=province_pivot['age_group_labels'].astype(str),  # age groups as strings for proper labeling
+            x=province_pivot.get('male', 0),  # get 'male' values or 0 if missing
             name='Male',
             orientation='h',
             marker=dict(color=male_color),
             opacity=0.9,
-            showlegend=False  # Disable legend for individual plots
+            showlegend=False
         )
 
         # add trace for females
         female_trace = go.Bar(
             y=province_pivot['age_group_labels'].astype(str),
-            x=province_pivot.get('female', 0),  # Get 'female' values or 0 if missing
+            x=province_pivot.get('female', 0),  # get 'female' values or 0 if missing
             name='Female',
             orientation='h',
             marker=dict(color=female_color),
             opacity=0.9,
-            showlegend=False  # Disable legend for individual plots
+            showlegend=False
         )
 
         # add traces to the appropriate subplot
@@ -116,7 +116,7 @@ def plot_multi_province_pyramid(plot_data, parameters):
 
     # update layout for all subplots
     fig.update_layout(
-        height=fig_height * num_rows * 0.7,  # Adjust height according to number of rows
+        height=fig_height * num_rows * 0.7,
         title_text=title,
         plot_bgcolor='rgba(0,0,0,0)',
         paper_bgcolor='rgba(0,0,0,0)',
