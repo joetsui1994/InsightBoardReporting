@@ -178,5 +178,19 @@ reporting:
           fig_height: 15
           export: false
           filename: 'zone-sante_case_distribution_map.pdf'
+    - type: 'horizontal-line'
+    - type: 'multi-week-zone-sante-map'
+      parameters:
+        data:
+          time_col: 'date_notification'
+          deaths_only: true
+          weeks: ['2023-02-05', '2023-02-12', '2023-02-19', '2023-02-26']
+        graphics:
+          title: 'Case distribution at zone-sant-level'
+          fig_width: 15
+          fig_height: 15
+          export: false
+          filename: 'zone-sante_case_distribution_map.pdf'
+
 
 

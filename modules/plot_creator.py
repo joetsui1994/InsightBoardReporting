@@ -13,6 +13,8 @@ from plots.multi_province_age_sex_pyramid_plot.preprocess import preprocess_mult
 from plots.multi_province_age_sex_pyramid_plot.plot import plot_multi_province_pyramid
 from plots.multi_week_province_map.preprocess import preprocess_multi_week_province_map_data
 from plots.multi_week_province_map.plot import plot_multi_week_province_map_matplotlib
+from plots.multi_week_zone_sante_map.preprocess import preprocess_multi_week_zone_sante_map_data
+from plots.multi_week_zone_sante_map.plot import plot_multi_week_zone_sante_map_matplotlib
 
 def create_plot(data, graph_config):
     plot_type = graph_config['type']
@@ -46,6 +48,10 @@ def create_plot(data, graph_config):
         'zone-sante-map': {
             'preprocess': preprocess_zone_sante_map_data,
             'plot': plot_zone_sante_map_matplotlib
+        },
+        'multi-week-zone-sante-map': {
+            'preprocess': preprocess_multi_week_zone_sante_map_data,
+            'plot': plot_multi_week_zone_sante_map_matplotlib
         }
     }
 
