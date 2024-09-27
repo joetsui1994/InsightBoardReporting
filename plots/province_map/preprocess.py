@@ -20,8 +20,8 @@ def preprocess_province_map_data(data, parameters):
 
     # filter by date range
     if start_date and end_date:
-        start_date = pd.to_datetime(start_date)
-        end_date = pd.to_datetime(end_date)
+        start_date = pd.to_datetime(start_date) if start_date else pd.to_datetime('1900-01-01')
+        end_date = pd.to_datetime(end_date) if end_date else pd.to_datetime('2100-01-01')
         mask = (data[time_col] >= start_date) & (data[time_col] <= end_date)
         data = data.loc[mask]
 

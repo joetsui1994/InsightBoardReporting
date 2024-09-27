@@ -9,15 +9,15 @@ def preprocess_data(data, config):
 
     # filter by date range
     use_date = data_range.get('use_date')
-    start_date = data_range.get('start_date', '1900-01-01')
-    end_date = data_range.get('end_date', '2100-01-01')
+    start_date = data_range.get('start_date')
+    end_date = data_range.get('end_date')
 
     # check that use_date column is in datetime format, otherwise use all data
     if use_date in data.columns:
         data[use_date] = pd.to_datetime(data[use_date])
         # filter by date range
-        start_date = pd.to_datetime(start_date)
-        end_date = pd.to_datetime(end_date)
+        start_date = pd.to_datetime(start_date) if start_date else pd.to_datetime('1900-01-01')
+        end_date = pd.to_datetime(end_date) if end_date else pd.to_datetime('2100-01-01')
         mask = (data[use_date] >= start_date) & (data[use_date] <= end_date)
         data = data.loc[mask]
 
