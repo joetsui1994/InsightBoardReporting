@@ -55,3 +55,17 @@ reporting:
           png_dpi: 300
           export: false
           filename: 'province_case_distribution_map.pdf'
+    - type: 'age-sex-pyramid-plot'
+      parameters:
+        data:
+          time_col: 'date_notification'
+          date_range_inclusive:
+            start_date: '2023-01-05'
+            end_date: '2023-02-01'
+          age_col: 'age'
+          age_groups: [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60]
+          sex_col: 'sex'
+        graphics:
+          x_label: 'Population'
+          y_label: 'Age Group'
+          title: 'something'

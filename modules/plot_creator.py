@@ -3,6 +3,8 @@ from plots.time_series_barplot.preprocess import preprocess_time_series_data
 from plots.time_series_barplot.plot import plot_time_series_barplot
 from plots.province_map.preprocess import preprocess_province_map_data
 from plots.province_map.plot import plot_province_map_matplotlib
+from plots.age_sex_pyramid_plot.preprocess import preprocess_pyramid_data
+from plots.age_sex_pyramid_plot.plot import plot_pyramid
 
 def create_plot(data, graph_config):
     plot_type = graph_config['type']
@@ -17,6 +19,10 @@ def create_plot(data, graph_config):
             'preprocess': preprocess_province_map_data,
             'plot': plot_province_map_matplotlib
         },
+        'age-sex-pyramid-plot': {
+            'preprocess': preprocess_pyramid_data,
+            'plot': plot_pyramid
+        }
     }
 
     if plot_type not in plot_functions:
