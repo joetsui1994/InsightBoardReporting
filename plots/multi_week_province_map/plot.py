@@ -91,7 +91,7 @@ def plot_multi_week_province_map_matplotlib(geo_data, parameters):
         tmp_png_filename = os.path.join(TMP_DIR, '%d.png' % np.random.randint(1e9))
     
     # save plot as PNG in TMP_DIR for display in the HTML report
-    plt.savefig(tmp_png_filename, dpi=300)
+    plt.savefig(tmp_png_filename, dpi=150)
 
     # save plot as PDF if export is True
     if export:
