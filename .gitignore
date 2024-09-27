@@ -31,7 +31,7 @@ Thumbs.db
 # Ignore report outputs
 output/
 # Ignore tmp files
-tmp/
+# tmp/
 # VS Code settings
 .vscode/
 
