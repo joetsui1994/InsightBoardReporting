@@ -27,7 +27,6 @@ def plot_zone_sante_map_matplotlib(geo_data, parameters):
 
     # load shapefile
     zone_sante_gdf = gpd.read_file(ZONE_SANTE_SHAPEFILE)
-    print(zone_sante_gdf, geo_data)
     zone_sante_gdf = zone_sante_gdf[[SHAPEFILE_COLUMN, 'geometry']]
     if zone_sante_gdf.crs != 'EPSG:4326':
         zone_sante_gdf = zone_sante_gdf.to_crs('EPSG:4326')

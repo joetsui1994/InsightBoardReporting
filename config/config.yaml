@@ -93,6 +93,7 @@ reporting:
           fig_height: 500
           export: false
           filename: 'age-sex-distribution.pdf'
+    - type: 'horizontal-line'
     - type: 'zone-sante-map'
       parameters:
         data:

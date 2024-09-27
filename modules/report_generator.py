@@ -28,6 +28,13 @@ def create_section(section_config, data):
             'html': plot_html
         }
 
+    # horizontal line (divider)
+    elif section_type == 'horizontal-line':
+        return {
+            'type': 'horizontal-line',
+            'html': '<hr style="border: 0; border-top: 1px solid #ccc; margin: 30px 0;">'
+        }
+
     else:
         raise ValueError(f"Unsupported section type: {section_type}")
 
