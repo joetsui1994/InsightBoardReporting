@@ -41,4 +41,7 @@ output/
 
 # Python virtual environments
 env/
-venv/
+**/venv/
+**/__pycache__
+**/tmp
+output/

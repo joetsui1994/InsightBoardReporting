@@ -1,32 +1,15 @@
 # Mpox Analysis and Visualization for DRC
 
-## Project Structure
-
+Install this package using your favourite Python package manager. We recommend `uv`. To set up a virtual environment and activate it using `uv`, run:
 ```bash
-.
-├── data/
-│   ├── geoBoundaries-COD-ADM1-all/
-│   ├── geoBoundaries-COD-ADM1-all_dissolved/
-│   ├── rdc_aires-de-sante/
-│   ├── rdc_zones-de-sante/
-│   └── test_data/
-│       ├── generate_data.py
-│       └── test_data.csv
-├── templates/
-│   └── report_template.html
-├── config/
-│   └── config.yaml
-├── modules/
-│   ├── config_loader.py
-│   ├── data_processor.py
-│   ├── plot_creator.py
-│   └── report_generator.py
-├── plots/
-│   ├── province_map/
-│   │   ├── plot.py
-│   │   └── preprocess.py
-│   └── time_series_barplot/
-│       ├── plot.py
-│       └── preprocess.py
-├── requirements.txt
-└── .gitignore
+uv venv
+uv sync
+. .venv/bin/activate
+```
+
+Then, you can run the sample script with the supplied sample data using:
+```bash
+python main.py
+```
+
+The report file will be placed in `./output/report.html`.

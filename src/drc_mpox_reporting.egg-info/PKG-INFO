@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: drc-mpox-reporting
+Version: 0.1.0
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: geopandas>=1.0.1
+Requires-Dist: jinja2>=3.1.4
+Requires-Dist: matplotlib>=3.9.2
+Requires-Dist: numpy>=2.1.1
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: plotly>=5.24.1
+Requires-Dist: pyyaml>=6.0.2
+Requires-Dist: kaleido==0.2.1
+
+# Mpox Analysis and Visualization for DRC
+
+## Project Structure
+
+```bash
+.
+├── data/
+│   ├── geoBoundaries-COD-ADM1-all/
+│   ├── geoBoundaries-COD-ADM1-all_dissolved/
+│   ├── rdc_aires-de-sante/
+│   ├── rdc_zones-de-sante/
+│   └── test_data/
+│       ├── generate_data.py
+│       └── test_data.csv
+├── templates/
+│   └── report_template.html
+├── config/
+│   └── config.yaml
+├── modules/
+│   ├── config_loader.py
+│   ├── data_processor.py
+│   ├── plot_creator.py
+│   └── report_generator.py
+├── plots/
+│   ├── province_map/
+│   │   ├── plot.py
+│   │   └── preprocess.py
+│   └── time_series_barplot/
+│       ├── plot.py
+│       └── preprocess.py
+├── requirements.txt
+└── .gitignore
