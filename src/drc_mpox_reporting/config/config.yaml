@@ -1,8 +1,8 @@
 ---
 reporting:
-  date: '2023-10-01'
-  title: 'DRC Mpox Outbreak Report'
-  introductory_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+  date: 'YYYY-MM-DD'
+  title: '2024 DiseaseX Outbreak: CountryX [EXAMPLE]'
+  introductory_text: 'This report provides an overview of the epidemiological situation of DiseaseX as reported by ReportingAgency as of DateEnd. The report includes information on the number of cases, deaths, and demographic characteristics of the affected population at different administrative levels. The report focuses on confirmed, probable, and suspected cases as defined by CountryX working case definitions published at CaseDefinitionLink. Note that the definitions are subject to change as the outbreak evolves.'
   data_range_inclusive:
     use_date: 'dateofnotification'
     start_date: null
@@ -16,15 +16,22 @@ reporting:
   aires_sante:
     include: null
     exclude: null
+  html_template: 'report_template_v2.html'
   sections:
     ################################## Country-level, daily case number ##################################
+    - type: 'text'
+      parameters:
+        content: 'Note that this is only an example report template. Figures shown below are generated using simulated data.'
+        text_color: '#484848'
+        font_size: '15px'
+        font_weight: 700
     - type: 'time-series-barplot'
       parameters:
         data:
           time_col: 'dateofnotification'
           deaths_only: false
           aggregate_by_epiweek: true
-          moving_average_window: 3 # in units of aggregation (e.g. days, weeks)
+          moving_average_window: 3 # in units of aggregation (i.e. days or weeks)
           provinces:
             include: null
             exclude: null

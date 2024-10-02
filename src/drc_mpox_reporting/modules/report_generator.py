@@ -55,6 +55,7 @@ def generate_report_html(data, config):
     introductory_text = reporting.get("introductory_text", "")
     date = reporting.get("date", "")
     sections = reporting.get("sections", [])
+    html_template = reporting.get("html_template", "")
 
     # HTML component for each section
     sections_html = []
@@ -66,7 +67,8 @@ def generate_report_html(data, config):
     templates_folder = REPORT_ROOT_FOLDER / "templates"
     templates_folder.mkdir(exist_ok=True, parents=True)
     env = Environment(loader=FileSystemLoader(str(templates_folder)))
-    template = env.get_template("report_template.html")
+    # load template file
+    template = env.get_template(html_template)
 
     # render HTML report
     report_html = template.render(
