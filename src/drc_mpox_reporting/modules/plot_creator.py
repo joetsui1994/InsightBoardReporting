@@ -81,6 +81,7 @@ def create_plot(data, graph_config):
         },
     }
 
+    # check if the plot type is supported
     if plot_type not in plot_functions:
         raise ValueError(f"Plot type '{plot_type}' is not supported.")
 
@@ -92,19 +93,22 @@ def create_plot(data, graph_config):
     plot = plot_functions[plot_type]["plot"]
     plot_output = plot(plot_data, parameters.get("graphics", {}))
 
-    # handle Matplotlib plots (image file paths)
-    if isinstance(
-        plot_output, str
-    ):  # if a file path is returned, generate absolute path for <img> tag
-        absolute_path = os.path.abspath(plot_output)  # convert to absolute path
-        # Read image file and convert to base64
-        with open(absolute_path, "rb") as image_file:
-            img_data = image_file.read()
-            encoded_image = base64.b64encode(img_data).decode()
-        plot_html = (
-            f'<img src="data:image/png;base64,{encoded_image}" alt="Generated Map" />'
-        )
-    else:  # handle Plotly plots
-        plot_html = plot_output.to_html(full_html=False, include_plotlyjs=False)
+    # now convertion to HTML handled in plot, so just return the output
+    return plot_output
 
-    return plot_html
+    # # handle Matplotlib plots (image file paths)
+    # if isinstance(
+    #     plot_output, str
+    # ):  # if a file path is returned, generate absolute path for <img> tag
+    #     absolute_path = os.path.abspath(plot_output)  # convert to absolute path
+    #     # Read image file and convert to base64
+    #     with open(absolute_path, "rb") as image_file:
+    #         img_data = image_file.read()
+    #         encoded_image = base64.b64encode(img_data).decode()
+    #     plot_html = (
+    #         f'<img src="data:image/png;base64,{encoded_image}" alt="Generated Map" />'
+    #     )
+    # else:  # handle Plotly plots
+    #     plot_html = plot_output.to_html(full_html=False, include_plotlyjs=False)
+
+    # return plot_html

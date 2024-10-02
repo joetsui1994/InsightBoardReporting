@@ -79,6 +79,7 @@ reporting:
             include: null
             exclude: null
         graphics:
+          tab_display: true
           x_label: 'Date'
           y_label: 'Case Incidence'
           title: ''

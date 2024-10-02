@@ -4,6 +4,8 @@ from matplotlib.colors import LinearSegmentedColormap
 import numpy as np
 from pathlib import Path
 from math import ceil
+import base64
+import io
 import os
 
 # filepath to zone-sante shapefile
@@ -12,7 +14,6 @@ ZONE_SANTE_SHAPEFILE = str(REPORT_BASE_FOLDER / "data" / "rdc_zones-de-sante")
 COUNTRY_BOUNDARY_SHAPEFILE = str(REPORT_BASE_FOLDER / "data" / "country-boundary")
 SHAPEFILE_COLUMN = "Pcode"
 OUTPUT_DIR = str(REPORT_BASE_FOLDER / "output")
-TMP_DIR = str(REPORT_BASE_FOLDER / "tmp")
 
 
 def plot_multi_week_zone_sante_map_matplotlib(geo_data, parameters):
@@ -108,13 +109,16 @@ def plot_multi_week_zone_sante_map_matplotlib(geo_data, parameters):
     # set the overall title
     plt.suptitle(title, fontsize=20, y=1.05)
 
-    # generate a unique filename for PNG plot in TMP_DIR
-    tmp_png_filename = os.path.join(TMP_DIR, "%d.png" % np.random.randint(1e9))
-    while os.path.exists(tmp_png_filename):
-        tmp_png_filename = os.path.join(TMP_DIR, "%d.png" % np.random.randint(1e9))
+    # save figure to a BytesIO object
+    buf = io.BytesIO()
+    fig.savefig(buf, format='png')
+    buf.seek(0)  # rewind the buffer to the beginning
 
-    # save plot as PNG in TMP_DIR for display in the HTML report
-    plt.savefig(tmp_png_filename, dpi=150)
+    # encode the BytesIO object to base64 string
+    img_base64 = base64.b64encode(buf.read()).decode('utf-8')
+
+    # embed the base64 string in an HTML img tag
+    fig_html = f'<img src="data:image/png;base64,{img_base64}" alt="multi-week-zonte-sante-map" />'
 
     # save plot as PDF if export is True
     if export:
@@ -130,4 +134,4 @@ def plot_multi_week_zone_sante_map_matplotlib(geo_data, parameters):
     # close plot to free memory
     plt.close(fig)
 
-    return tmp_png_filename
+    return fig_html

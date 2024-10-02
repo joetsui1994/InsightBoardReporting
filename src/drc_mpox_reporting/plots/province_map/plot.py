@@ -4,6 +4,8 @@ from matplotlib.colors import LinearSegmentedColormap
 import numpy as np
 from pathlib import Path
 import os
+import base64
+import io
 
 # filepath to provincial shapefile
 REPORT_BASE_FOLDER = Path(__file__).parent.parent.parent
@@ -11,7 +13,6 @@ PROVINCES_SHAPEFILE = str(REPORT_BASE_FOLDER / "data" / "geoBoundaries-COD-ADM1-
 COUNTRY_BOUNDARY_SHAPEFILE = str(REPORT_BASE_FOLDER / "data" / "country-boundary")
 SHAPEFILE_COLUMN = "shapeISO"
 OUTPUT_DIR = str(REPORT_BASE_FOLDER / "output")
-TMP_DIR = str(REPORT_BASE_FOLDER / "tmp")
 
 
 def plot_province_map_matplotlib(geo_data, parameters):
@@ -73,13 +74,16 @@ def plot_province_map_matplotlib(geo_data, parameters):
     # tight layout
     plt.tight_layout()
 
-    # generate a unique filename for PNG plot in TMP_DIR
-    Path(TMP_DIR).mkdir(parents=True, exist_ok=True)
-    tmp_png_filename = os.path.join(TMP_DIR, "%d.png" % np.random.randint(1e9))
-    while os.path.exists(tmp_png_filename):
-        tmp_png_filename = os.path.join(TMP_DIR, "%d.png" % np.random.randint(1e9))
-    # save plot as PNG in TMP_DIR for display in the html report
-    plt.savefig(tmp_png_filename, dpi=300)
+    # save figure to a BytesIO object
+    buf = io.BytesIO()
+    fig.savefig(buf, format='png')
+    buf.seek(0)  # rewind the buffer to the beginning
+
+    # encode the BytesIO object to base64 string
+    img_base64 = base64.b64encode(buf.read()).decode('utf-8')
+
+    # embed the base64 string in an HTML img tag
+    fig_html = f'<img src="data:image/png;base64,{img_base64}" alt="province-map" />'
 
     # save plot as PDF if export is True
     if export:
@@ -95,4 +99,4 @@ def plot_province_map_matplotlib(geo_data, parameters):
     # close plot to free memory
     plt.close(fig)
 
-    return tmp_png_filename
+    return fig_html

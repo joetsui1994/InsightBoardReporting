@@ -142,4 +142,7 @@ def plot_multi_province_pyramid(plot_data, parameters):
             pdf_filename, format="pdf", width=fig_width, height=fig_height * num_rows
         )
 
-    return fig
+    # convert plot to HTML
+    fig_html = fig.to_html(full_html=False, include_plotlyjs=False)
+
+    return fig_html

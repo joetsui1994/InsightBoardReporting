@@ -66,4 +66,7 @@ def plot_time_series_barplot(plot_data, parameters):
         # create layout object
         fig.write_image(pdf_filename, format="pdf", width=fig_width, height=fig_height)
 
-    return fig
+    # convert plot to HTML
+    fig_html = fig.to_html(full_html=False, include_plotlyjs=False)
+
+    return fig_html

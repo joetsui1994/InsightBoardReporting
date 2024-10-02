@@ -136,4 +136,7 @@ def plot_multi_province_time_series_barplot(plot_data, parameters):
             height=fig_height * num_rows * 0.7,
         )
 
-    return fig
+    # convert plot to HTML
+    fig_html = fig.to_html(full_html=False, include_plotlyjs=False)
+
+    return fig_html
