@@ -79,7 +79,6 @@ reporting:
             include: null
             exclude: null
         graphics:
-          tab_display: true
           x_label: 'Date'
           y_label: 'Case Incidence'
           title: ''
@@ -90,7 +89,7 @@ reporting:
           fig_width: 1000
           fig_height: 300
           export: false
-          filename: 'daily_case_incidence.pdf'
+          filestem: 'multi_province_daily_case_incidence'
     - type: 'text'
       parameters:
         content: 'Fig. 2: Daily case incidence at province-level'

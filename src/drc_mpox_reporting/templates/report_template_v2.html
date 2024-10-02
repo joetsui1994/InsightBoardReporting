@@ -76,6 +76,7 @@
             padding: 16px;
             border: 1px solid #ccc;
             border-top: none;
+            padding: 10px 50px;
         }
         .tabcontent.active {
             display: block;
@@ -87,28 +88,6 @@
     <h1 contenteditable="true">{{ report_title }}</h1>
     <p style="font-style: italic; font-size: 14px; color: #777;">Generated on {{ date }}</p>
     <p class="markdown" contenteditable="true">{{ introductory_text }}</p>
-    <!-- tab Links -->
-    <div id="province-case-count-tabs" class="tab">
-        <button class="tablinks" onclick="openTab(event, 'Plot1-with-a-very-long-name', 'province-case-count')" id="defaultOpen">Plot 1 with a very long name</button>
-        <button class="tablinks" onclick="openTab(event, 'Plot2', 'province-case-count')">Plot 2</button>
-        <button class="tablinks" onclick="openTab(event, 'Plot3', 'province-case-count')">Plot 3</button>
-    </div>
-    <!-- tab content -->
-    <div id="province-case-count-Plot1-with-a-very-long-name" class="tabcontent">
-        <h3>Plot 1 with a very long name</h3>
-        <p>This is Plot 1 content.</p>
-        <!-- Insert your plot here, e.g., <img src="plot1.png"> or use a canvas for interactive plots -->
-    </div>
-    <div id="province-case-count-Plot2" class="tabcontent">
-        <h3>Plot 2</h3>
-        <p>This is Plot 2 content.</p>
-        <!-- Insert your plot here -->
-    </div>
-    <div id="province-case-count-Plot3" class="tabcontent">
-        <h3>Plot 3</h3>
-        <p>This is Plot 3 content.</p>
-        <!-- Insert your plot here -->
-    </div>
     <!-- Render all sections, both text and plots -->
     {% for section in sections_html %}
         {{ section|safe }}
@@ -119,26 +98,61 @@
 
     <!-- javascript to handle tab switching -->
     <script>
-        function openTab(evt, plotName, sectionName) {
-            // get all elements with ids that start with the section name and are of class "tabcontent", and hide them
-            var tabcontent = document.getElementsByClassName("tabcontent");
-            for (var i = 0; i < tabcontent.length; i++) {
-                if (tabcontent[i].id.startsWith(sectionName)) {
-                    tabcontent[i].style.display = "none";
-                }
-            }
-            // get all elements with class="tablinks" that are children of the element with id="{{ sectionName }}-tabs", and remove the "active" class
-            var tablinks = document.getElementById(sectionName + "-tabs").getElementsByClassName("tablinks");
-            for (var i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            // show the current tab, and add an "active" class to the button that opened the tab
-            document.getElementById(sectionName + "-" + plotName).style.display = "block";
-            evt.currentTarget.className += " active";
+    function openTab(evt, tabName, sectionName) {
+        // Get the parent tab section
+        var tabSectionId = sectionName + '-section';
+        var tabSection = document.getElementById(tabSectionId);
+
+        // Hide all tab contents within the current section
+        var tabcontent = tabSection.getElementsByClassName("tabcontent");
+        for (var i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
         }
 
-        // automatically open the first tab on page load
-        document.getElementById("defaultOpen").click();
+        // Remove "active" class from all tab links within the current section
+        var tablinks = tabSection.getElementsByClassName("tablinks");
+        for (var i = 0; i < tablinks.length; i++) {
+            tablinks[i].classList.remove("active");
+        }
+
+        // Show the current tab content
+        var tabContentId = sectionName + "-" + tabName;
+        var tabContent = document.getElementById(tabContentId);
+        tabContent.style.display = "block";
+
+        // Add "active" class to the clicked tab link
+        evt.currentTarget.classList.add("active");
+
+        // Hide Plotly figures within the tab content
+        var plotlyFigures = tabContent.getElementsByClassName('plotly-graph-div');
+        for (var j = 0; j < plotlyFigures.length; j++) {
+            plotlyFigures[j].style.visibility = 'hidden';
+        }
+
+        // Resize Plotly figures
+        for (var j = 0; j < plotlyFigures.length; j++) {
+            Plotly.Plots.resize(plotlyFigures[j]);
+        }
+
+        // Use setTimeout to wait for 100 milliseconds before making Plotly figures visible
+        setTimeout(function() {
+            // Make Plotly figures visible after resizing
+            for (var j = 0; j < plotlyFigures.length; j++) {
+            plotlyFigures[j].style.visibility = 'visible';
+            }
+        }, 100);
+    }
+
+    // Automatically open the first tab on page load for each tab section
+    window.onload = function() {
+        var tabSections = document.getElementsByClassName('tab-section');
+        for (var i = 0; i < tabSections.length; i++) {
+            var defaultOpen = tabSections[i].querySelector(".tablinks.active");
+            if (defaultOpen) {
+                defaultOpen.click();
+            }
+        }
+    };
     </script>
 </body>
 </html>
