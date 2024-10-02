@@ -17,7 +17,7 @@ TMP_DIR = str(REPORT_BASE_FOLDER / "tmp")
 
 def plot_multi_week_province_map_matplotlib(geo_data, parameters):
     """
-    Plots a provincial-level map using GeoPandas and Matplotlib, creating a 2x2 grid of subplots,
+    Plots a provincial-level map using GeoPandas and Matplotlib, creating a 2 x n grid of subplots,
     each corresponding to a different date provided in parameters.
     """
     title = parameters.get("title", "")
