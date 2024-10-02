@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{ report_title }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 70px 120px;
+            line-height: 1.6;
+            color: #333;
+            background-color: #ecf3f0;
+        }
+        h1 {
+            color: #252525;
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 16px;
+            color: #555;
+            margin: 10px 0;
+        }
+        img {
+            width: 700px;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+        .plot-container {
+            margin: 30px 0;
+            padding: 20px;
+        }
+        .caption {
+            font-style: italic;
+            font-size: 14px;
+            color: #777;
+            text-align: center;
+            margin-top: -10px;
+            margin-bottom: 20px;
+        }
+        footer {
+            margin-top: 30px;
+            font-size: 12px;
+            text-align: center;
+            color: #888;
+        }
+        .tab {
+            overflow: hidden;
+            background-color: #f1f1f1;
+        }
+        .tab button {
+            background-color: inherit;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+        }
+        .tab button:hover {
+            background-color: #ddd;
+        }
+        .tab button.active {
+            background-color: #ccc;
+        }
+        .tabcontent {
+            display: none;
+            padding: 16px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+        .tabcontent.active {
+            display: block;
+        }
+    </style>
+    {{ plotly_script|safe }}  <!-- Include Plotly.js -->
+</head>
+<body>
+    <h1 contenteditable="true">{{ report_title }}</h1>
+    <p style="font-style: italic; font-size: 14px; color: #777;">Generated on {{ date }}</p>
+    <p class="markdown" contenteditable="true">{{ introductory_text }}</p>
+    <!-- tab Links -->
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Plot1')" id="defaultOpen">Plot 1</button>
+        <button class="tablinks" onclick="openTab(event, 'Plot2')">Plot 2</button>
+        <button class="tablinks" onclick="openTab(event, 'Plot3')">Plot 3</button>
+    </div>
+    <!-- tab content -->
+    <div id="Plot1" class="tabcontent">
+        <h3>Plot 1</h3>
+        <p>This is Plot 1 content.</p>
+        <!-- Insert your plot here, e.g., <img src="plot1.png"> or use a canvas for interactive plots -->
+    </div>
+    <div id="Plot2" class="tabcontent">
+        <h3>Plot 2</h3>
+        <p>This is Plot 2 content.</p>
+        <!-- Insert your plot here -->
+    </div>
+    <div id="Plot3" class="tabcontent">
+        <h3>Plot 3</h3>
+        <p>This is Plot 3 content.</p>
+        <!-- Insert your plot here -->
+    </div>
+    <!-- Render all sections, both text and plots -->
+    {% for section in sections_html %}
+        {{ section|safe }}
+    {% endfor %}
+    <footer>
+        <hr style="border: 0; border-top: 1px solid #ccc; margin: 20px 0;">
+    </footer>
+
+    <!-- javascript to handle tab switching -->
+    <script>
+        function openTab(evt, plotName) {
+            // get all elements with class="tabcontent" and hide them
+            var tabcontent = document.getElementsByClassName("tabcontent");
+            for (var i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            // get all elements with class="tablinks" and remove the class "active"
+            var tablinks = document.getElementsByClassName("tablinks");
+            for (var i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            // show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(plotName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // automatically open the first tab on page load
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+</html>
