@@ -28,7 +28,7 @@ def plot_province_map_matplotlib(geo_data, parameters):
     fig, ax = plt.subplots(1, figsize=(fig_width, fig_height))
 
     # load shapefile
-    provinces_gdf = gpd.read_file(PROVINCES_SHAPEFILE)
+    provinces_gdf = gpd.read_file(PROVINCES_SHAPEFILE, layer="geoBoundaries-COD-ADM1")
     provinces_gdf = provinces_gdf[[SHAPEFILE_COLUMN, "geometry"]]
     if provinces_gdf.crs != "EPSG:4326":
         provinces_gdf = provinces_gdf.to_crs("EPSG:4326")

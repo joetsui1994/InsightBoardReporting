@@ -1,3 +1,5 @@
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
 import plotly.graph_objects as go
 from pathlib import Path
 import os
