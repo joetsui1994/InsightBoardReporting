@@ -1,3 +1,17 @@
+Metadata-Version: 2.1
+Name: InsightBoardReporting
+Version: 0.1.0
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: geopandas>=0.12.2
+Requires-Dist: jinja2>=3.1.2
+Requires-Dist: matplotlib>=3.7.3
+Requires-Dist: numpy>=1.24.0
+Requires-Dist: pandas>=2.1.1
+Requires-Dist: plotly>=5.15.0
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: kaleido>=0.2.1
+
 # InsightBoardReporting
 
 **InsightBoardReporting** is a command-line tool for generating HTML reports from linelist CSV files (output from InsightBoard (https://github.com/globaldothealth/InsightBoard)[https://github.com/globaldothealth/InsightBoard]). The tool allows you to create detailed reports using HTML templates, apply custom filters to linelist data, compute and populate variables within templates, and generate plots.
