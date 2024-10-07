@@ -161,28 +161,28 @@ Variables can be used in templates by enclosing them in double curly braces:
 
 The following variables can be computed and used within templates:
 
-`total_cases`: Total number of cases (regardless of case classification) in the linelist.
-`total_deaths`: Total number of deaths in the linelist.
-`total_deaths_percentage`: Percentage of total cases that resulted in death.
-`total_confirmed_cases`: Total number of confirmed cases in the linelist.
-`total_confirmed_cases_percentage`: Percentage of total cases that are confirmed.
-`total_probable_cases`: Total number of probable cases in the linelist.
-`total_probable_cases_percentage`: Percentage of total cases that are probable.
-`total_suspected_cases`: Total number of suspected cases in the linelist.
-`total_suspected_cases_percentage`: Percentage of total cases that are suspected.
-`total_negative_cases`: Total number of negative cases in the linelist.
-`total_negative_cases_percentage`: Percentage of total cases that are negative.
-`total_unknown_cases`: Total number of unknown cases in the linelist.
-`total_unknown_cases_percentage`: Percentage of total cases that are unknown.
-`total_health_workers`: Total number of health workers among all cases in the linelist.
-`total_health_workers_percentage`: Percentage of total cases that are health workers.
-`total_sex_workers`: Total number of sex workers among all cases in the linelist.
-`total_sex_workers_percentage`: Percentage of total cases that are sex workers.
-`total_male_cases`: Total number of cases (regardless of case classification) in the linelist that are male.
-`total_male_cases_percentage`: Percentage of total cases that are male.
-`total_female_cases`: Total number of cases (regardless of case classification) in the linelist that are female.
-`total_female_cases_percentage`: Percentage of total cases that are female.
-`total_median_age`: Median age of all cases (regardless of case classification) in the linelist.
-`total_lower_quartile_age`: Lower quartile age of all cases (regardless of case classification) in the linelist.
-`total_upper_quartile_age`: Upper quartile age of all cases (regardless of case classification) in the linelist.
-`earliest_case_date`: Date of the earliest case in the linelist.
+- `total_cases`: Total number of cases (regardless of case classification) in the linelist.
+- `total_deaths`: Total number of deaths in the linelist.
+- `total_deaths_percentage`: Percentage of total cases that resulted in death.
+- `total_confirmed_cases`: Total number of confirmed cases in the linelist.
+- `total_confirmed_cases_percentage`: Percentage of total cases that are confirmed.
+- `total_probable_cases`: Total number of probable cases in the linelist.
+- `total_probable_cases_percentage`: Percentage of total cases that are probable.
+- `total_suspected_cases`: Total number of suspected cases in the linelist.
+- `total_suspected_cases_percentage`: Percentage of total cases that are suspected.
+- `total_negative_cases`: Total number of negative cases in the linelist.
+- `total_negative_cases_percentage`: Percentage of total cases that are negative.
+- `total_unknown_cases`: Total number of unknown cases in the linelist.
+- `total_unknown_cases_percentage`: Percentage of total cases that are unknown.
+- `total_health_workers`: Total number of health workers among all cases in the linelist.
+- `total_health_workers_percentage`: Percentage of total cases that are health workers.
+- `total_sex_workers`: Total number of sex workers among all cases in the linelist.
+- `total_sex_workers_percentage`: Percentage of total cases that are sex workers.
+- `total_male_cases`: Total number of cases (regardless of case classification) in the linelist that are male.
+- `total_male_cases_percentage`: Percentage of total cases that are male.
+- `total_female_cases`: Total number of cases (regardless of case classification) in the linelist that are female.
+- `total_female_cases_percentage`: Percentage of total cases that are female.
+- `total_median_age`: Median age of all cases (regardless of case classification) in the linelist.
+- `total_lower_quartile_age`: Lower quartile age of all cases (regardless of case classification) in the linelist.
+- `total_upper_quartile_age`: Upper quartile age of all cases (regardless of case classification) in the linelist.
+- `earliest_case_date`: Date of the earliest case in the linelist.
