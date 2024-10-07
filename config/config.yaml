@@ -1,0 +1,475 @@
+---
+parameters: # note that these values will override any variables computed from the data, if they share the same name
+  disease_name: 'Mpox'
+  country_name: 'DRC'
+  reporting_agency: 'Africa CDC'
+  report_date: '2024-10-07'
+  data_collection_date: '2024-10-06'
+filtering: # filtering applied to all sections
+  # filtering by date
+  - type: 'date'
+    column: 'notification_date'
+    min: null # YYYY-MM-DD, inclusive
+    max: null # YYYY-MM-DD, inclusive
+  # filtering by location
+  - type: 'str'
+    column: 'loc_admin_1'
+    include: null # list of values to include
+    exclude: null # list of values to exclude
+  - type: 'int'
+    column: 'age'
+    min: null # inclusive
+    max: null # inclusive
+  - type: 'bool'
+    column: 'sex_worker'
+    take_only: null # True or False
+reporting:
+  html_template: 'report_template_v2.html'
+  report_title: '2024 {{ disease_name }} Outbreak: {{ country_name }}'
+  introductory_text: 'This report provides an overview of the epidemiological situation of {{ disease_name }} as reported by {{ reporting_agency }} as of {{ data_collection_date }}. The report includes information on the number of cases, deaths, and demographic characteristics of the affected population at different administrative levels. The report focuses on confirmed, probable, and suspected cases as defined by {{ country_name }} working case definitions published at <a href="https://africacdc.org/disease/monkeypox/">https://africacdc.org/disease/monkeypox/</a>. Note that the definitions are subject to change as the outbreak evolves.'
+  sections:
+    ###################### text-block ######################
+    - type: 'text'
+      content: 'Note that figures shown below are generated using simulated data.'
+      text_color: '#484848'
+      font_size: '15px'
+      font_weight: 700
+    ###################### separator ######################
+    - type: 'horizontal-line'
+      linewidth: '1px'
+      line_color: '#ccc'
+      margin: "50px 0px"
+    ###################### text-block (title) ######################
+    - type: 'text'
+      content: '1. Overview'
+      text_color: '#484848'
+      font_size: '35px'
+      font_weight: 700
+    ###################### text-block ######################
+    - type: 'text'
+      content: 'This report provides an overview of the epidemiological situation of {{ disease_name }} as reported by {{ reporting_agency }} as of {{ data_collection_date }}. The Africa Centres for Disease Control and Prevention (Africa CDC) has officially declared the ongoing Mpox outbreak a Public Health Emergency of Continental Security (PHECS), marking the first such declaration by the agency since its inception in 2017. This declaration, under Article 3, Paragraph F of the Africa CDC Statute, empowers the organization to lead and coordinate responses to significant health emergencies. The statute mandates Africa CDC to "coordinate and support Member States in health emergency responses, particularly those declared PHECS or Public Health Emergency of International Concern (PHEIC), as well as health promotion and disease prevention through health systems strengthening, addressing communicable and non-communicable diseases, environmental health, and Neglected Tropical Diseases."'
+      text_color: '#484848'
+      font_size: '15px'
+      font_weight: 100
+    ###################### text-block ######################
+    - type: 'text'
+      content: 'Based on currently available information, the spread of Mpox cases in {{ country_name }} is attributed to two main outbreaks - spread of MPXV clade Ia in Equateur and other previously affected provinces of the country, and the spread of clade Ib MPXV in the provinces of North and South Kivu, as well as several clade Ib cases detected in Kinshasa. Current sequencing in the country is limited and clade distribution might be broader than what is currently known.'
+      text_color: '#484848'
+      font_size: '15px'
+      font_weight: 100
+    ###################### text-block ######################
+    - type: 'text'
+      content: 'The report focuses on confirmed, probably, and suspected cases as defined by {{ country_name }} working case definition published at <a href="https://africacdc.org/disease/monkeypox/">https://africacdc.org/disease/monkeypox/</a>. Note that the definitions may change.'
+      text_color: '#484848'
+      font_size: '15px'
+      font_weight: 100
+    ###################### text-block ######################
+    - type: 'text'
+      content: 'Suspected cases:'
+      text_color: '#484848'
+      font_size: '15px'
+      font_weight: 700
+    ###################### text-block ######################
+    - type: 'text'
+      content: 'A person with sudden onset of high fever followed by a vesiculopustular rash predominantly on the face and present on the palms of the hands and soles of the feet; OR presence of at least 5 smallpox-like scars.'
+      text_color: '#484848'
+      font_size: '15px'
+      font_weight: 100
+    ###################### text-block ######################
+    - type: 'text'
+      content: 'OR'
+      text_color: '#484848'
+      font_size: '15px'
+      font_weight: 700
+      underline: True
+    ###################### text-block ######################
+    - type: 'text'
+      content: 'Any person with fever > 38.3 °C (101 F), severe headache, lymphadenopathy, back pain, myalgia, and severe weakness, followed 1-3 days later by a progressive rash that often begins on the face (more dense) and then spreads elsewhere on the body, including the soles of the feet and palms of the hands.'
+      text_color: '#484848'
+      font_size: '15px'
+      font_weight: 100
+    ###################### text-block ######################
+    - type: 'text'
+      content: 'Confirmed cases:'
+      text_color: '#484848'
+      font_size: '15px'
+      font_weight: 700
+    ###################### text-block ######################
+    - type: 'text'
+      content: 'Any case for which the clinical and epidemiological diagnosis of Mpox has been laboratory confirmed.'
+      text_color: '#484848'
+      font_size: '15px'
+      font_weight: 100
+    ###################### separator ######################
+    - type: 'horizontal-line'
+      linewidth: '1px'
+      line_color: '#ccc'
+      margin: "30px 0"
+    ###################### text-block (title) ######################
+    - type: 'text'
+      content: '2. Situation in {{ country_name }}'
+      text_color: '#484848'
+      font_size: '35px'
+      font_weight: 700
+    ###################### text-block ######################
+    - type: 'text'
+      content: 'Since {{ earliest_case_date }}, a total of {{ total_confirmed_cases }} laboratory confirmed cases, including {{ total_deaths }}, has been reported in {{ country_name }}. A significant number of suspected and probably Mpox cases that clinically compatible with Mpox remain untested due to limited diagnostic and thus never get confirmed. For this reason, we include suspected cases in this report.'
+      text_color: '#484848'
+      font_size: '15px'
+      font_weight: 100
+    ###################### text-block ######################
+    - type: 'text'
+      content: 'This indicator should be interpreted with caution, as suspected and probable cases are recorded according to varying national and within-country case definitions.'
+      text_color: '#484848'
+      font_size: '15px'
+      font_weight: 100
+    ###################### plot: country weekly case count, disaggregated by case classification ######################
+    - type: 'time-series-barplot'
+      filtering:
+        - type: 'date'
+          column: 'notification_date'
+          min: null # YYYY-MM-DD, inclusive
+          max: null # YYYY-MM-DD, inclusive
+      time_column: 'notification_date'
+      by_epiweek: True
+      moving_average_window: 4 # in units of aggregation (i.e. days or weeks)
+      group_by: 'case_classification' # could be any column in the data
+      group_by_age: # override group_by if active
+        active: False
+        age_column: 'age_years'
+        age_groups: [0, 18, 45, 65] # left-closed, right-open intervals
+      plotting:
+        x_label: 'Date'
+        y_label: 'Weekly Number of Cases'
+        title: ''
+        moving_average:
+          show: True
+          linewidth: 4
+          colour: '#B4A269'
+        fig_width: 1000
+        fig_height: 400
+        export: False
+        filestem: 'weekly_case_count_country_case_classification'
+    ###################### text-block ######################
+    - type: 'text'
+      content: '<span style="font-weight: 700;">Fig. 1:</span> Weekly number of confirmed, probable, and suspected cases of Mpox in {{ country_name }}.'
+      text_color: '#484848'
+      font_size: '15px'
+      font_weight: 100
+    ###################### separator ######################
+    - type: 'horizontal-line'
+      linewidth: '1px'
+      line_color: '#ccc'
+      margin: "30px 0"
+    ###################### plot: province weekly case count ######################
+    - type: 'time-series-barplot'
+      filtering:
+        - type: 'date'
+          column: 'notification_date'
+          min: null # YYYY-MM-DD, inclusive
+          max: null # YYYY-MM-DD, inclusive
+      time_column: 'notification_date'
+      by_epiweek: True
+      moving_average_window: 4 # in units of aggregation (i.e. days or weeks)
+      group_by: 'loc_admin_1' # could be any column in the data
+      group_by_age: # override group_by if active
+        active: False
+        age_column: 'age_years'
+        age_groups: [0, 18, 45, 65] # left-closed, right-open intervals
+      plotting:
+        x_label: 'Date'
+        y_label: 'Weekly Number of Cases'
+        title: ''
+        moving_average:
+          show: True
+          linewidth: 4
+          colour: '#B4A269'
+        fig_width: 1000
+        fig_height: 400
+        export: False
+        filestem: 'weekly_case_count_province'
+    ###################### text-block ######################
+    - type: 'text'
+      content: '<span style="font-weight: 700;">Fig. 2:</span> Weekly number of cases (confirmed, probable, and suspected) of Mpox by province in {{ country_name }}.'
+      text_color: '#484848'
+      font_size: '15px'
+      font_weight: 100
+    ###################### separator ######################
+    - type: 'horizontal-line'
+      linewidth: '1px'
+      line_color: '#ccc'
+      margin: "30px 0"
+    ###################### plot: country weekly death count ######################
+    - type: 'time-series-barplot'
+      filtering: 
+        - type: 'str'
+          column: 'case_status'
+          include: ['died'] # list of values to include
+          exclude: null # list of values to exclude
+      time_column: 'notification_date'
+      by_epiweek: True
+      moving_average_window: 4 # in units of aggregation (i.e. days or weeks)
+      group_by: null # could be any column in the data
+      group_by_age: # override group_by if active
+        active: False
+        age_column: 'age_years'
+        age_groups: [0, 18, 45, 65] # left-closed, right-open intervals
+      plotting:
+        x_label: 'Date'
+        y_label: 'Weekly Number of Deaths'
+        title: ''
+        moving_average:
+          show: True
+          linewidth: 4
+          colour: '#B4A269'
+        fig_width: 1000
+        fig_height: 400
+        export: False
+        filestem: 'weekly_death_count_country'
+    ###################### text-block ######################
+    - type: 'text'
+      content: '<span style="font-weight: 700;">Fig. 3:</span> Weekly number of confirmed deaths due to Mpox in {{ country_name }}.'
+      text_color: '#484848'
+      font_size: '15px'
+      font_weight: 100
+    ###################### separator ######################
+    - type: 'horizontal-line'
+      linewidth: '1px'
+      line_color: '#ccc'
+      margin: "30px 0"
+    ###################### plot: province weekly death count ######################
+    - type: 'time-series-barplot'
+      filtering: 
+        - type: 'str'
+          column: 'case_status'
+          include: ['died'] # list of values to include
+          exclude: null # list of values to exclude
+      time_column: 'notification_date'
+      by_epiweek: True
+      moving_average_window: 4 # in units of aggregation (i.e. days or weeks)
+      group_by: 'loc_admin_1' # could be any column in the data
+      group_by_age: # override group_by if active
+        active: False
+        age_column: 'age_years'
+        age_groups: [0, 18, 45, 65] # left-closed, right-open intervals
+      plotting:
+        x_label: 'Date'
+        y_label: 'Weekly Number of Deaths'
+        title: ''
+        moving_average:
+          show: True
+          linewidth: 4
+          colour: '#B4A269'
+        fig_width: 1000
+        fig_height: 400
+        export: False
+        filestem: 'weekly_death_count_province'
+    ###################### text-block ######################
+    - type: 'text'
+      content: '<span style="font-weight: 700;">Fig. 4:</span> Weekly number of confirmed deaths due to Mpox by province in {{ country_name }}.'
+      text_color: '#484848'
+      font_size: '15px'
+      font_weight: 100
+    ###################### separator ######################
+    - type: 'horizontal-line'
+      linewidth: '1px'
+      line_color: '#ccc'
+      margin: "30px 0"
+    ###################### plot: cumulative case count at provincial level ######################
+    - type: 'spatial-map'
+      filtering: null
+      loc_column: 'loc_admin_2'
+      aggregation:
+        by_epiweek: False # aggregate by epiweek and display multiple maps in tabbed display
+        time_column: 'notification_date' # only used if by_epiweek is True
+      plotting:
+        shapefile: 'rdc_zones-de-sante'
+        id_column: 'Nom' # column in shapefile that matches data_column
+        boundary_shapefile: 'country-boundary' # optional
+        title: 'Cumulative case distribution at provincial level' # only used if by_epiweek is False
+        fig_width: 15
+        fig_height: 15
+        export: False
+        filestem: 'cumulative_case_count_province_map'
+    ###################### text-block ######################
+    - type: 'text'
+      content: '<span style="font-weight: 700;">Fig. 5:</span> Cumulative number of confirmed, probable, and suspected cases of Mpox by province in {{ country_name }}.'
+      text_color: '#484848'
+      font_size: '15px'
+      font_weight: 100
+    ###################### separator ######################
+    - type: 'horizontal-line'
+      linewidth: '1px'
+      line_color: '#ccc'
+      margin: "30px 0"
+    ###################### plot: cumulative death count at provincial level ######################
+    - type: 'spatial-map'
+      filtering:
+        - type: 'str'
+          column: 'case_status'
+          include: ['died'] # list of values to include
+          exclude: null # list of values to exclude
+      loc_column: 'loc_admin_2'
+      aggregation:
+        by_epiweek: False # aggregate by epiweek and display multiple maps in tabbed display
+        time_column: 'notification_date' # only used if by_epiweek is True
+      plotting:
+        shapefile: 'rdc_zones-de-sante'
+        id_column: 'Nom' # column in shapefile that matches data_column
+        boundary_shapefile: 'country-boundary' # optional
+        title: 'Cumulative death distribution at provincial level' # only used if by_epiweek is False
+        fig_width: 15
+        fig_height: 15
+        export: False
+        filestem: 'cumulative_death_count_province_map'
+    ###################### text-block ######################
+    - type: 'text'
+      content: '<span style="font-weight: 700;">Fig. 6:</span> Cumulative number of confirmed deaths due to Mpox by province in {{ country_name }}.'
+      text_color: '#484848'
+      font_size: '15px'
+      font_weight: 100
+    ###################### separator ######################
+    - type: 'horizontal-line'
+      linewidth: '1px'
+      line_color: '#ccc'
+      margin: "30px 0"
+    ###################### text-block (title) ######################
+    - type: 'text'
+      content: '3. Case Profile'
+      text_color: '#484848'
+      font_size: '35px'
+      font_weight: 700
+    ###################### text-block ######################
+    - type: 'text'
+      content: 'Key features of cases from up to {{ data_collection_date }} are summarized below:'
+      text_color: '#484848'
+      font_size: '15px'
+      font_weight: 100
+    ###################### text-block (bullet-points) ######################
+    - type: 'bullet-points'
+      content: [
+        '{{ total_male_cases_percentage }}% ({{ total_male_cases }}/{{ total_cases }}) of cases with available data are male',
+        'Median age of cases is {{ total_median_age }} years (IQR: {{ total_lower_quartile_age }}-{{ total_upper_quartile_age }})',
+        '{{ total_health_workers }} cases were reported to be health workers'
+      ]
+      text_color: '#484848'
+      font_size: '15px'
+      font_weight: 100
+    ###################### plot: age-sex distribution at country level, disaggregated by case_classification ######################
+    - type: 'age-sex-pyramid'
+      filtering: null
+      age_column: 'age_years'
+      age_groups: [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60] # left-closed, right-open intervals
+      sex_column: 'sex_at_birth' # only 'male' and 'female' are supported currently
+      group_by: 'case_classification'
+      plotting:
+        title: ''
+        x_label: 'Population'
+        y_label: 'Age Group'
+        fig_width: 1200
+        fig_height: 500
+        export: False
+        filestem: 'age_sex_pyramid_plot_country_case_classification'
+    ###################### text-block ######################
+    - type: 'text'
+      content: '<span style="font-weight: 700;">Fig. 7:</span> Age-sex distribution of confirmed, probable, and suspected cases of Mpox in {{ country_name }}.'
+      text_color: '#484848'
+      font_size: '15px'
+      font_weight: 100
+    ###################### separator ######################
+    - type: 'horizontal-line'
+      linewidth: '1px'
+      line_color: '#ccc'
+      margin: "30px 0"
+    ###################### plot: age-sex distribution at provincial level ######################
+    - type: 'age-sex-pyramid'
+      filtering: null
+      age_column: 'age_years'
+      age_groups: [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60] # left-closed, right-open intervals
+      sex_column: 'sex_at_birth' # only 'male' and 'female' are supported currently
+      group_by: 'loc_admin_1'
+      plotting:
+        title: ''
+        x_label: 'Population'
+        y_label: 'Age Group'
+        fig_width: 1200
+        fig_height: 500
+        export: False
+        filestem: 'age_sex_pyramid_plot_provincial'
+    ###################### text-block ######################
+    - type: 'text'
+      content: '<span style="font-weight: 700;">Fig. 8:</span> Age-sex distribution of all cases of Mpox in {{ country_name }} by province.'
+      text_color: '#484848'
+      font_size: '15px'
+      font_weight: 100
+    ###################### separator ######################
+    - type: 'horizontal-line'
+      linewidth: '1px'
+      line_color: '#ccc'
+      margin: "30px 0"
+    ###################### plot: country weekly case count, disaggregated by age ######################
+    - type: 'time-series-barplot'
+      filtering:
+        - type: 'date'
+          column: 'notification_date'
+          min: null # YYYY-MM-DD, inclusive
+          max: null # YYYY-MM-DD, inclusive
+      time_column: 'notification_date'
+      by_epiweek: True
+      moving_average_window: 4 # in units of aggregation (i.e. days or weeks)
+      group_by: null # could be any column in the data
+      group_by_age: # override group_by if active
+        active: True
+        age_column: 'age_years'
+        age_groups: [0, 18, 45, 65] # left-closed, right-open intervals
+      plotting:
+        x_label: 'Date'
+        y_label: 'Weekly Number of Cases'
+        title: ''
+        moving_average:
+          show: True
+          linewidth: 4
+          colour: '#B4A269'
+        fig_width: 1000
+        fig_height: 400
+        export: False
+        filestem: 'weekly_case_count_country_age_binned'
+    ###################### text-block ######################
+    - type: 'text'
+      content: '<span style="font-weight: 700;">Fig. 9:</span> Weekly number of confirmed, probable, and suspected cases of Mpox in {{ country_name }} by age group.'
+      text_color: '#484848'
+      font_size: '15px'
+      font_weight: 100
+    ###################### separator ######################
+    - type: 'horizontal-line'
+      linewidth: '1px'
+      line_color: '#ccc'
+      margin: "30px 0"
+    ###################### text-block (title) ######################
+    - type: 'text'
+      content: '4. Genomic Epidemiology (TBD)'
+      text_color: '#484848'
+      font_size: '35px'
+      font_weight: 700
+    ###################### separator ######################
+    - type: 'horizontal-line'
+      linewidth: '1px'
+      line_color: '#ccc'
+      margin: "30px 0"
+    ###################### text-block (title) ######################
+    - type: 'text'
+      content: '5. Vaccines (TBD)'
+      text_color: '#484848'
+      font_size: '35px'
+      font_weight: 700
+    ###################### separator ######################
+    - type: 'horizontal-line'
+      linewidth: '1px'
+      line_color: '#ccc'
+      margin: "30px 0"
+    ###################### text-block (title) ######################
+    - type: 'text'
+      content: '6. Testing (TBD)'
+      text_color: '#484848'
+      font_size: '35px'
+      font_weight: 700
