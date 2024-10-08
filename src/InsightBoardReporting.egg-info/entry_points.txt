@@ -1,2 +1,2 @@
 [console_scripts]
-InsightBoardReporting = InsightBoardReporting.main:cli
+InsightBoardReporting = main:cli

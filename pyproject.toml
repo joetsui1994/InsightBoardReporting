@@ -15,7 +15,7 @@ dependencies = [
 ]
 
 [project.scripts]
-InsightBoardReporting = "InsightBoardReporting.main:cli"
+InsightBoardReporting = "main:cli"
 
 [build-system]
 requires = ["setuptools>=64", "setuptools-scm>=8", "wheel"]
