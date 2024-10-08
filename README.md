@@ -6,6 +6,7 @@
 
 - [InsightBoardReporting](#insightboardreporting)
   - [Table of Contents](#table-of-contents)
+  - [Demo](#demo)
   - [Features](#features)
   - [Installation](#installation)
     - [Prerequisites](#prerequisites)
@@ -25,6 +26,10 @@
   - [Variables](#variables)
       - [Using Variables in Templates](#using-variables-in-templates)
       - [Available Variables](#available-variables)
+
+## Demo
+
+Check it out here: <a href="https://raw.githubusercontent.com/joetsui1994/InsightBoardReporting/refactored/example_output/report.html" target="_blank">before applying `populate`</a>, <a href="https://raw.githubusercontent.com/joetsui1994/InsightBoardReporting/refactored/example_output/report.populated.html" target="_blank">after applying `populate`</a>
 
 ## Features
 
