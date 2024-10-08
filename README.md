@@ -1,6 +1,6 @@
 # InsightBoardReporting
 
-**InsightBoardReporting** is a command-line tool for generating HTML reports from linelist CSV files (output from InsightBoard (https://github.com/globaldothealth/InsightBoard)[https://github.com/globaldothealth/InsightBoard]). The tool allows you to create detailed reports using HTML templates, apply custom filters to linelist data, compute and populate variables within templates, and generate plots.
+**InsightBoardReporting** is a command-line tool for generating HTML reports from linelist CSV files (output from InsightBoard [https://github.com/globaldothealth/InsightBoard](https://github.com/globaldothealth/InsightBoard)). The tool allows you to create detailed reports using HTML templates, apply custom filters to linelist data, compute and populate variables within templates, and generate plots.
 
 ## Table of Contents
 
