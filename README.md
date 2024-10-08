@@ -29,7 +29,7 @@
 
 ## Demo
 
-Check it out here: <a href="https://raw.githubusercontent.com/joetsui1994/InsightBoardReporting/refactored/example_output/report.html" target="_blank">before applying `populate`</a>, <a href="https://raw.githubusercontent.com/joetsui1994/InsightBoardReporting/refactored/example_output/report.populated.html" target="_blank">after applying `populate`</a>
+Check it out here: <a href="https://raw.githubusercontent.com/joetsui1994/InsightBoardReporting/refactored/example_output/report.populated.html" target="_blank">after applying `populate`</a>
 
 ## Features
 
