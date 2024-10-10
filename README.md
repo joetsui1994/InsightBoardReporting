@@ -20,7 +20,7 @@
 
 ## Demo
 
-Check it out here: <a href="https://gabby-trail.surge.sh/report.populated.html" target="_blank">after applying `populate`</a>
+Check it out here: <a href="https://joetsui1994.github.io/InsightBoardReporting/" target="_blank">after applying `populate`</a>
 
 ## Features
 
