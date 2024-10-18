@@ -18,7 +18,7 @@ def preprocess(data, config):
     filtering_config = config.get("filtering", [])
     loc_column = config.get("loc_column")
     aggregation_config = config.get("aggregation", {})
-    
+
     # apply filters
     filtered_data = apply_filters(data, filtering_config)
     # return empty dataframe if no data left after filtering
@@ -38,13 +38,13 @@ def preprocess(data, config):
         plot_data = plot_data.groupby(loc_column).size().reset_index(name="count")
         # add dummy date column
         plot_data["date"] = datetime.strptime("2020-01-01", "%Y-%m-%d")
-    else: # aggregate by epiweek
+    else:  # aggregate by epiweek
         # get the time column
         time_column = aggregation_config.get("time_column")
         # check that time_column is in data
         if time_column not in plot_data.columns:
             raise ValueError(f"Column '{time_column}' not found in data.")
-        
+
         # convert time_col to datetime
         plot_data[time_column] = pd.to_datetime(plot_data[time_column])
 
@@ -60,7 +60,9 @@ def preprocess(data, config):
 
         # add start of each epiweek as date
         plot_data["date"] = plot_data.apply(
-            lambda x: datetime.strptime("%d-W%d-1" % (x["year"], x["epiweek"]), "%G-W%V-%u")
+            lambda x: datetime.strptime(
+                "%d-W%d-1" % (x["year"], x["epiweek"]), "%G-W%V-%u"
+            )
             - timedelta(days=1),
             axis=1,
         )
@@ -85,6 +87,9 @@ def preprocess(data, config):
 
 
 def plot(plot_data, config, out_dir):
+    if len(plot_data) == 0:
+        return "<p>No data available for the selected filters.</p>"
+
     # extract config parameters
     shapefile = config.get("shapefile")
     id_column = config.get("id_column")
@@ -120,27 +125,38 @@ def plot(plot_data, config, out_dir):
         date_data = plot_data[plot_data["date"] == date]
 
         # merge data with geographic data
-        geo_data = gdf.merge(date_data, left_on=id_column, right_on="loc_column", how="left")
+        geo_data = gdf.merge(
+            date_data, left_on=id_column, right_on="loc_column", how="left"
+        )
 
         # fill NaN values with 0
         geo_data["count"] = geo_data["count"].fillna(0)
 
         # plot map
         fig, ax = plt.subplots(1, figsize=(fig_width, fig_height))
-        geo_data_plot = geo_data.plot(column="count", ax=ax, legend=False, cmap=custom_cmap)
+        geo_data_plot = geo_data.plot(
+            column="count", ax=ax, legend=False, cmap=custom_cmap
+        )
 
         # plot transparent polygons as borders
         gdf.boundary.plot(color="white", linewidth=0.3, alpha=0.4)
 
         # plot country boundary if specified
         if boundary_shapefile:
-            gdf_boundary.plot(color="none", ax=ax, edgecolor="#484848", linewidth=3, alpha=0.8)
+            gdf_boundary.plot(
+                color="none", ax=ax, edgecolor="#484848", linewidth=3, alpha=0.8
+            )
 
         # add title (use date as title if len(dates) > 1)
         ax.set_axis_off()
         ax.text(
-            0.5, -0.1, title if len(dates) == 1 else f"Date: {date}",
-            ha="center", va="center", transform=ax.transAxes, fontsize=20
+            0.5,
+            -0.1,
+            title if len(dates) == 1 else f"Date: {date}",
+            ha="center",
+            va="center",
+            transform=ax.transAxes,
+            fontsize=20,
         )
 
         # adjust margin
@@ -161,11 +177,11 @@ def plot(plot_data, config, out_dir):
 
         # encode plot as base64
         buf = io.BytesIO()
-        fig.savefig(buf, format='png')
+        fig.savefig(buf, format="png")
         buf.seek(0)  # rewind the buffer to the beginning
 
         # encode the BytesIO object to base64 string
-        img_base64 = base64.b64encode(buf.read()).decode('utf-8')
+        img_base64 = base64.b64encode(buf.read()).decode("utf-8")
         img_base64_url = f"data:image/png;base64,{img_base64}"
 
         # create a download link for the image
@@ -185,13 +201,11 @@ def plot(plot_data, config, out_dir):
             counter = 0
             while os.path.exists(pdf_filename):
                 counter += 1
-                pdf_filename = os.path.join(
-                    out_dir, f"{filestem}_{date}.{counter}.pdf"
-                )
+                pdf_filename = os.path.join(out_dir, f"{filestem}_{date}.{counter}.pdf")
 
             # save plot as PDF
             plt.gcf().set_size_inches(fig_width, fig_height)
-            plt.savefig(pdf_filename, format="pdf", bbox_inches='tight')
+            plt.savefig(pdf_filename, format="pdf", bbox_inches="tight")
 
         figs_html.append((fig_html, str(date)))
 

@@ -1,8 +1,17 @@
 from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
-from plotting_modules.time_series_barplot import preprocess as time_series_barplot_preprocess, plot as time_series_barplot_plot
-from plotting_modules.spatial_map import preprocess as spatial_map_preprocess, plot as spatial_map_plot
-from plotting_modules.age_sex_pyramid import preprocess as age_sex_pyramid_preprocess, plot as age_sex_pyramid_plot
+from plotting_modules.time_series_barplot import (
+    preprocess as time_series_barplot_preprocess,
+    plot as time_series_barplot_plot,
+)
+from plotting_modules.spatial_map import (
+    preprocess as spatial_map_preprocess,
+    plot as spatial_map_plot,
+)
+from plotting_modules.age_sex_pyramid import (
+    preprocess as age_sex_pyramid_preprocess,
+    plot as age_sex_pyramid_plot,
+)
 from datetime import datetime
 
 REPORT_ROOT_FOLDER = Path(__file__).parent.parent
@@ -53,7 +62,7 @@ def create_section(data, section, in_dir, out_dir):
         # bullet points html
         html = f'<ul style="color:{text_color}; font-size:{font_size}; font-weight:{font_weight};">'
         for point in content:
-            html += f'<li>{point}</li>'
+            html += f"<li>{point}</li>"
         html += "</ul>"
 
     # plot
@@ -67,7 +76,7 @@ def create_section(data, section, in_dir, out_dir):
         # and look for them in the in_dir, if found, replace the path with absolute path
         for key, value in plotting_config.items():
             if key.endswith("file"):
-                plotting_config[key] = '%s/%s' % (in_dir, value)
+                plotting_config[key] = "%s/%s" % (in_dir, value)
         plot = PLOT_TYPES[section_type]["plot"]
         html = plot(plot_data, plotting_config, out_dir)
 
@@ -79,7 +88,9 @@ def create_section(data, section, in_dir, out_dir):
         margin = section.get("margin", "30px 0")
 
         # horizontal line html
-        html = f'<hr style="border-top:{linewidth} solid {line_color}; margin:{margin};">'
+        html = (
+            f'<hr style="border-top:{linewidth} solid {line_color}; margin:{margin};">'
+        )
 
     return html
 

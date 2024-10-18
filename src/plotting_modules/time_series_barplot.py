@@ -31,7 +31,7 @@ def preprocess(data, config):
     # check that time_column is in data
     if time_column not in plot_data.columns:
         raise ValueError(f"Column '{time_column}' not found in data.")
-    
+
     # first check if group_by_age is active
     if group_by_age_config.get("active", False):
         age_column = group_by_age_config.get("age_column", "age")
@@ -40,7 +40,7 @@ def preprocess(data, config):
         # check that age_column is in data
         if age_column not in plot_data.columns:
             raise ValueError(f"Column '{age_column}' not found in data.")
-        
+
         # add inf to the last age group
         age_groups.append(float("inf"))
 
@@ -48,20 +48,24 @@ def preprocess(data, config):
         plot_data[age_column] = plot_data[age_column].apply(
             lambda x: 0 if pd.isnull(x) else int(x)
         )
-        plot_data["age_group"] = pd.cut(plot_data[age_column], bins=age_groups, right=False)
+        plot_data["age_group"] = pd.cut(
+            plot_data[age_column], bins=age_groups, right=False
+        )
         group_by = "age_group"
 
         # rename age_group to human readable format
         plot_data["age_group"] = plot_data["age_group"].apply(
-            lambda x: "%d-%d" % (int(x.left), int(x.right)) if x.right != float("inf") else f"{int(x.left)}+"
+            lambda x: "%d-%d" % (int(x.left), int(x.right))
+            if x.right != float("inf")
+            else f"{int(x.left)}+"
         )
 
     # check also group_by column
     if group_by and group_by not in plot_data.columns:
         raise ValueError(f"Column '{group_by}' not found in data.")
-    elif group_by is None: # add a dummy column
+    elif group_by is None:  # add a dummy column
         plot_data["group"] = 0
-    else: # rename group_by column to group
+    else:  # rename group_by column to group
         plot_data.rename(columns={group_by: "group"}, inplace=True)
 
     # convert time_col to datetime
@@ -74,18 +78,25 @@ def preprocess(data, config):
             plot_data[time_column].dt.isocalendar().values.T
         )
         plot_data = (
-            plot_data.groupby(["year", "epiweek", "group"], observed=False).size().reset_index(name="count")
+            plot_data.groupby(["year", "epiweek", "group"], observed=False)
+            .size()
+            .reset_index(name="count")
         )
         # add start of each epiweek as date
         plot_data["date"] = plot_data.apply(
             lambda x: datetime.strptime(
                 "%d-W%d-1" % (x["year"], x["epiweek"]), "%G-W%V-%u"
-            ) - timedelta(days=1),
+            )
+            - timedelta(days=1),
             axis=1,
         )
     else:
         plot_data["date"] = pd.to_datetime(plot_data[time_column]).dt.date
-        plot_data = plot_data.groupby(["date", "group"], observed=False).size().reset_index(name="count")
+        plot_data = (
+            plot_data.groupby(["date", "group"], observed=False)
+            .size()
+            .reset_index(name="count")
+        )
 
     # add 0 count for missing dates
     all_dates = pd.date_range(
@@ -95,14 +106,20 @@ def preprocess(data, config):
     )
 
     # create combinations of all dates and unique groups
-    unique_groups = plot_data["group"].unique()
+    seen = set()
+    unique_groups = []
+    for item in plot_data["group"].unique():
+        lower_item = item.lower()
+        if lower_item not in seen:
+            seen.add(lower_item)
+            unique_groups.append(item)
     all_dates_df = pd.DataFrame(
-        [(d, g) for d in all_dates.date for g in unique_groups], 
-        columns=["date", "group"]
+        [(d, g) for d in all_dates.date for g in unique_groups],
+        columns=["date", "group"],
     )
-    
+
     all_dates_df["date"] = pd.to_datetime(all_dates_df["date"]).dt.date
-    
+
     # merge
     plot_data["date"] = pd.to_datetime(plot_data["date"]).dt.date
     plot_data = all_dates_df.merge(plot_data, how="left", on=["date", "group"])
@@ -166,7 +183,8 @@ def plot(plot_data, config, out_dir):
             plot_bgcolor="rgba(0,0,0,0)",
             xaxis=dict(gridcolor="rgba(200,200,200,0.5)"),
             yaxis=dict(gridcolor="rgba(200,200,200,0.5)"),
-            margin=dict(l=60, r=20, b=60, t=50), autosize=True
+            margin=dict(l=60, r=20, b=60, t=50),
+            autosize=True,
         )
 
         # add a moving average line if specified
@@ -183,7 +201,7 @@ def plot(plot_data, config, out_dir):
 
         # convert figure to HTML string
         fig_html = fig.to_html(full_html=False, include_plotlyjs=False)
-        fig_html = fig_html.replace('<div ', '<div class="plotly-graph-div" ')
+        fig_html = fig_html.replace("<div ", '<div class="plotly-graph-div" ')
         figs_html.append((fig_html, str(group)))
 
         # export plot if specified
@@ -197,11 +215,12 @@ def plot(plot_data, config, out_dir):
                 )
 
             # create layout object
-            fig.write_image(pdf_filename, format="pdf", width=fig_width, height=fig_height)
+            fig.write_image(
+                pdf_filename, format="pdf", width=fig_width, height=fig_height
+            )
 
     # if multiple groups, return tabbed display
     if len(groups) > 1:
         return generate_tabbed_html(filestem, figs_html)
     else:
         return figs_html[0][0]
-    

@@ -15,7 +15,7 @@ loc_admin_1_shp_dir = "../geoBoundaries-COD-ADM1-all"
 loc_admin_2_shp_dir = "../rdc_zones-de-sante"
 loc_admin_3_shp_dir = "../rdc_aires-de-sante"
 # read from geopandas dataframes
-loc_admin_1_unique= gpd.read_file(loc_admin_1_shp_dir).shapeName.unique()
+loc_admin_1_unique = gpd.read_file(loc_admin_1_shp_dir).shapeName.unique()
 loc_admin_2_unique = gpd.read_file(loc_admin_2_shp_dir).Nom.unique()
 loc_admin_3_unique = gpd.read_file(loc_admin_3_shp_dir).AS_.unique()
 case_classifications = ["confirmed", "probable", "suspected", "negative", "unknown"]
@@ -26,7 +26,30 @@ sex_worker = [True, False]
 
 # specific to mpox
 clades = ["IIa", "IIb", "Ia", "Ib"]
-lineages = ["A", "A.1", "A.1.1", "A.2", "A.2.1", "A.2.3", "A.3", "B.1", "B.1.1", "B.1.10", "B.1.11", "B.1.12", "B.1.20", "B.1.22", "B.1.3", "B.1.4", "B.1.5", "B.1.6", "B.1.7", "B.1.9", "C.1", "C.1.1"]
+lineages = [
+    "A",
+    "A.1",
+    "A.1.1",
+    "A.2",
+    "A.2.1",
+    "A.2.3",
+    "A.3",
+    "B.1",
+    "B.1.1",
+    "B.1.10",
+    "B.1.11",
+    "B.1.12",
+    "B.1.20",
+    "B.1.22",
+    "B.1.3",
+    "B.1.4",
+    "B.1.5",
+    "B.1.6",
+    "B.1.7",
+    "B.1.9",
+    "C.1",
+    "C.1.1",
+]
 
 # generate random values for categorical columns
 loc_admin_1_values = np.random.choice(loc_admin_1_unique, size=num_cases)
