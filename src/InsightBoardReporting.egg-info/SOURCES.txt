@@ -1,0 +1,78 @@
+.gitignore
+.python-version
+LICENSE
+README.md
+main.py
+pyproject.toml
+uv.lock
+config/config-v2.yaml
+config/config.yaml
+example_input/generate_data.py
+example_input/linelist.csv
+example_input/country-boundary/geoBoundaries-COD-ADM1-all.dissolved.cpg
+example_input/country-boundary/geoBoundaries-COD-ADM1-all.dissolved.dbf
+example_input/country-boundary/geoBoundaries-COD-ADM1-all.dissolved.prj
+example_input/country-boundary/geoBoundaries-COD-ADM1-all.dissolved.shp
+example_input/country-boundary/geoBoundaries-COD-ADM1-all.dissolved.shx
+example_input/geoBoundaries-COD-ADM1-all/CITATION-AND-USE-geoBoundaries.txt
+example_input/geoBoundaries-COD-ADM1-all/geoBoundaries-COD-ADM1-PREVIEW.png
+example_input/geoBoundaries-COD-ADM1-all/geoBoundaries-COD-ADM1-metaData.json
+example_input/geoBoundaries-COD-ADM1-all/geoBoundaries-COD-ADM1-metaData.txt
+example_input/geoBoundaries-COD-ADM1-all/geoBoundaries-COD-ADM1.dbf
+example_input/geoBoundaries-COD-ADM1-all/geoBoundaries-COD-ADM1.geojson
+example_input/geoBoundaries-COD-ADM1-all/geoBoundaries-COD-ADM1.prj
+example_input/geoBoundaries-COD-ADM1-all/geoBoundaries-COD-ADM1.shp
+example_input/geoBoundaries-COD-ADM1-all/geoBoundaries-COD-ADM1.shx
+example_input/geoBoundaries-COD-ADM1-all/geoBoundaries-COD-ADM1.topojson
+example_input/geoBoundaries-COD-ADM1-all/geoBoundaries-COD-ADM1_simplified.dbf
+example_input/geoBoundaries-COD-ADM1-all/geoBoundaries-COD-ADM1_simplified.geojson
+example_input/geoBoundaries-COD-ADM1-all/geoBoundaries-COD-ADM1_simplified.prj
+example_input/geoBoundaries-COD-ADM1-all/geoBoundaries-COD-ADM1_simplified.shp
+example_input/geoBoundaries-COD-ADM1-all/geoBoundaries-COD-ADM1_simplified.shx
+example_input/geoBoundaries-COD-ADM1-all/geoBoundaries-COD-ADM1_simplified.topojson
+example_input/geoBoundaries-COD-ADM1-all/province_lookup.csv
+example_input/geoBoundaries-COD-ADM1-all/province_lookup.qmd
+example_input/rdc_aires-de-sante/RDC_Aires de santé.cpg
+example_input/rdc_aires-de-sante/RDC_Aires de santé.dbf
+example_input/rdc_aires-de-sante/RDC_Aires de santé.prj
+example_input/rdc_aires-de-sante/RDC_Aires de santé.qpj
+example_input/rdc_aires-de-sante/RDC_Aires de santé.sbn
+example_input/rdc_aires-de-sante/RDC_Aires de santé.sbx
+example_input/rdc_aires-de-sante/RDC_Aires de santé.shp
+example_input/rdc_aires-de-sante/RDC_Aires de santé.shp.xml
+example_input/rdc_aires-de-sante/RDC_Aires de santé.shx
+example_input/rdc_aires-de-sante/aires_lookup.csv
+example_input/rdc_aires-de-sante/aires_lookup.qmd
+example_input/rdc_zones-de-sante/RDC_Zones de sant‚.cpg
+example_input/rdc_zones-de-sante/RDC_Zones de sant‚.dbf
+example_input/rdc_zones-de-sante/RDC_Zones de sant‚.prj
+example_input/rdc_zones-de-sante/RDC_Zones de sant‚.qpj
+example_input/rdc_zones-de-sante/RDC_Zones de sant‚.sbn
+example_input/rdc_zones-de-sante/RDC_Zones de sant‚.sbx
+example_input/rdc_zones-de-sante/RDC_Zones de sant‚.shp
+example_input/rdc_zones-de-sante/RDC_Zones de sant‚.shp.xml
+example_input/rdc_zones-de-sante/RDC_Zones de sant‚.shx
+example_input/rdc_zones-de-sante/source.rtf
+example_input/rdc_zones-de-sante/zones_lookup.csv
+example_input/rdc_zones-de-sante/zones_lookup.qmd
+example_output/report.html
+example_output/report.populated.html
+src/__init__.py
+src/InsightBoardReporting.egg-info/PKG-INFO
+src/InsightBoardReporting.egg-info/SOURCES.txt
+src/InsightBoardReporting.egg-info/dependency_links.txt
+src/InsightBoardReporting.egg-info/entry_points.txt
+src/InsightBoardReporting.egg-info/requires.txt
+src/InsightBoardReporting.egg-info/top_level.txt
+src/modules/__init__.py
+src/modules/config_loader.py
+src/modules/data_filtering.py
+src/modules/populate_variables.py
+src/modules/report_generator.py
+src/plotting_modules/__init__.py
+src/plotting_modules/add_tabs.py
+src/plotting_modules/age_sex_pyramid.py
+src/plotting_modules/spatial_map.py
+src/plotting_modules/time_series_barplot.py
+src/templates/report_template.html
+src/templates/report_template_v2.html
